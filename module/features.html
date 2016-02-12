@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>WmsTileLayer &mdash; Folium 0.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/f6.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Folium 0.2.0 documentation" href="../index.html" />
+    <link rel="up" title="ModuleDescription" href="../module.html" />
+    <link rel="next" title="Map" href="folium.html" />
+    <link rel="prev" title="LegacyMap" href="map.html" />
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="folium.html" title="Map"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="map.html" title="LegacyMap"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" accesskey="U">ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><cite>WmsTileLayer</cite></a></li>
+<li><a class="reference internal" href="#regularpolygonmarker"><cite>RegularPolygonMarker</cite></a></li>
+<li><a class="reference internal" href="#vega"><cite>Vega</cite></a></li>
+<li><a class="reference internal" href="#geojson"><cite>GeoJson</cite></a></li>
+<li><a class="reference internal" href="#topojson"><cite>TopoJson</cite></a></li>
+<li><a class="reference internal" href="#markercluster"><cite>MarkerCluster</cite></a></li>
+<li><a class="reference internal" href="#divicon"><cite>DivIcon</cite></a></li>
+<li><a class="reference internal" href="#circlemarker"><cite>CircleMarker</cite></a></li>
+<li><a class="reference internal" href="#latlngpopup"><cite>LatLngPopup</cite></a></li>
+<li><a class="reference internal" href="#clickformarker"><cite>ClickForMarker</cite></a></li>
+<li><a class="reference internal" href="#polyline"><cite>PolyLine</cite></a></li>
+<li><a class="reference internal" href="#multipolyline"><cite>MultiPolyLine</cite></a></li>
+<li><a class="reference internal" href="#customicon"><cite>CustomIcon</cite></a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="map.html"
+                        title="previous chapter"><cite>LegacyMap</cite></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="folium.html"
+                        title="next chapter"><cite>Map</cite></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/features.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="wmstilelayer">
+<h1><cite>WmsTileLayer</cite><a class="headerlink" href="#wmstilelayer" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.WmsTileLayer">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">WmsTileLayer</code><span class="sig-paren">(</span><em>url</em>, <em>name=None</em>, <em>layers=None</em>, <em>styles=None</em>, <em>format=None</em>, <em>transparent=True</em>, <em>version='1.1.1'</em>, <em>attr=None</em>, <em>overlay=True</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.WmsTileLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a Web Map Service (WMS) layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>url</strong> (<em>str</em>) &#8211; The url of the WMS server.</li>
+<li><strong>name</strong> (<em>string, default None</em>) &#8211; The name of the Layer, as it will appear in LayerControls</li>
+<li><strong>layers</strong> (<em>str, default None</em>) &#8211; The names of the layers to be displayed.</li>
+<li><strong>styles</strong> (<em>str, default None</em>) &#8211; Comma-separated list of WMS styles.</li>
+<li><strong>format</strong> (<em>str, default None</em>) &#8211; The format of the service output.
+Ex: &#8216;iamge/png&#8217;</li>
+<li><strong>transparent</strong> (<em>bool, default True</em>) &#8211; Whether the layer shall allow transparency.</li>
+<li><strong>version</strong> (<em>str, default '1.1.1'</em>) &#8211; Version of the WMS service to use.</li>
+<li><strong>attr</strong> (<em>str, default None</em>) &#8211; The attribution of the service.
+Will be displayed in the bottom right corner.</li>
+<li><strong>overlay</strong> (<em>bool, default False</em>) &#8211; Adds the layer as an optional overlay (True) or the base layer (False).</li>
+<li><strong>control</strong> (<em>bool, default True</em>) &#8211; Whether the Layer will be included in LayerControls</li>
+<li><strong>more information see</strong> (<em>For</em>) &#8211; </li>
+<li><strong>http</strong> (<em>//leafletjs.com/reference.html#tilelayer-wms</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="regularpolygonmarker">
+<h1><cite>RegularPolygonMarker</cite><a class="headerlink" href="#regularpolygonmarker" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.RegularPolygonMarker">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">RegularPolygonMarker</code><span class="sig-paren">(</span><em>location</em>, <em>color='black'</em>, <em>opacity=1</em>, <em>weight=2</em>, <em>fill_color='blue'</em>, <em>fill_opacity=1</em>, <em>number_of_sides=4</em>, <em>rotation=0</em>, <em>radius=15</em>, <em>popup=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.RegularPolygonMarker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Custom markers using the Leaflet Data Vis Framework.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>location</strong> (<em>tuple or list, default None</em>) &#8211; Latitude and Longitude of Marker (Northing, Easting)</li>
+<li><strong>color</strong> (<em>string, default 'black'</em>) &#8211; Marker line color</li>
+<li><strong>opacity</strong> (<em>float, default 1</em>) &#8211; Line opacity, scale 0-1</li>
+<li><strong>weight</strong> (<em>int, default 2</em>) &#8211; Stroke weight in pixels</li>
+<li><strong>fill_color</strong> (<em>string, default 'blue'</em>) &#8211; Marker fill color</li>
+<li><strong>fill_opacity</strong> (<em>float, default 1</em>) &#8211; Marker fill opacity</li>
+<li><strong>number_of_sides</strong> (<em>int, default 4</em>) &#8211; Number of polygon sides</li>
+<li><strong>rotation</strong> (<em>int, default 0</em>) &#8211; Rotation angle in degrees</li>
+<li><strong>radius</strong> (<em>int, default 15</em>) &#8211; Marker radius, in pixels</li>
+<li><strong>popup</strong> (<em>string or folium.Popup, default None</em>) &#8211; Input text or visualization for object. Can pass either text,
+or a folium.Popup object.
+If None, no popup will be displayed.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li><em>Polygon marker names and HTML in obj.template_vars</em></li>
+<li><strong>For more information, see https</strong> (<em>//humangeo.github.io/leaflet-dvf/</em>)</li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.features.RegularPolygonMarker.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.RegularPolygonMarker.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="vega">
+<h1><cite>Vega</cite><a class="headerlink" href="#vega" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.Vega">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">Vega</code><span class="sig-paren">(</span><em>data</em>, <em>width=None</em>, <em>height=None</em>, <em>left='0%'</em>, <em>top='0%'</em>, <em>position='relative'</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.Vega" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cretes a Vega chart element.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<em>JSON-like str or object</em>) &#8211; The Vega description of the chart.
+It can also be any object that has a method <cite>to_json</cite>,
+so that you can (for instance) provide a <cite>vincent</cite> chart.</li>
+<li><strong>width</strong> (<em>int or str, default None</em>) &#8211; The width of the output element.
+If None, either data[&#8216;width&#8217;] (if available) or &#8216;100%&#8217; will be used.
+Ex: 120, &#8216;120px&#8217;, &#8216;80%&#8217;</li>
+<li><strong>height</strong> (<em>int or str, default None</em>) &#8211; The height of the output element.
+If None, either data[&#8216;width&#8217;] (if available) or &#8216;100%&#8217; will be used.
+Ex: 120, &#8216;120px&#8217;, &#8216;80%&#8217;</li>
+<li><strong>left</strong> (<em>int or str, default '0%'</em>) &#8211; The horizontal distance of the output with respect to the parent
+HTML object. Ex: 120, &#8216;120px&#8217;, &#8216;80%&#8217;</li>
+<li><strong>top</strong> (<em>int or str, default '0%'</em>) &#8211; The vertical distance of the output with respect to the parent
+HTML object. Ex: 120, &#8216;120px&#8217;, &#8216;80%&#8217;</li>
+<li><strong>position</strong> (<em>str, default 'relative'</em>) &#8211; The <cite>position</cite> argument that the CSS shall contain.
+Ex: &#8216;relative&#8217;, &#8216;absolute&#8217;</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.features.Vega.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.Vega.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="geojson">
+<h1><cite>GeoJson</cite><a class="headerlink" href="#geojson" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.GeoJson">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">GeoJson</code><span class="sig-paren">(</span><em>data</em>, <em>style_function=None</em>, <em>name=None</em>, <em>overlay=True</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.GeoJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a GeoJson object for plotting into a Map.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<em>file, dict or str.</em>) &#8211; The GeoJSON data you want to plot.
+* If file, then data will be read in the file and fully
+embedded in Leaflet&#8217;s JavaScript.
+* If dict, then data will be converted to JSON and embedded
+in the JavaScript.
+* If str, then data will be passed to the JavaScript as-is.</li>
+<li><strong>style_function</strong> (<em>function, default None</em>) &#8211; A function mapping a GeoJson Feature to a style dict.</li>
+<li><strong>name</strong> (<em>string, default None</em>) &#8211; The name of the Layer, as it will appear in LayerControls</li>
+<li><strong>overlay</strong> (<em>bool, default False</em>) &#8211; Adds the layer as an optional overlay (True) or the base layer (False).</li>
+<li><strong>control</strong> (<em>bool, default True</em>) &#8211; Whether the Layer will be included in LayerControls</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing file that shall be embeded.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">GeoJson</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing filename that shall not be embeded.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">GeoJson</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing dict.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">GeoJson</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">)))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing string.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">GeoJson</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Provide a style_function that color all states green but Alabama.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">style_function</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;fillColor&#39;</span><span class="p">:</span> <span class="s1">&#39;#0000ff&#39;</span> <span class="k">if</span>
+<span class="gp">... </span>                            <span class="n">x</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Alabama&#39;</span> <span class="k">else</span>
+<span class="gp">... </span>                            <span class="s1">&#39;#00ff00&#39;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">GeoJson</span><span class="p">(</span><span class="n">geojson</span><span class="p">,</span> <span class="n">style_function</span><span class="o">=</span><span class="n">style_function</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="folium.features.GeoJson.style_data">
+<code class="descname">style_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.GeoJson.style_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies <cite>self.style_function</cite> to each feature of <cite>self.data</cite> and
+returns a corresponding JSON output.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="topojson">
+<h1><cite>TopoJson</cite><a class="headerlink" href="#topojson" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.TopoJson">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">TopoJson</code><span class="sig-paren">(</span><em>data</em>, <em>object_path</em>, <em>style_function=None</em>, <em>name=None</em>, <em>overlay=True</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.TopoJson" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a TopoJson object for plotting into a Map.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<em>file, dict or str.</em>) &#8211; The TopoJSON data you want to plot.
+* If file, then data will be read in the file and fully
+embedded in Leaflet&#8217;s JavaScript.
+* If dict, then data will be converted to JSON and embedded
+in the JavaScript.
+* If str, then data will be passed to the JavaScript as-is.</li>
+<li><strong>object_path</strong> (<em>str</em>) &#8211; The path of the desired object into the TopoJson structure.
+Ex: &#8216;objects.myobject&#8217;.</li>
+<li><strong>style_function</strong> (<em>function, default None</em>) &#8211; A function mapping a TopoJson geometry to a style dict.</li>
+<li><strong>name</strong> (<em>string, default None</em>) &#8211; The name of the Layer, as it will appear in LayerControls</li>
+<li><strong>overlay</strong> (<em>bool, default False</em>) &#8211; Adds the layer as an optional overlay (True) or the base layer (False).</li>
+<li><strong>control</strong> (<em>bool, default True</em>) &#8211; Whether the Layer will be included in LayerControls</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing file that shall be embeded.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">TopoJson</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">),</span> <span class="s1">&#39;object.myobject&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing filename that shall not be embeded.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">TopoJson</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">,</span> <span class="s1">&#39;object.myobject&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing dict.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">TopoJson</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">)),</span> <span class="s1">&#39;object.myobject&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Providing string.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">TopoJson</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s1">&#39;foo.json&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="s1">&#39;object.myobject&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Provide a style_function that color all states green but Alabama.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">style_function</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;fillColor&#39;</span><span class="p">:</span> <span class="s1">&#39;#0000ff&#39;</span> <span class="k">if</span>
+<span class="gp">... </span>                            <span class="n">x</span><span class="p">[</span><span class="s1">&#39;properties&#39;</span><span class="p">][</span><span class="s1">&#39;name&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;Alabama&#39;</span> <span class="k">else</span>
+<span class="gp">... </span>                            <span class="s1">&#39;#00ff00&#39;</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">TopoJson</span><span class="p">(</span><span class="n">topo_json</span><span class="p">,</span> <span class="s1">&#39;object.myobject&#39;</span><span class="p">,</span> <span class="n">style_function</span><span class="o">=</span><span class="n">style_function</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="folium.features.TopoJson.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.TopoJson.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.features.TopoJson.style_data">
+<code class="descname">style_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.TopoJson.style_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Applies self.style_function to each feature of self.data and returns
+a corresponding JSON output.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="markercluster">
+<h1><cite>MarkerCluster</cite><a class="headerlink" href="#markercluster" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.MarkerCluster">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">MarkerCluster</code><span class="sig-paren">(</span><em>name=None</em>, <em>overlay=True</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.MarkerCluster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a MarkerCluster element to append into a map with
+Map.add_children.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>string, default None</em>) &#8211; The name of the Layer, as it will appear in LayerControls</li>
+<li><strong>overlay</strong> (<em>bool, default False</em>) &#8211; Adds the layer as an optional overlay (True) or the base layer (False).</li>
+<li><strong>control</strong> (<em>bool, default True</em>) &#8211; Whether the Layer will be included in LayerControls</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.features.MarkerCluster.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.MarkerCluster.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="divicon">
+<h1><cite>DivIcon</cite><a class="headerlink" href="#divicon" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.DivIcon">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">DivIcon</code><span class="sig-paren">(</span><em>html=None</em>, <em>icon_size=None</em>, <em>icon_anchor=None</em>, <em>popup_anchor=None</em>, <em>class_name='empty'</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.DivIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Represents a lightweight icon for markers that uses a simple <cite>div</cite>
+element instead of an image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>icon_size</strong> (<em>tuple of 2 int</em>) &#8211; Size of the icon image in pixels.</li>
+<li><strong>icon_anchor</strong> (<em>tuple of 2 int</em>) &#8211; The coordinates of the &#8220;tip&#8221; of the icon
+(relative to its top left corner).
+The icon will be aligned so that this point is at the
+marker&#8217;s geographical location.</li>
+<li><strong>popup_anchor</strong> (<em>tuple of 2 int</em>) &#8211; The coordinates of the point from which popups will &#8220;open&#8221;,
+relative to the icon anchor.</li>
+<li><strong>class_name</strong> (<em>string</em>) &#8211; A custom class name to assign to the icon.
+Leaflet defaults is &#8216;leaflet-div-icon&#8217; which draws a little white
+square with a shadow.  We set it &#8216;empty&#8217; in folium.</li>
+<li><strong>html</strong> (<em>string</em>) &#8211; A custom HTML code to put inside the div element.</li>
+<li><strong>more information see</strong> (<em>For</em>) &#8211; </li>
+<li><strong>http</strong> (<em>//leafletjs.com/reference.html#divicon</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="circlemarker">
+<h1><cite>CircleMarker</cite><a class="headerlink" href="#circlemarker" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.CircleMarker">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">CircleMarker</code><span class="sig-paren">(</span><em>location</em>, <em>radius=500</em>, <em>color='black'</em>, <em>fill_color='black'</em>, <em>fill_opacity=0.6</em>, <em>popup=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.CircleMarker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a CircleMarker object for plotting on a Map.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>location</strong> (<em>tuple or list, default None</em>) &#8211; Latitude and Longitude of Marker (Northing, Easting)</li>
+<li><strong>radius</strong> (<em>int</em>) &#8211; The radius of the circle in pixels.</li>
+<li><strong>color</strong> (<em>str, default 'black'</em>) &#8211; The color of the marker&#8217;s edge in a HTML-compatible format.</li>
+<li><strong>fill_color</strong> (<em>str, default 'black'</em>) &#8211; The fill color of the marker in a HTML-compatible format.</li>
+<li><strong>fill_opacity</strong> (<em>float, default à.6</em>) &#8211; The fill opacity of the marker, between 0. and 1.</li>
+<li><strong>popup</strong> (<em>string or folium.Popup, default None</em>) &#8211; Input text or visualization for object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="latlngpopup">
+<h1><cite>LatLngPopup</cite><a class="headerlink" href="#latlngpopup" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.LatLngPopup">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">LatLngPopup</code><a class="headerlink" href="#folium.features.LatLngPopup" title="Permalink to this definition">¶</a></dt>
+<dd><p>When one clicks on a Map that contains a LatLngPopup,
+a popup is shown that displays the latitude and longitude of the pointer.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="clickformarker">
+<h1><cite>ClickForMarker</cite><a class="headerlink" href="#clickformarker" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.ClickForMarker">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">ClickForMarker</code><span class="sig-paren">(</span><em>popup=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.ClickForMarker" title="Permalink to this definition">¶</a></dt>
+<dd><p>When one clicks on a Map that contains a ClickForMarker, a Marker is created
+at the pointer&#8217;s position.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>popup</strong> (<em>str, default None</em>) &#8211; Text to display in the markers&#8217; popups.
+If None, the popups will display the marker&#8217;s latitude and longitude.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="polyline">
+<h1><cite>PolyLine</cite><a class="headerlink" href="#polyline" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.PolyLine">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">PolyLine</code><span class="sig-paren">(</span><em>locations</em>, <em>color=None</em>, <em>weight=None</em>, <em>opacity=None</em>, <em>latlon=True</em>, <em>popup=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.PolyLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a PolyLine object to append into a map with
+Map.add_children.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>locations</strong> (<em>list of points (latitude, longitude)</em>) &#8211; Latitude and Longitude of line (Northing, Easting)</li>
+<li><strong>color</strong> (<em>string, default Leaflet's default ('#03f')</em>) &#8211; </li>
+<li><strong>weight</strong> (<em>float, default Leaflet's default (5)</em>) &#8211; </li>
+<li><strong>opacity</strong> (<em>float, default Leaflet's default (0.5)</em>) &#8211; </li>
+<li><strong>latlon</strong> (<em>bool, default True</em>) &#8211; Whether locations are given in the form [[lat, lon]]
+or not ([[lon, lat]] if False).
+Note that the default GeoJson format is latlon=False,
+while Leaflet polyline&#8217;s default is latlon=True.</li>
+<li><strong>popup</strong> (<em>string or folium.Popup, default None</em>) &#8211; Input text or visualization for object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="multipolyline">
+<h1><cite>MultiPolyLine</cite><a class="headerlink" href="#multipolyline" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.MultiPolyLine">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">MultiPolyLine</code><span class="sig-paren">(</span><em>locations</em>, <em>color=None</em>, <em>weight=None</em>, <em>opacity=None</em>, <em>latlon=True</em>, <em>popup=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.MultiPolyLine" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a MultiPolyLine object to append into a map with
+Map.add_children.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>locations</strong> (<em>list of points (latitude, longitude)</em>) &#8211; Latitude and Longitude of line (Northing, Easting)</li>
+<li><strong>color</strong> (<em>string, default Leaflet's default ('#03f')</em>) &#8211; </li>
+<li><strong>weight</strong> (<em>float, default Leaflet's default (5)</em>) &#8211; </li>
+<li><strong>opacity</strong> (<em>float, default Leaflet's default (0.5)</em>) &#8211; </li>
+<li><strong>latlon</strong> (<em>bool, default True</em>) &#8211; Whether locations are given in the form [[lat, lon]]
+or not ([[lon, lat]] if False).
+Note that the default GeoJson format is latlon=False,
+while Leaflet polyline&#8217;s default is latlon=True.</li>
+<li><strong>popup</strong> (<em>string or folium.Popup, default None</em>) &#8211; Input text or visualization for object.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="customicon">
+<h1><cite>CustomIcon</cite><a class="headerlink" href="#customicon" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.features.CustomIcon">
+<em class="property">class </em><code class="descclassname">folium.features.</code><code class="descname">CustomIcon</code><span class="sig-paren">(</span><em>icon_image</em>, <em>icon_size=None</em>, <em>icon_anchor=None</em>, <em>shadow_image=None</em>, <em>shadow_size=None</em>, <em>shadow_anchor=None</em>, <em>popup_anchor=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.features.CustomIcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a custom icon, based on an image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>icon_image</strong> (<em>string, file or array-like object</em>) &#8211; The data you want to use as an icon.
+* If string, it will be written directly in the output file.
+* If file, it&#8217;s content will be converted as embedded in the
+output file.
+* If array-like, it will be converted to PNG base64 string
+and embedded in the output.</li>
+<li><strong>icon_size</strong> (<em>tuple of 2 int</em>) &#8211; Size of the icon image in pixels.</li>
+<li><strong>icon_anchor</strong> (<em>tuple of 2 int</em>) &#8211; The coordinates of the &#8220;tip&#8221; of the icon
+(relative to its top left corner).
+The icon will be aligned so that this point is at the
+marker&#8217;s geographical location.</li>
+<li><strong>shadow_image</strong> (<em>string, file or array-like object</em>) &#8211; The data for the shadow image. If not specified,
+no shadow image will be created.</li>
+<li><strong>shadow_size</strong> (<em>tuple of 2 int</em>) &#8211; Size of the shadow image in pixels.</li>
+<li><strong>shadow_anchor</strong> (<em>tuple of 2 int</em>) &#8211; The coordinates of the &#8220;tip&#8221; of the shadow relative to its
+top left corner (the same as icon_anchor if not specified).</li>
+<li><strong>popup_anchor</strong> (<em>tuple of 2 int</em>) &#8211; The coordinates of the point from which popups will &#8220;open&#8221;,
+relative to the icon anchor.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="folium.html" title="Map"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="map.html" title="LegacyMap"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" >ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Rob Story.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.5.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>

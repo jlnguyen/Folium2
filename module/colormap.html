@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ColorMap &mdash; Folium 0.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/f6.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Folium 0.2.0 documentation" href="../index.html" />
+    <link rel="up" title="ModuleDescription" href="../module.html" />
+    <link rel="next" title="legend_scaler" href="utilities.html" />
+    <link rel="prev" title="Map" href="folium.html" />
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="utilities.html" title="legend_scaler"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="folium.html" title="Map"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" accesskey="U">ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><cite>ColorMap</cite></a></li>
+<li><a class="reference internal" href="#linearcolormap"><cite>LinearColormap</cite></a></li>
+<li><a class="reference internal" href="#stepcolormap"><cite>StepColormap</cite></a></li>
+<li><a class="reference internal" href="#linear"><cite>linear</cite></a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="folium.html"
+                        title="previous chapter"><cite>Map</cite></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utilities.html"
+                        title="next chapter"><cite>legend_scaler</cite></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/colormap.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="colormap">
+<h1><cite>ColorMap</cite><a class="headerlink" href="#colormap" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.colormap.ColorMap">
+<em class="property">class </em><code class="descclassname">folium.colormap.</code><code class="descname">ColorMap</code><span class="sig-paren">(</span><em>vmin=0.0</em>, <em>vmax=1.0</em>, <em>caption=''</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>A generic class for creating colormaps.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>vmin</strong> (<em>float</em>) &#8211; The left bound of the color scale.</li>
+<li><strong>vmax</strong> (<em>float</em>) &#8211; The right bound of the color scale.</li>
+<li><strong>caption</strong> (<em>str</em>) &#8211; A caption to draw with the colormap.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.colormap.ColorMap.__call__">
+<code class="descname">__call__</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the color corresponding to value <cite>x</cite> in the
+form of a string of hewadecimal values &#8220;#RRGGBB&#8221;.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.ColorMap.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.ColorMap.rgb_bytes_tuple">
+<code class="descname">rgb_bytes_tuple</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap.rgb_bytes_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the color corresponding to value <cite>x</cite> in the
+form of a tuple (R,G,B) with int values between 0 and 255.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.ColorMap.rgb_hex_str">
+<code class="descname">rgb_hex_str</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap.rgb_hex_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the color corresponding to value <cite>x</cite> in the
+form of a string of hewadecimal values &#8220;#RRGGBB&#8221;.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.ColorMap.rgba_bytes_tuple">
+<code class="descname">rgba_bytes_tuple</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap.rgba_bytes_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the color corresponding to value <cite>x</cite> in the
+form of a tuple (R,G,B,A) with int values between 0 and 255.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.ColorMap.rgba_floats_tuple">
+<code class="descname">rgba_floats_tuple</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.ColorMap.rgba_floats_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class has to be implemented for each class inheriting from
+Colormap. This has to be a function of the form float -&gt;
+(float, float, float, float) describing for each input float x,
+the output color in RGBA format;
+Each output value being between 0 and 1.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="linearcolormap">
+<h1><cite>LinearColormap</cite><a class="headerlink" href="#linearcolormap" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.colormap.LinearColormap">
+<em class="property">class </em><code class="descclassname">folium.colormap.</code><code class="descname">LinearColormap</code><span class="sig-paren">(</span><em>colors</em>, <em>index=None</em>, <em>vmin=0.0</em>, <em>vmax=1.0</em>, <em>caption=''</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.LinearColormap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a ColorMap based on linear interpolation of a set of colors
+over a given index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>colors</strong> (<em>list-like object</em>) &#8211; The set of colors to be used for interpolation.
+Colors can be provided in the form:
+* tuples of int between 0 and 255 (e.g: <cite>(255,255,0)</cite> or
+<cite>(255, 255, 0, 255)</cite>)
+* tuples of floats between 0. and 1. (e.g: <cite>(1.,1.,0.)</cite> or
+<cite>(1., 1., 0., 1.)</cite>)
+* HTML-like string (e.g: <cite>&#8220;#ffff00</cite>)
+* a color name or shortcut (e.g: <cite>&#8220;y&#8221;</cite> or <cite>&#8220;yellow&#8221;</cite>)</li>
+<li><strong>index</strong> (<em>list of floats, default None</em>) &#8211; The values corresponding to each color.
+It has to be sorted, and have the same length as <cite>colors</cite>.
+If None, a regular grid between <cite>vmin</cite> and <cite>vmax</cite> is created.</li>
+<li><strong>vmin</strong> (<em>float, default 0.</em>) &#8211; The minimal value for the colormap.
+Values lower than <cite>vmin</cite> will be bound directly to <cite>colors[0]</cite>.</li>
+<li><strong>vmax</strong> (<em>float, default 1.</em>) &#8211; The maximal value for the colormap.
+Values higher than <cite>vmax</cite> will be bound directly to <cite>colors[-1]</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.colormap.LinearColormap.rgba_floats_tuple">
+<code class="descname">rgba_floats_tuple</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.LinearColormap.rgba_floats_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the color corresponding to value <cite>x</cite> in the
+form of a tuple (R,G,B,A) with float values between 0. and 1.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.LinearColormap.scale">
+<code class="descname">scale</code><span class="sig-paren">(</span><em>vmin=0.0</em>, <em>vmax=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.LinearColormap.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms the colorscale so that the minimal and maximal values
+fit the given parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.LinearColormap.to_step">
+<code class="descname">to_step</code><span class="sig-paren">(</span><em>n=None</em>, <em>index=None</em>, <em>data=None</em>, <em>method=None</em>, <em>quantiles=None</em>, <em>round_method=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.LinearColormap.to_step" title="Permalink to this definition">¶</a></dt>
+<dd><p>Splits the LinearColormap into a StepColormap.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<em>int, default None</em>) &#8211; The number of expected colors in the ouput StepColormap.
+This will be ignored if <cite>index</cite> is provided.</li>
+<li><strong>index</strong> (<em>list of floats, default None</em>) &#8211; The values corresponding to each color bounds.
+It has to be sorted.
+If None, a regular grid between <cite>vmin</cite> and <cite>vmax</cite> is created.</li>
+<li><strong>data</strong> (<em>list of floats, default None</em>) &#8211; A sample of data to adapt the color map to.</li>
+<li><strong>method</strong> (<em>str, default 'linear'</em>) &#8211; The method used to create data-based colormap.
+It can be &#8216;linear&#8217; for linear scale, &#8216;log&#8217; for logarithmic,
+or &#8216;quant&#8217; for data&#8217;s quantile-based scale.</li>
+<li><strong>quantiles</strong> (<em>list of floats, default None</em>) &#8211; Alternatively, you can provide explicitely the quantiles you
+want to use in the scale.</li>
+<li><strong>round_method</strong> (<em>str, default None</em>) &#8211; The method used to round thresholds.
+* If &#8216;int&#8217;, all values will be rounded to the nearest integer.
+* If &#8216;log10&#8217;, all values will be rounded to the nearest
+order-of-magnitude integer. For example, 2100 is rounded to
+2000, 2790 to 3000.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last"><ul class="simple">
+<li>A StepColormap with <cite>n=len(index)-1</cite> colors.</li>
+<li><em>Examples</em></li>
+<li><em>&gt;&gt; lc.to_step(n=12)</em></li>
+<li><em>&gt;&gt; lc.to_step(index=[0, 2, 4, 6, 8, 10])</em></li>
+<li><em>&gt;&gt; lc.to_step(data=some_list, n=12)</em></li>
+<li><em>&gt;&gt; lc.to_step(data=some_list, n=12, method=&#8217;linear&#8217;)</em></li>
+<li><em>&gt;&gt; lc.to_step(data=some_list, n=12, method=&#8217;log&#8217;)</em></li>
+<li><em>&gt;&gt; lc.to_step(data=some_list, n=12, method=&#8217;quantiles&#8217;)</em></li>
+<li><em>&gt;&gt; lc.to_step(data=some_list, quantiles=[0, 0.3, 0.7, 1])</em></li>
+<li><em>&gt;&gt; lc.to_step(data=some_list, quantiles=[0, 0.3, 0.7, 1],</em></li>
+<li><em>...           round_method=&#8217;log10&#8217;)</em></li>
+</ul>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="stepcolormap">
+<h1><cite>StepColormap</cite><a class="headerlink" href="#stepcolormap" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.colormap.StepColormap">
+<em class="property">class </em><code class="descclassname">folium.colormap.</code><code class="descname">StepColormap</code><span class="sig-paren">(</span><em>colors</em>, <em>index=None</em>, <em>vmin=0.0</em>, <em>vmax=1.0</em>, <em>caption=''</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.StepColormap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a ColorMap based on linear interpolation of a set of colors
+over a given index.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>colors</strong> (<em>list-like object</em>) &#8211; The set of colors to be used for interpolation.
+Colors can be provided in the form:
+* tuples of int between 0 and 255 (e.g: <cite>(255,255,0)</cite> or
+<cite>(255, 255, 0, 255)</cite>)
+* tuples of floats between 0. and 1. (e.g: <cite>(1.,1.,0.)</cite> or
+<cite>(1., 1., 0., 1.)</cite>)
+* HTML-like string (e.g: <cite>&#8220;#ffff00</cite>)
+* a color name or shortcut (e.g: <cite>&#8220;y&#8221;</cite> or <cite>&#8220;yellow&#8221;</cite>)</li>
+<li><strong>index</strong> (<em>list of floats, default None</em>) &#8211; The values corresponding to each color.
+It has to be sorted, and have the same length as <cite>colors</cite>.
+If None, a regular grid between <cite>vmin</cite> and <cite>vmax</cite> is created.</li>
+<li><strong>vmin</strong> (<em>float, default 0.</em>) &#8211; The minimal value for the colormap.
+Values lower than <cite>vmin</cite> will be bound directly to <cite>colors[0]</cite>.</li>
+<li><strong>vmax</strong> (<em>float, default 1.</em>) &#8211; The maximal value for the colormap.
+Values higher than <cite>vmax</cite> will be bound directly to <cite>colors[-1]</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.colormap.StepColormap.rgba_floats_tuple">
+<code class="descname">rgba_floats_tuple</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.StepColormap.rgba_floats_tuple" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides the color corresponding to value <cite>x</cite> in the
+form of a tuple (R,G,B,A) with float values between 0. and 1.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.StepColormap.scale">
+<code class="descname">scale</code><span class="sig-paren">(</span><em>vmin=0.0</em>, <em>vmax=1.0</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.StepColormap.scale" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms the colorscale so that the minimal and maximal values
+fit the given parameters.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.colormap.StepColormap.to_linear">
+<code class="descname">to_linear</code><span class="sig-paren">(</span><em>index=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.colormap.StepColormap.to_linear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transforms the StepColormap into a LinearColormap.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>index</strong> (<em>list of floats, default None</em>) &#8211; The values corresponding to each color in the output colormap.
+It has to be sorted.
+If None, a regular grid between <cite>vmin</cite> and <cite>vmax</cite> is created.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="linear">
+<h1><cite>linear</cite><a class="headerlink" href="#linear" title="Permalink to this headline">¶</a></h1>
+<dl class="data">
+<dt id="folium.colormap.linear">
+<code class="descclassname">folium.colormap.</code><code class="descname">linear</code><a class="headerlink" href="#folium.colormap.linear" title="Permalink to this definition">¶</a></dt>
+<dd><p>A class for hosting the list of built-in linear colormaps.</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="utilities.html" title="legend_scaler"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="folium.html" title="Map"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" >ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Rob Story.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.5.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>LegacyMap &mdash; Folium 0.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/f6.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Folium 0.2.0 documentation" href="../index.html" />
+    <link rel="up" title="ModuleDescription" href="../module.html" />
+    <link rel="next" title="WmsTileLayer" href="features.html" />
+    <link rel="prev" title="Element" href="element.html" />
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="features.html" title="WmsTileLayer"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="element.html" title="Element"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" accesskey="U">ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><cite>LegacyMap</cite></a></li>
+<li><a class="reference internal" href="#layer"><cite>Layer</cite></a></li>
+<li><a class="reference internal" href="#tilelayer"><cite>TileLayer</cite></a></li>
+<li><a class="reference internal" href="#featuregroup"><cite>FeatureGroup</cite></a></li>
+<li><a class="reference internal" href="#layercontrol"><cite>LayerControl</cite></a></li>
+<li><a class="reference internal" href="#icon"><cite>Icon</cite></a></li>
+<li><a class="reference internal" href="#marker"><cite>Marker</cite></a></li>
+<li><a class="reference internal" href="#popup"><cite>Popup</cite></a></li>
+<li><a class="reference internal" href="#fitbounds"><cite>FitBounds</cite></a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="element.html"
+                        title="previous chapter"><cite>Element</cite></a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="features.html"
+                        title="next chapter"><cite>WmsTileLayer</cite></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/map.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="legacymap">
+<h1><cite>LegacyMap</cite><a class="headerlink" href="#legacymap" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.LegacyMap">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">LegacyMap</code><span class="sig-paren">(</span><em>location=None</em>, <em>width=u'100%'</em>, <em>height=u'100%'</em>, <em>left=u'0%'</em>, <em>top=u'0%'</em>, <em>position=u'relative'</em>, <em>tiles=u'OpenStreetMap'</em>, <em>API_key=None</em>, <em>max_zoom=18</em>, <em>min_zoom=1</em>, <em>zoom_start=10</em>, <em>attr=None</em>, <em>min_lat=-90</em>, <em>max_lat=90</em>, <em>min_lon=-180</em>, <em>max_lon=180</em>, <em>detect_retina=False</em>, <em>crs=u'EPSG3857'</em>, <em>control_scale=False</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.LegacyMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Map with Folium and Leaflet.js</p>
+<p>Generate a base map of given width and height with either default
+tilesets or a custom tileset URL. The following tilesets are built-in
+to Folium. Pass any of the following to the &#8220;tiles&#8221; keyword:</p>
+<blockquote>
+<div><ul class="simple">
+<li>&#8220;OpenStreetMap&#8221;</li>
+<li>&#8220;MapQuest Open&#8221;</li>
+<li>&#8220;MapQuest Open Aerial&#8221;</li>
+<li>&#8220;Mapbox Bright&#8221; (Limited levels of zoom for free tiles)</li>
+<li>&#8220;Mapbox Control Room&#8221; (Limited levels of zoom for free tiles)</li>
+<li>&#8220;Stamen&#8221; (Terrain, Toner, and Watercolor)</li>
+<li>&#8220;Cloudmade&#8221; (Must pass API key)</li>
+<li>&#8220;Mapbox&#8221; (Must pass API key)</li>
+<li>&#8220;CartoDB&#8221; (positron and dark_matter)</li>
+</ul>
+</div></blockquote>
+<p>You can pass a custom tileset to Folium by passing a Leaflet-style
+URL to the tiles parameter:
+<a class="reference external" href="http:/">http:/</a>/{s}.yourtiles.com/{z}/{x}/{y}.png</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>location</strong> (<em>tuple or list, default None</em>) &#8211; Latitude and Longitude of Map (Northing, Easting).</li>
+<li><strong>width</strong> (<em>pixel int or percentage string (default: '100%')</em>) &#8211; Width of the map.</li>
+<li><strong>height</strong> (<em>pixel int or percentage string (default: '100%')</em>) &#8211; Height of the map.</li>
+<li><strong>tiles</strong> (<em>str, default 'OpenStreetMap'</em>) &#8211; Map tileset to use. Can choose from a list of built-in tiles,
+pass a custom URL or pass <cite>None</cite> to create a map without tiles.</li>
+<li><strong>API_key</strong> (<em>str, default None</em>) &#8211; API key for Cloudmade or Mapbox tiles.</li>
+<li><strong>max_zoom</strong> (<em>int, default 18</em>) &#8211; Maximum zoom depth for the map.</li>
+<li><strong>zoom_start</strong> (<em>int, default 10</em>) &#8211; Initial zoom level for the map.</li>
+<li><strong>attr</strong> (<em>string, default None</em>) &#8211; Map tile attribution; only required if passing custom tile URL.</li>
+<li><strong>detect_retina</strong> (<em>bool, default False</em>) &#8211; If true and user is on a retina display, it will request four
+tiles of half the specified size and a bigger zoom level in place
+of one to utilize the high resolution.</li>
+<li><strong>crs</strong> (<em>str, default 'EPSG3857'</em>) &#8211; Defines coordinate reference systems for projecting geographical points
+into pixel (screen) coordinates and back.
+You can use Leaflet&#8217;s values :
+* EPSG3857 : The most common CRS for online maps, used by almost all
+free and commercial tile providers. Uses Spherical Mercator projection.
+Set in by default in Map&#8217;s crs option.
+* EPSG4326 : A common CRS among GIS enthusiasts. Uses simple Equirectangular
+projection.
+* EPSG3395 : Rarely used by some commercial tile providers. Uses Elliptical
+Mercator projection.
+* Simple : A simple CRS that maps longitude and latitude into x and y directly.
+May be used for maps of flat surfaces (e.g. game maps). Note that the y axis
+should still be inverted (going from bottom to top).</li>
+<li><strong>control_scale</strong> (<em>bool, default False</em>) &#8211; Whether to add a control scale on the map.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Folium LegacyMap Object</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="mi">750</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">],</span>
+<span class="go">                           tiles=&#39;Mapbox Control Room&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">(</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">),</span> <span class="n">max_zoom</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+<span class="go">                           tiles=&#39;Cloudmade&#39;, API_key=&#39;YourKey&#39;)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+<span class="go">                           tiles=(&#39;http://{s}.tiles.mapbox.com/v3/&#39;</span>
+<span class="go">                                  &#39;mapbox.control-room/{z}/{x}/{y}.png&#39;),</span>
+<span class="go">                            attr=&#39;Mapbox attribution&#39;)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="folium.map.LegacyMap.add_tile_layer">
+<code class="descname">add_tile_layer</code><span class="sig-paren">(</span><em>tiles=u'OpenStreetMap'</em>, <em>name=None</em>, <em>API_key=None</em>, <em>max_zoom=18</em>, <em>min_zoom=1</em>, <em>attr=None</em>, <em>tile_name=None</em>, <em>tile_url=None</em>, <em>active=False</em>, <em>detect_retina=False</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.LegacyMap.add_tile_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a tile layer to the map.</p>
+<p>See TileLayer for options.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="layer">
+<h1><cite>Layer</cite><a class="headerlink" href="#layer" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.Layer">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">Layer</code><span class="sig-paren">(</span><em>name=None</em>, <em>overlay=False</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.Layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>An abstract class for everything that is a Layer on the map.
+It will be used to define whether an object will be included in
+LayerControls.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>string, default None</em>) &#8211; The name of the Layer, as it will appear in LayerControls</li>
+<li><strong>overlay</strong> (<em>bool, default False</em>) &#8211; Adds the layer as an optional overlay (True) or the base layer (False).</li>
+<li><strong>control</strong> (<em>bool, default True</em>) &#8211; Whether the Layer will be included in LayerControls.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="tilelayer">
+<h1><cite>TileLayer</cite><a class="headerlink" href="#tilelayer" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.TileLayer">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">TileLayer</code><span class="sig-paren">(</span><em>tiles=u'OpenStreetMap'</em>, <em>min_zoom=1</em>, <em>max_zoom=18</em>, <em>attr=None</em>, <em>API_key=None</em>, <em>detect_retina=False</em>, <em>name=None</em>, <em>overlay=False</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.TileLayer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a tile layer to append on a Map.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tiles</strong> (<em>str, default 'OpenStreetMap'</em>) &#8211; <dl class="docutils">
+<dt>Map tileset to use. Can choose from this list of built-in tiles:</dt>
+<dd><ul class="first last">
+<li>&#8220;OpenStreetMap&#8221;</li>
+<li>&#8220;MapQuest Open&#8221;</li>
+<li>&#8220;MapQuest Open Aerial&#8221;</li>
+<li>&#8220;Mapbox Bright&#8221; (Limited levels of zoom for free tiles)</li>
+<li>&#8220;Mapbox Control Room&#8221; (Limited levels of zoom for free tiles)</li>
+<li>&#8220;Stamen&#8221; (Terrain, Toner, and Watercolor)</li>
+<li>&#8220;Cloudmade&#8221; (Must pass API key)</li>
+<li>&#8220;Mapbox&#8221; (Must pass API key)</li>
+<li>&#8220;CartoDB&#8221; (positron and dark_matter)</li>
+</ul>
+</dd>
+</dl>
+<p>You can pass a custom tileset to Folium by passing a Leaflet-style
+URL to the tiles parameter:
+<a class="reference external" href="http:/">http:/</a>/{s}.yourtiles.com/{z}/{x}/{y}.png</p>
+</li>
+<li><strong>min_zoom</strong> (<em>int, default 1</em>) &#8211; Minimal zoom for which the layer will be displayed.</li>
+<li><strong>max_zoom</strong> (<em>int, default 18</em>) &#8211; Maximal zoom for which the layer will be displayed.</li>
+<li><strong>attr</strong> (<em>string, default None</em>) &#8211; Map tile attribution; only required if passing custom tile URL.</li>
+<li><strong>API_key</strong> (<em>str, default None</em>) &#8211; API key for Cloudmade or Mapbox tiles.</li>
+<li><strong>detect_retina</strong> (<em>bool, default False</em>) &#8211; If true and user is on a retina display, it will request four
+tiles of half the specified size and a bigger zoom level in place
+of one to utilize the high resolution.</li>
+<li><strong>name</strong> (<em>string, default None</em>) &#8211; The name of the Layer, as it will appear in LayerControls</li>
+<li><strong>overlay</strong> (<em>bool, default False</em>) &#8211; Adds the layer as an optional overlay (True) or the base layer (False).</li>
+<li><strong>control</strong> (<em>bool, default True</em>) &#8211; Whether the Layer will be included in LayerControls.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="featuregroup">
+<h1><cite>FeatureGroup</cite><a class="headerlink" href="#featuregroup" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.FeatureGroup">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">FeatureGroup</code><span class="sig-paren">(</span><em>name=None</em>, <em>overlay=True</em>, <em>control=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.FeatureGroup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a FeatureGroup layer ; you can put things in it and handle them
+as a single layer.  For example, you can add a LayerControl to
+tick/untick the whole group.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>name</strong> (<em>str, default None</em>) &#8211; The name of the featureGroup layer.
+It will be displayed in the LayerControl.
+If None get_name() will be called to get the technical (ugly) name.</li>
+<li><strong>overlay</strong> (<em>bool, default True</em>) &#8211; Whether your layer will be an overlay (ticked with a check box in
+LayerControls) or a base layer (ticked with a radio button).</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="layercontrol">
+<h1><cite>LayerControl</cite><a class="headerlink" href="#layercontrol" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.LayerControl">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">LayerControl</code><a class="headerlink" href="#folium.map.LayerControl" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates a LayerControl object to be added on a folium map.</p>
+<dl class="method">
+<dt id="folium.map.LayerControl.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.LayerControl.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="icon">
+<h1><cite>Icon</cite><a class="headerlink" href="#icon" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.Icon">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">Icon</code><span class="sig-paren">(</span><em>color=u'blue'</em>, <em>icon_color=u'white'</em>, <em>icon=u'info-sign'</em>, <em>angle=0</em>, <em>prefix=u'glyphicon'</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.Icon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates an Icon object that will be rendered
+using Leaflet.awesome-markers.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>color</strong> (<em>str, default 'blue'</em>) &#8211; <p>The color of the marker. You can use:</p>
+<dl class="docutils">
+<dt>[&#8216;red&#8217;, &#8216;blue&#8217;, &#8216;green&#8217;, &#8216;purple&#8217;, &#8216;orange&#8217;, &#8216;darkred&#8217;,</dt>
+<dd>&#8216;lightred&#8217;, &#8216;beige&#8217;, &#8216;darkblue&#8217;, &#8216;darkgreen&#8217;, &#8216;cadetblue&#8217;,
+&#8216;darkpurple&#8217;, &#8216;white&#8217;, &#8216;pink&#8217;, &#8216;lightblue&#8217;, &#8216;lightgreen&#8217;,
+&#8216;gray&#8217;, &#8216;black&#8217;, &#8216;lightgray&#8217;]</dd>
+</dl>
+</li>
+<li><strong>icon_color</strong> (<em>str, default 'white'</em>) &#8211; The color of the drawing on the marker. You can use colors above,
+or an html color code.</li>
+<li><strong>icon</strong> (<em>str, default 'info-sign'</em>) &#8211; The name of the marker sign.
+See Font-Awesome website to choose yours.
+Warning : depending on the icon you choose you may need to adapt
+the <cite>prefix</cite> as well.</li>
+<li><strong>angle</strong> (<em>int, default 0</em>) &#8211; The icon will be rotated by this amount of degrees.</li>
+<li><strong>prefix</strong> (<em>str, default 'glyphicon'</em>) &#8211; The prefix states the source of the icon. &#8216;fa&#8217; for font-awesome or
+&#8216;glyphicon&#8217; for bootstrap 3.</li>
+<li><strong>more details see</strong> (<em>For</em>) &#8211; </li>
+<li><strong>https</strong> (<em>//github.com/lvoogdt/Leaflet.awesome-markers</em>) &#8211; </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="marker">
+<h1><cite>Marker</cite><a class="headerlink" href="#marker" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.Marker">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">Marker</code><span class="sig-paren">(</span><em>location</em>, <em>popup=None</em>, <em>icon=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.Marker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a simple stock Leaflet marker on the map, with optional
+popup text or Vincent visualization.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>location</strong> (<em>tuple or list, default None</em>) &#8211; Latitude and Longitude of Marker (Northing, Easting)</li>
+<li><strong>popup</strong> (<em>string or folium.Popup, default None</em>) &#8211; Input text or visualization for object.</li>
+<li><strong>icon</strong> (<em>Icon plugin</em>) &#8211; the Icon plugin to use to render the marker.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Marker names and HTML in obj.template_vars</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;Portland, OR&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Popup</span><span class="p">(</span><span class="s1">&#39;Portland, OR&#39;</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="popup">
+<h1><cite>Popup</cite><a class="headerlink" href="#popup" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.Popup">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">Popup</code><span class="sig-paren">(</span><em>html=None</em>, <em>max_width=300</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.Popup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Popup instance that can be linked to a Layer.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>html</strong> (<em>string or Element</em>) &#8211; Content of the Popup.</li>
+<li><strong>max_width</strong> (<em>int, default 300</em>) &#8211; The maximal width of the popup.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="folium.map.Popup.render">
+<code class="descname">render</code><span class="sig-paren">(</span><em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.Popup.render" title="Permalink to this definition">¶</a></dt>
+<dd><p>Renders the HTML representation of the element.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="fitbounds">
+<h1><cite>FitBounds</cite><a class="headerlink" href="#fitbounds" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="folium.map.FitBounds">
+<em class="property">class </em><code class="descclassname">folium.map.</code><code class="descname">FitBounds</code><span class="sig-paren">(</span><em>bounds</em>, <em>padding_top_left=None</em>, <em>padding_bottom_right=None</em>, <em>padding=None</em>, <em>max_zoom=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.map.FitBounds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Fit the map to contain a bounding box with the
+maximum zoom level possible.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>bounds</strong> (<em>list of (latitude, longitude) points</em>) &#8211; Bounding box specified as two points [southwest, northeast]</li>
+<li><strong>padding_top_left</strong> (<em>(x, y) point, default None</em>) &#8211; Padding in the top left corner. Useful if some elements in
+the corner, such as controls, might obscure objects you&#8217;re zooming
+to.</li>
+<li><strong>padding_bottom_right</strong> (<em>(x, y) point, default None</em>) &#8211; Padding in the bottom right corner.</li>
+<li><strong>padding</strong> (<em>(x, y) point, default None</em>) &#8211; Equivalent to setting both top left and bottom right padding to
+the same value.</li>
+<li><strong>max_zoom</strong> (<em>int, default None</em>) &#8211; Maximum zoom to be used.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="features.html" title="WmsTileLayer"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="element.html" title="Element"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" >ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Rob Story.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.5.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>

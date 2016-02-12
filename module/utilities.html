@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>legend_scaler &mdash; Folium 0.2.0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/f6.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="Folium 0.2.0 documentation" href="../index.html" />
+    <link rel="up" title="ModuleDescription" href="../module.html" />
+    <link rel="prev" title="ColorMap" href="colormap.html" />
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="colormap.html" title="ColorMap"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" accesskey="U">ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#"><cite>legend_scaler</cite></a></li>
+<li><a class="reference internal" href="#linear-gradient"><cite>linear_gradient</cite></a></li>
+<li><a class="reference internal" href="#color-brewer"><cite>color_brewer</cite></a></li>
+<li><a class="reference internal" href="#split-six"><cite>split_six</cite></a></li>
+<li><a class="reference internal" href="#image-to-url"><cite>image_to_url</cite></a></li>
+<li><a class="reference internal" href="#write-png"><cite>write_png</cite></a></li>
+<li><a class="reference internal" href="#parse-size"><cite>_parse_size</cite></a></li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="colormap.html"
+                        title="previous chapter"><cite>ColorMap</cite></a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/module/utilities.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="legend-scaler">
+<h1><cite>legend_scaler</cite><a class="headerlink" href="#legend-scaler" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities.legend_scaler">
+<code class="descclassname">folium.utilities.</code><code class="descname">legend_scaler</code><span class="sig-paren">(</span><em>legend_values</em>, <em>max_labels=10.0</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities.legend_scaler" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downsamples the number of legend values so that there isn&#8217;t a collision
+of text on the legend colorbar (within reason). The colorbar seems to
+support ~10 entries as a maximum.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="linear-gradient">
+<h1><cite>linear_gradient</cite><a class="headerlink" href="#linear-gradient" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities.linear_gradient">
+<code class="descclassname">folium.utilities.</code><code class="descname">linear_gradient</code><span class="sig-paren">(</span><em>hexList</em>, <em>nColors</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities.linear_gradient" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a list of hexcode values, will return a list of length
+nColors where the colors are linearly interpolated between the
+(r, g, b) tuples that are given.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">linear_gradient</span><span class="p">([(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)],</span> <span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+<div class="section" id="color-brewer">
+<h1><cite>color_brewer</cite><a class="headerlink" href="#color-brewer" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities.color_brewer">
+<code class="descclassname">folium.utilities.</code><code class="descname">color_brewer</code><span class="sig-paren">(</span><em>color_code</em>, <em>n=6</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities.color_brewer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a colorbrewer color scheme of length &#8216;len&#8217;, type &#8216;scheme.
+Live examples can be seen at <a class="reference external" href="http://colorbrewer2.org/">http://colorbrewer2.org/</a></p>
+</dd></dl>
+
+</div>
+<div class="section" id="split-six">
+<h1><cite>split_six</cite><a class="headerlink" href="#split-six" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities.split_six">
+<code class="descclassname">folium.utilities.</code><code class="descname">split_six</code><span class="sig-paren">(</span><em>series=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities.split_six" title="Permalink to this definition">¶</a></dt>
+<dd><p>Given a Pandas Series, get a domain of values from zero to the 90% quantile
+rounded to the nearest order-of-magnitude integer. For example, 2100 is
+rounded to 2000, 2790 to 3000.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>series</strong> (<em>Pandas series, default None</em>) &#8211; </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">list</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="image-to-url">
+<h1><cite>image_to_url</cite><a class="headerlink" href="#image-to-url" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities.image_to_url">
+<code class="descclassname">folium.utilities.</code><code class="descname">image_to_url</code><span class="sig-paren">(</span><em>image</em>, <em>colormap=None</em>, <em>origin='upper'</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities.image_to_url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Infers the type of an image argument and transforms it into a URL.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>image</strong> (<em>string, file or array-like object</em>) &#8211; <ul>
+<li>If string, it will be written directly in the output file.</li>
+<li>If file, it&#8217;s content will be converted as embedded in the
+output file.</li>
+<li>If array-like, it will be converted to PNG base64 string and
+embedded in the output.</li>
+</ul>
+</li>
+<li><strong>origin</strong> (<em>['upper' | 'lower'], optional, default 'upper'</em>) &#8211; Place the [0, 0] index of the array in the upper left or
+lower left corner of the axes.</li>
+<li><strong>colormap</strong> (callable, used only for <cite>mono</cite> image.) &#8211; Function of the form [x -&gt; (r,g,b)] or [x -&gt; (r,g,b,a)]
+for transforming a mono image into RGB.
+It must output iterables of length 3 or 4, with values between
+0. and 1.  Hint : you can use colormaps from <cite>matplotlib.cm</cite>.</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="write-png">
+<h1><cite>write_png</cite><a class="headerlink" href="#write-png" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities.write_png">
+<code class="descclassname">folium.utilities.</code><code class="descname">write_png</code><span class="sig-paren">(</span><em>data</em>, <em>origin='upper'</em>, <em>colormap=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities.write_png" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform an array of data into a PNG string.
+This can be written to disk using binary I/O, or encoded using base64
+for an inline PNG like this:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">png_str</span> <span class="o">=</span> <span class="n">write_png</span><span class="p">(</span><span class="n">array</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">&quot;data:image/png;base64,&quot;</span><span class="o">+</span><span class="n">png_str</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;base64&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Inspired from
+<a class="reference external" href="http://stackoverflow.com/questions/902761/saving-a-numpy-array-as-an-image">http://stackoverflow.com/questions/902761/saving-a-numpy-array-as-an-image</a></p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>data</strong> (<em>numpy array or equivalent list-like object.</em>) &#8211; Must be NxM (mono), NxMx3 (RGB) or NxMx4 (RGBA)</li>
+<li><strong>origin</strong> (<em>['upper' | 'lower'], optional, default 'upper'</em>) &#8211; Place the [0,0] index of the array in the upper left or lower left
+corner of the axes.</li>
+<li><strong>colormap</strong> (callable, used only for <cite>mono</cite> image.) &#8211; Function of the form [x -&gt; (r,g,b)] or [x -&gt; (r,g,b,a)]
+for transforming a mono image into RGB.
+It must output iterables of length 3 or 4, with values between
+0. and 1.  Hint: you can use colormaps from <cite>matplotlib.cm</cite>.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">PNG formatted byte string</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+<div class="section" id="parse-size">
+<h1><cite>_parse_size</cite><a class="headerlink" href="#parse-size" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="folium.utilities._parse_size">
+<code class="descclassname">folium.utilities.</code><code class="descname">_parse_size</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.utilities._parse_size" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="colormap.html" title="ColorMap"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Folium 0.2.0 documentation</a> &raquo;</li>
+          <li class="nav-item nav-item-1"><a href="../module.html" >ModuleDescription</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, Rob Story.
+    Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.3.5.Theme by <a href="http://github.com/vkvn">vkvn</a>
+    </div>
+  </body>
+</html>
