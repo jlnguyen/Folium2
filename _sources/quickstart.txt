@@ -12,7 +12,7 @@ To create a base map, simply pass your starting coordinates to Folium:
     import folium
     map_osm = folium.Map(location=[45.5236, -122.6750])
 
-To dispaly it in a Jupyter notebook, simply ask for the object
+To display it in a Jupyter notebook, simply ask for the object
 representation:
 
 .. code:: python
@@ -293,7 +293,7 @@ marker type, with the visualization as the popover:
 
 
 For more information about popups, please visit
-`Popups.ipynb <Popups.ipynb>`__
+`Popups.ipynb <http://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/Popups.ipynb>`__
 
 GeoJSON/TopoJSON Overlays
 -------------------------
@@ -345,7 +345,7 @@ to quickly visualize different combinations:
     
     state_data = pd.read_csv(state_unemployment)
     
-    #Let Folium determine the scale
+    # Let Folium determine the scale.
     map = folium.Map(location=[48, -102], zoom_start=3)
     map.geo_json(geo_path=state_geo, data=state_data,
                  columns=['State', 'Unemployment'],
@@ -353,15 +353,6 @@ to quickly visualize different combinations:
                  fill_color='YlGn', fill_opacity=0.7, line_opacity=0.2,
                  legend_name='Unemployment Rate (%)')
     map
-
-
-.. parsed-literal::
-
-    /home/bibmartin/miniconda/envs/py35/lib/python3.5/site-packages/folium-0.2.0.dev0-py3.5.egg/folium/folium.py:500: UserWarning: This method is deprecated. Please use Map.choropleth instead.
-      warnings.warn('This method is deprecated. '
-    /home/bibmartin/miniconda/envs/py35/lib/python3.5/site-packages/folium-0.2.0.dev0-py3.5.egg/folium/folium.py:502: FutureWarning: 'threshold_scale' default behavior has changed. Now you get a linear scale between the 'min' and the 'max' of your data. To get former behavior, use folium.utilities.split_six.
-      return self.choropleth(*args, **kwargs)
-
 
 
 
@@ -386,13 +377,6 @@ own threshold values is simple:
                  legend_name='Unemployment Rate (%)',
                  reset=True)
     map
-
-
-.. parsed-literal::
-
-    /home/bibmartin/miniconda/envs/py35/lib/python3.5/site-packages/folium-0.2.0.dev0-py3.5.egg/folium/folium.py:500: UserWarning: This method is deprecated. Please use Map.choropleth instead.
-      warnings.warn('This method is deprecated. '
-
 
 
 
@@ -424,12 +408,6 @@ visualize:
     m
 
 
-.. parsed-literal::
-
-    /home/bibmartin/miniconda/envs/py35/lib/python3.5/site-packages/ipykernel/__main__.py:11: FutureWarning: 'threshold_scale' default behavior has changed. Now you get a linear scale between the 'min' and the 'max' of your data. To get former behavior, use folium.utilities.split_six.
-
-
-
 
 .. raw:: html
 
@@ -438,4 +416,4 @@ visualize:
 
 
 For more choropleth example, please visit `GeoJSON and
-choropleth.ipynb <GeoJSON%20and%20choropleth.ipynb>`__
+choropleth.ipynb <http://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/GeoJSON%20and%20choropleth.ipynb>`__

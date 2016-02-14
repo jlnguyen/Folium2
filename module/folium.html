@@ -84,93 +84,28 @@
 <h1><cite>Map</cite><a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h1>
 <dl class="class">
 <dt id="folium.folium.Map">
-<em class="property">class </em><code class="descclassname">folium.folium.</code><code class="descname">Map</code><span class="sig-paren">(</span><em>location=None</em>, <em>width=u'100%'</em>, <em>height=u'100%'</em>, <em>left=u'0%'</em>, <em>top=u'0%'</em>, <em>position=u'relative'</em>, <em>tiles=u'OpenStreetMap'</em>, <em>API_key=None</em>, <em>max_zoom=18</em>, <em>min_zoom=1</em>, <em>zoom_start=10</em>, <em>attr=None</em>, <em>min_lat=-90</em>, <em>max_lat=90</em>, <em>min_lon=-180</em>, <em>max_lon=180</em>, <em>detect_retina=False</em>, <em>crs=u'EPSG3857'</em>, <em>control_scale=False</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map" title="Permalink to this definition">¶</a></dt>
-<dd><p>Create a Map with Folium and Leaflet.js</p>
-<p>Generate a base map of given width and height with either default
-tilesets or a custom tileset URL. The following tilesets are built-in
-to Folium. Pass any of the following to the &#8220;tiles&#8221; keyword:</p>
-<blockquote>
-<div><ul class="simple">
-<li>&#8220;OpenStreetMap&#8221;</li>
-<li>&#8220;MapQuest Open&#8221;</li>
-<li>&#8220;MapQuest Open Aerial&#8221;</li>
-<li>&#8220;Mapbox Bright&#8221; (Limited levels of zoom for free tiles)</li>
-<li>&#8220;Mapbox Control Room&#8221; (Limited levels of zoom for free tiles)</li>
-<li>&#8220;Stamen&#8221; (Terrain, Toner, and Watercolor)</li>
-<li>&#8220;Cloudmade&#8221; (Must pass API key)</li>
-<li>&#8220;Mapbox&#8221; (Must pass API key)</li>
-<li>&#8220;CartoDB&#8221; (positron and dark_matter)</li>
-</ul>
-</div></blockquote>
-<p>You can pass a custom tileset to Folium by passing a Leaflet-style
-URL to the tiles parameter:
-<a class="reference external" href="http:/">http:/</a>/{s}.yourtiles.com/{z}/{x}/{y}.png</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>location</strong> (<em>tuple or list, default None</em>) &#8211; Latitude and Longitude of Map (Northing, Easting).</li>
-<li><strong>width</strong> (<em>pixel int or percentage string (default: '100%')</em>) &#8211; Width of the map.</li>
-<li><strong>height</strong> (<em>pixel int or percentage string (default: '100%')</em>) &#8211; Height of the map.</li>
-<li><strong>tiles</strong> (<em>str, default 'OpenStreetMap'</em>) &#8211; Map tileset to use. Can choose from a list of built-in tiles,
-pass a custom URL or pass <cite>None</cite> to create a map without tiles.</li>
-<li><strong>API_key</strong> (<em>str, default None</em>) &#8211; API key for Cloudmade or Mapbox tiles.</li>
-<li><strong>max_zoom</strong> (<em>int, default 18</em>) &#8211; Maximum zoom depth for the map.</li>
-<li><strong>zoom_start</strong> (<em>int, default 10</em>) &#8211; Initial zoom level for the map.</li>
-<li><strong>attr</strong> (<em>string, default None</em>) &#8211; Map tile attribution; only required if passing custom tile URL.</li>
-<li><strong>detect_retina</strong> (<em>bool, default False</em>) &#8211; If true and user is on a retina display, it will request four
-tiles of half the specified size and a bigger zoom level in place
-of one to utilize the high resolution.</li>
-<li><strong>crs</strong> (<em>str, default 'EPSG3857'</em>) &#8211; Defines coordinate reference systems for projecting geographical points
-into pixel (screen) coordinates and back.
-You can use Leaflet&#8217;s values :
-* EPSG3857 : The most common CRS for online maps, used by almost all
-free and commercial tile providers. Uses Spherical Mercator projection.
-Set in by default in Map&#8217;s crs option.
-* EPSG4326 : A common CRS among GIS enthusiasts.
-Uses simple Equirectangular projection.
-* EPSG3395 : Rarely used by some commercial tile providers.
-Uses Elliptical Mercator projection.
-* Simple : A simple CRS that maps longitude and latitude into
-x and y directly. May be used for maps of flat surfaces
-(e.g. game maps). Note that the y axis should still be inverted
-(going from bottom to top).</li>
-<li><strong>control_scale</strong> (<em>bool, default False</em>) &#8211; Whether to add a control scale on the map.</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Folium LegacyMap Object</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Examples</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">],</span>
-<span class="gp">... </span>                       <span class="n">width</span><span class="o">=</span><span class="mi">750</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">500</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">],</span>
-<span class="go">                           tiles=&#39;Mapbox Control Room&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">(</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">),</span> <span class="n">max_zoom</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-<span class="go">                           tiles=&#39;Cloudmade&#39;, API_key=&#39;YourKey&#39;)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">LegacyMap</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.523</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
-<span class="go">                           tiles=(&#39;http://{s}.tiles.mapbox.com/v3/&#39;</span>
-<span class="go">                                  &#39;mapbox.control-room/{z}/{x}/{y}.png&#39;),</span>
-<span class="go">                            attr=&#39;Mapbox attribution&#39;)</span>
-</pre></div>
-</div>
+<em class="property">class </em><code class="descclassname">folium.folium.</code><code class="descname">Map</code><span class="sig-paren">(</span><em>location=None</em>, <em>width='100%'</em>, <em>height='100%'</em>, <em>tiles='OpenStreetMap'</em>, <em>API_key=None</em>, <em>max_zoom=18</em>, <em>min_zoom=1</em>, <em>zoom_start=10</em>, <em>attr=None</em>, <em>min_lat=-90</em>, <em>max_lat=90</em>, <em>min_lon=-180</em>, <em>max_lon=180</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a Map with Folium.</p>
 <dl class="method">
-<dt id="folium.folium.Map.add_plugin">
-<code class="descname">add_plugin</code><span class="sig-paren">(</span><em>plugin</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.add_plugin" title="Permalink to this definition">¶</a></dt>
-<dd><p>Adds a plugin to the map.</p>
+<dt id="folium.folium.Map.add_layers_to_map">
+<code class="descname">add_layers_to_map</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.add_layers_to_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required function to actually add the layers to the HTML packet.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.folium.Map.add_tile_layer">
+<code class="descname">add_tile_layer</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.add_tile_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds a simple tile layer.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>plugin</strong> (<em>folium.plugins object</em>) &#8211; A plugin to be added to the map. It has to implement the
-methods <cite>render_html</cite>, <cite>render_css</cite> and <cite>render_js</cite>.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>tile_name</strong> (<em>string</em>) &#8211; name of the tile layer</li>
+<li><strong>tile_url</strong> (<em>string</em>) &#8211; url location of the tile layer</li>
+<li><strong>the available options see</strong> (<em>For</em>) &#8211; <a class="reference external" href="http://leafletjs.com/reference.html#tilelayer">http://leafletjs.com/reference.html#tilelayer</a></li>
+</ul>
+</td>
 </tr>
 </tbody>
 </table>
@@ -178,7 +113,7 @@ methods <cite>render_html</cite>, <cite>render_css</cite> and <cite>render_js</c
 
 <dl class="method">
 <dt id="folium.folium.Map.add_wms_layer">
-<code class="descname">add_wms_layer</code><span class="sig-paren">(</span><em>wms_name=None</em>, <em>wms_url=None</em>, <em>wms_format=None</em>, <em>wms_layers=None</em>, <em>wms_transparent=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.add_wms_layer" title="Permalink to this definition">¶</a></dt>
+<code class="descname">add_wms_layer</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.add_wms_layer" title="Permalink to this definition">¶</a></dt>
 <dd><p>Adds a simple tile layer.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -195,84 +130,8 @@ methods <cite>render_html</cite>, <cite>render_css</cite> and <cite>render_js</c
 </dd></dl>
 
 <dl class="method">
-<dt id="folium.folium.Map.choropleth">
-<code class="descname">choropleth</code><span class="sig-paren">(</span><em>geo_path=None</em>, <em>geo_str=None</em>, <em>data_out='data.json'</em>, <em>data=None</em>, <em>columns=None</em>, <em>key_on=None</em>, <em>threshold_scale=None</em>, <em>fill_color='blue'</em>, <em>fill_opacity=0.6</em>, <em>line_color='black'</em>, <em>line_weight=1</em>, <em>line_opacity=1</em>, <em>legend_name=''</em>, <em>topojson=None</em>, <em>reset=False</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.choropleth" title="Permalink to this definition">¶</a></dt>
-<dd><p>Apply a GeoJSON overlay to the map.</p>
-<p>Plot a GeoJSON overlay on the base map. There is no requirement
-to bind data (passing just a GeoJSON plots a single-color overlay),
-but there is a data binding option to map your columnar data to
-different feature objects with a color scale.</p>
-<p>If data is passed as a Pandas dataframe, the &#8220;columns&#8221; and &#8220;key-on&#8221;
-keywords must be included, the first to indicate which DataFrame
-columns to use, the second to indicate the layer in the GeoJSON
-on which to key the data. The &#8216;columns&#8217; keyword does not need to be
-passed for a Pandas series.</p>
-<p>Colors are generated from color brewer (<a class="reference external" href="http://colorbrewer2.org/">http://colorbrewer2.org/</a>)
-sequential palettes on a D3 threshold scale. The scale defaults to the
-following quantiles: [0, 0.5, 0.75, 0.85, 0.9]. A custom scale can be
-passed to <cite>threshold_scale</cite> of length &lt;=6, in order to match the
-color brewer range.</p>
-<p>TopoJSONs can be passed as &#8220;geo_path&#8221;, but the &#8220;topojson&#8221; keyword must
-also be passed with the reference to the topojson objects to convert.
-See the topojson.feature method in the TopoJSON API reference:
-<a class="reference external" href="https://github.com/mbostock/topojson/wiki/API-Reference">https://github.com/mbostock/topojson/wiki/API-Reference</a></p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>geo_path</strong> (<em>string, default None</em>) &#8211; URL or File path to your GeoJSON data</li>
-<li><strong>geo_str</strong> (<em>string, default None</em>) &#8211; String of GeoJSON, alternative to geo_path</li>
-<li><strong>data_out</strong> (<em>string, default 'data.json'</em>) &#8211; Path to write Pandas DataFrame/Series to JSON if binding data</li>
-<li><strong>data</strong> (<em>Pandas DataFrame or Series, default None</em>) &#8211; Data to bind to the GeoJSON.</li>
-<li><strong>columns</strong> (<em>dict or tuple, default None</em>) &#8211; If the data is a Pandas DataFrame, the columns of data to be bound.
-Must pass column 1 as the key, and column 2 the values.</li>
-<li><strong>key_on</strong> (<em>string, default None</em>) &#8211; Variable in the GeoJSON file to bind the data to. Must always
-start with &#8216;feature&#8217; and be in JavaScript objection notation.
-Ex: &#8216;feature.id&#8217; or &#8216;feature.properties.statename&#8217;.</li>
-<li><strong>threshold_scale</strong> (<em>list, default None</em>) &#8211; Data range for D3 threshold scale. Defaults to the following range
-of quantiles: [0, 0.5, 0.75, 0.85, 0.9], rounded to the nearest
-order-of-magnitude integer. Ex: 270 rounds to 200, 5600 to 6000.</li>
-<li><strong>fill_color</strong> (<em>string, default 'blue'</em>) &#8211; Area fill color. Can pass a hex code, color name, or if you are
-binding data, one of the following color brewer palettes:
-&#8216;BuGn&#8217;, &#8216;BuPu&#8217;, &#8216;GnBu&#8217;, &#8216;OrRd&#8217;, &#8216;PuBu&#8217;, &#8216;PuBuGn&#8217;, &#8216;PuRd&#8217;, &#8216;RdPu&#8217;,
-&#8216;YlGn&#8217;, &#8216;YlGnBu&#8217;, &#8216;YlOrBr&#8217;, and &#8216;YlOrRd&#8217;.</li>
-<li><strong>fill_opacity</strong> (<em>float, default 0.6</em>) &#8211; Area fill opacity, range 0-1.</li>
-<li><strong>line_color</strong> (<em>string, default 'black'</em>) &#8211; GeoJSON geopath line color.</li>
-<li><strong>line_weight</strong> (<em>int, default 1</em>) &#8211; GeoJSON geopath line weight.</li>
-<li><strong>line_opacity</strong> (<em>float, default 1</em>) &#8211; GeoJSON geopath line opacity, range 0-1.</li>
-<li><strong>legend_name</strong> (<em>string, default empty string</em>) &#8211; Title for data legend.</li>
-<li><strong>topojson</strong> (<em>string, default None</em>) &#8211; If using a TopoJSON, passing &#8220;objects.yourfeature&#8221; to the topojson
-keyword argument will enable conversion to GeoJSON.</li>
-<li><strong>reset</strong> (<em>boolean, default False</em>) &#8211; Remove all current geoJSON layers, start with new layer</li>
-</ul>
-</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">GeoJSON data layer in obj.template_vars</p>
-</td>
-</tr>
-</tbody>
-</table>
-<p class="rubric">Examples</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">geo_path</span><span class="o">=</span><span class="s1">&#39;us-states.json&#39;</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
-<span class="gp">... </span>             <span class="n">line_weight</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">geo_path</span><span class="o">=</span><span class="s1">&#39;geo.json&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
-<span class="gp">... </span>             <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Data 1&#39;</span><span class="p">,</span> <span class="s1">&#39;Data 2&#39;</span><span class="p">],</span>
-<span class="gp">... </span>             <span class="n">key_on</span><span class="o">=</span><span class="s1">&#39;feature.properties.myvalue&#39;</span><span class="p">,</span>
-<span class="gp">... </span>             <span class="n">fill_color</span><span class="o">=</span><span class="s1">&#39;PuBu&#39;</span><span class="p">,</span>
-<span class="gp">... </span>             <span class="n">threshold_scale</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">60</span><span class="p">])</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">choropleth</span><span class="p">(</span><span class="n">geo_path</span><span class="o">=</span><span class="s1">&#39;countries.json&#39;</span><span class="p">,</span>
-<span class="gp">... </span>             <span class="n">topojson</span><span class="o">=</span><span class="s1">&#39;objects.countries&#39;</span><span class="p">)</span>
-</pre></div>
-</div>
-</dd></dl>
-
-<dl class="method">
 <dt id="folium.folium.Map.circle_marker">
-<code class="descname">circle_marker</code><span class="sig-paren">(</span><em>location=None</em>, <em>radius=500</em>, <em>popup=None</em>, <em>line_color='black'</em>, <em>fill_color='black'</em>, <em>fill_opacity=0.6</em>, <em>popup_width=300</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.circle_marker" title="Permalink to this definition">¶</a></dt>
+<code class="descname">circle_marker</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.circle_marker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a simple circle marker on the map, with optional popup text
 or Vincent visualization.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -300,11 +159,11 @@ using the optional keywords <cite>popup_width</cite> (default is 300px).</li>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
+<p class="rubric">Example</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">circle_marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">],</span>
-<span class="go">                      radius=1000, popup=&#39;Portland, OR&#39;)</span>
+<span class="go">                     radius=1000, popup=&#39;Portland, OR&#39;)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">circle_marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">],</span>
-<span class="go">                      radius=1000, popup=(bar_chart, &#39;bar_data.json&#39;))</span>
+<span class="go">                     radius=1000, popup=(bar_chart, &#39;bar_data.json&#39;))</span>
 </pre></div>
 </div>
 </dd></dl>
@@ -323,7 +182,7 @@ popup parameter. Double click markers to remove them.</p>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
+<p class="rubric">Example</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">click_for_marker</span><span class="p">(</span><span class="n">popup</span><span class="o">=</span><span class="s1">&#39;Your Custom Text&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -332,27 +191,22 @@ popup parameter. Double click markers to remove them.</p>
 <dl class="method">
 <dt id="folium.folium.Map.create_map">
 <code class="descname">create_map</code><span class="sig-paren">(</span><em>path='map.html'</em>, <em>plugin_data_out=True</em>, <em>template=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.create_map" title="Permalink to this definition">¶</a></dt>
-<dd><p>Write Map output to HTML.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>path</strong> (<em>string, default 'map.html'</em>) &#8211; Path for HTML output for map</li>
-<li><strong>plugin_data_out</strong> (<em>boolean, default True</em>) &#8211; Deprecated, not used anymore</li>
-<li><strong>template</strong> (<em>string, default None</em>) &#8211; Deprecated, not used anymore</li>
-</ul>
-</td>
-</tr>
-</tbody>
-</table>
+<dd><p>Write Map output to HTML and data output to JSON if available.</p>
+<dl class="docutils">
+<dt>path: string, default &#8216;map.html&#8217;</dt>
+<dd>Path for HTML output for map</dd>
+<dt>plugin_data_out: boolean, default True</dt>
+<dd>If using plugins such as awesome markers, write all plugin
+data such as JS/CSS/images to path</dd>
+<dt>template: string, default None</dt>
+<dd>Custom template to render</dd>
+</dl>
 </dd></dl>
 
 <dl class="method">
 <dt id="folium.folium.Map.fit_bounds">
 <code class="descname">fit_bounds</code><span class="sig-paren">(</span><em>bounds</em>, <em>padding_top_left=None</em>, <em>padding_bottom_right=None</em>, <em>padding=None</em>, <em>max_zoom=None</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.fit_bounds" title="Permalink to this definition">¶</a></dt>
-<dd><p>Fit the map to contain a bounding box with the
-maximum zoom level possible.</p>
+<dd><p>Fit the map to contain a bounding box with the maximum zoom level possible.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -371,7 +225,7 @@ the same value.</li>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
+<p class="rubric">Example</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">fit_bounds</span><span class="p">([[</span><span class="mf">52.193636</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.221575</span><span class="p">],</span> <span class="p">[</span><span class="mf">52.636878</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.139759</span><span class="p">]])</span>
 </pre></div>
 </div>
@@ -380,70 +234,146 @@ the same value.</li>
 <dl class="method">
 <dt id="folium.folium.Map.geo_json">
 <code class="descname">geo_json</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.geo_json" title="Permalink to this definition">¶</a></dt>
-<dd><p>This method is deprecated and will be removed in v0.2.1. See
-<cite>Map.choropleth</cite> instead.</p>
-</dd></dl>
-
-<dl class="method">
-<dt id="folium.folium.Map.image_overlay">
-<code class="descname">image_overlay</code><span class="sig-paren">(</span><em>data</em>, <em>opacity=0.25</em>, <em>min_lat=-90.0</em>, <em>max_lat=90.0</em>, <em>min_lon=-180.0</em>, <em>max_lon=180.0</em>, <em>origin='upper'</em>, <em>colormap=None</em>, <em>image_name=None</em>, <em>filename=None</em>, <em>mercator_project=False</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.image_overlay" title="Permalink to this definition">¶</a></dt>
-<dd><p>Simple image overlay of raster data from a numpy array.  This is a
-lightweight way to overlay geospatial data on top of a map.  If your
-data is high res, consider implementing a WMS server and adding a WMS
-layer.</p>
-<p>This function works by generating a PNG file from a numpy array.  If
-you do not specify a filename, it will embed the image inline.
-Otherwise, it saves the file in the current directory, and then adds
-it as an image overlay layer in leaflet.js.  By default, the image is
-placed and stretched using bounds that cover the entire globe.</p>
+<dd><p>Apply a GeoJSON overlay to the map.</p>
+<p>Plot a GeoJSON overlay on the base map. There is no requirement
+to bind data (passing just a GeoJSON plots a single-color overlay),
+but there is a data binding option to map your columnar data to
+different feature objects with a color scale.</p>
+<p>If data is passed as a Pandas dataframe, the &#8220;columns&#8221; and &#8220;key-on&#8221;
+keywords must be included, the first to indicate which DataFrame
+columns to use, the second to indicate the layer in the GeoJSON
+on which to key the data. The &#8216;columns&#8217; keyword does not need to be
+passed for a Pandas series.</p>
+<p>Colors are generated from color brewer (<a class="reference external" href="http://colorbrewer2.org/">http://colorbrewer2.org/</a>)
+sequential palettes on a D3 threshold scale. The scale defaults to the
+following quantiles: [0, 0.5, 0.75, 0.85, 0.9]. A custom scale can be
+passed to <cite>threshold_scale</cite> of length &lt;=6, in order to match the
+color brewer range.</p>
+<p>TopoJSONs can be passed as &#8220;geo_path&#8221;, but the &#8220;topojson&#8221; keyword must
+also be passed with the reference to the topojson objects to convert.
+See the topojson.feature method in the TopoJSON API reference:
+<a class="reference external" href="https://github.com/mbostock/topojson/wiki/API-Reference">https://github.com/mbostock/topojson/wiki/API-Reference</a></p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>data</strong> (<em>numpy array OR url string, required.</em>) &#8211; if numpy array, must be a image format,
-i.e., NxM (mono), NxMx3 (rgb), or NxMx4 (rgba)
-if url, must be a valid url to a image (local or external)</li>
-<li><strong>opacity</strong> (<em>float, default 0.25</em>) &#8211; Image layer opacity in range 0 (transparent) to 1 (opaque)</li>
-<li><strong>min_lat</strong> (<em>float, default -90.0</em>) &#8211; </li>
-<li><strong>max_lat</strong> (<em>float, default  90.0</em>) &#8211; </li>
-<li><strong>min_lon</strong> (<em>float, default -180.0</em>) &#8211; </li>
-<li><strong>max_lon</strong> (<em>float, default  180.0</em>) &#8211; </li>
-<li><strong>image_name</strong> (<em>string, default None</em>) &#8211; The name of the layer object in leaflet.js</li>
-<li><strong>filename</strong> (<em>string, default None</em>) &#8211; Optional file name of output.png for image overlay.
-Use <cite>None</cite> for inline PNG.</li>
-<li><strong>origin</strong> (<em>['upper' | 'lower'], optional, default 'upper'</em>) &#8211; Place the [0,0] index of the array in the upper left or lower left
-corner of the axes.</li>
-<li><strong>colormap</strong> (callable, used only for <cite>mono</cite> image.) &#8211; Function of the form [x -&gt; (r,g,b)] or [x -&gt; (r,g,b,a)]
-for transforming a mono image into RGB.
-It must output iterables of length 3 or 4, with values
-between 0 and 1. Hint: you can use colormaps from <cite>matplotlib.cm</cite>.</li>
-<li><strong>mercator_project</strong> (<em>bool, default False, used only for array-like image.</em>) &#8211; Transforms the data to project (longitude,latitude) coordinates
-to the Mercator projection.</li>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>geo_path</strong> (<em>string, default None</em>) &#8211; URL or File path to your GeoJSON data</li>
+<li><strong>geo_str</strong> (<em>string, default None</em>) &#8211; String of GeoJSON, alternative to geo_path</li>
+<li><strong>data_out</strong> (<em>string, default 'data.json'</em>) &#8211; Path to write Pandas DataFrame/Series to JSON if binding data</li>
+<li><strong>data</strong> (<em>Pandas DataFrame or Series, default None</em>) &#8211; Data to bind to the GeoJSON.</li>
+<li><strong>columns</strong> (<em>dict or tuple, default None</em>) &#8211; If the data is a Pandas DataFrame, the columns of data to be bound.
+Must pass column 1 as the key, and column 2 the values.</li>
+<li><strong>key_on</strong> (<em>string, default None</em>) &#8211; Variable in the GeoJSON file to bind the data to. Must always
+start with &#8216;feature&#8217; and be in JavaScript objection notation.
+Ex: &#8216;feature.id&#8217; or &#8216;feature.properties.statename&#8217;.</li>
+<li><strong>threshold_scale</strong> (<em>list, default None</em>) &#8211; Data range for D3 threshold scale. Defaults to the following range
+of quantiles: [0, 0.5, 0.75, 0.85, 0.9], rounded to the nearest
+order-of-magnitude integer. Ex: 270 rounds to 200, 5600 to 6000.</li>
+<li><strong>fill_color</strong> (<em>string, default 'blue'</em>) &#8211; Area fill color. Can pass a hex code, color name, or if you are
+binding data, one of the following color brewer palettes:
+&#8216;BuGn&#8217;, &#8216;BuPu&#8217;, &#8216;GnBu&#8217;, &#8216;OrRd&#8217;, &#8216;PuBu&#8217;, &#8216;PuBuGn&#8217;, &#8216;PuRd&#8217;, &#8216;RdPu&#8217;,
+&#8216;YlGn&#8217;, &#8216;YlGnBu&#8217;, &#8216;YlOrBr&#8217;, and &#8216;YlOrRd&#8217;.</li>
+<li><strong>fill_opacity</strong> (<em>float, default 0.6</em>) &#8211; Area fill opacity, range 0-1.</li>
+<li><strong>line_color</strong> (<em>string, default 'black'</em>) &#8211; GeoJSON geopath line color.</li>
+<li><strong>line_weight</strong> (<em>int, default 1</em>) &#8211; GeoJSON geopath line weight.</li>
+<li><strong>line_opacity</strong> (<em>float, default 1</em>) &#8211; GeoJSON geopath line opacity, range 0-1.</li>
+<li><strong>legend_name</strong> (<em>string, default None</em>) &#8211; Title for data legend. If not passed, defaults to columns[1].</li>
+<li><strong>topojson</strong> (<em>string, default None</em>) &#8211; If using a TopoJSON, passing &#8220;objects.yourfeature&#8221; to the topojson
+keyword argument will enable conversion to GeoJSON.</li>
+<li><strong>reset</strong> (<em>boolean, default False</em>) &#8211; Remove all current geoJSON layers, start with new layer</li>
+<li><strong>freescale</strong> (<em>if True use free format for the scale, where min and max</em>) &#8211; values are taken from the data.  It also allow to plot
+values &lt; 0 and float legend labels.</li>
+<li><strong>Output</strong> &#8211; </li>
+<li><strong>------</strong> &#8211; </li>
+<li><strong>data layer in obj.template_vars</strong> (<em>GeoJSON</em>) &#8211; </li>
 </ul>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
-</td>
-</tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Image overlay data layer in obj.template_vars</p>
+</tbody>
+</table>
+<p class="rubric">Example</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">geo_json</span><span class="p">(</span><span class="n">geo_path</span><span class="o">=</span><span class="s1">&#39;us-states.json&#39;</span><span class="p">,</span> <span class="n">line_color</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span>
+<span class="go">              line_weight=3)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">geo_json</span><span class="p">(</span><span class="n">geo_path</span><span class="o">=</span><span class="s1">&#39;geo.json&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">df</span><span class="p">,</span>
+<span class="go">              columns=[&#39;Data 1&#39;, &#39;Data 2&#39;],</span>
+<span class="go">              key_on=&#39;feature.properties.myvalue&#39;, fill_color=&#39;PuBu&#39;,</span>
+<span class="go">              threshold_scale=[0, 20, 30, 40, 50, 60])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">geo_json</span><span class="p">(</span><span class="n">geo_path</span><span class="o">=</span><span class="s1">&#39;countries.json&#39;</span><span class="p">,</span> <span class="n">topojson</span><span class="o">=</span><span class="s1">&#39;objects.countries&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="folium.folium.Map.image_overlay">
+<code class="descname">image_overlay</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.image_overlay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simple image overlay of raster <cite>data</cite> from an image or a NumPy array.
+This is a lightweight way to overlay geospatial data on top of a map.
+The default lon, lat corners are the whole globe.  Adjust it to your
+image.</p>
+<p>If <cite>data</cite> is is a NumPy array a PNG file will be created for you.
+If you do not specify a filename the image will be embedded inline.</p>
+<p>NOTE: The image must be projected as Web Mercator
+(<a class="reference external" href="https://en.wikipedia.org/wiki/Web_Mercator">https://en.wikipedia.org/wiki/Web_Mercator</a>).  See the examples below
+for re-projection.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>data</strong> (<em>NumPy array OR image.</em>) &#8211; The NumPy array can NxM (mono), NxMx3 (RGB), or NxMx4 (RGBA)</li>
+<li><strong>image_opacity</strong> (<em>float, default 1</em>) &#8211; Image layer image_opacity in range 0 (transparent) to 1 (opaque)</li>
+<li><strong>min_lat</strong> (<em>float (default: -90)</em>) &#8211; </li>
+<li><strong>max_lat</strong> (<em>float (default:  90)</em>) &#8211; </li>
+<li><strong>min_lon</strong> (<em>float (default: -180)</em>) &#8211; </li>
+<li><strong>max_lon</strong> (<em>float (default&quot;  180)</em>) &#8211; </li>
+<li><strong>image_name</strong> (<em>string, default None</em>) &#8211; The name of the layer object in leaflet.js</li>
+<li><strong>filename</strong> (<em>string or None, default None</em>) &#8211; Optional file name of output.png for image overlay.
+If None, we use a inline PNG.</li>
+<li><strong>Output</strong> &#8211; </li>
+<li><strong>------</strong> &#8211; </li>
+<li><strong>overlay data layer in obj.template_vars</strong> (<em>Image</em>) &#8211; </li>
+</ul>
 </td>
 </tr>
 </tbody>
 </table>
 <p class="rubric">Examples</p>
-<p># assumes a map object <cite>m</cite> has been created
-&gt;&gt;&gt; import numpy as np
-&gt;&gt;&gt; data = np.random.random((100,100))</p>
-<p># to make a rgba from a specific matplotlib colormap:
-&gt;&gt;&gt; import matplotlib.cm as cm
-&gt;&gt;&gt; cmapper = cm.cm.ColorMapper(&#8216;jet&#8217;)
-&gt;&gt;&gt; data2 = cmapper.to_rgba(np.random.random((100,100)))
-&gt;&gt;&gt; # Place the data over all of the globe (will be pretty pixelated!)
-&gt;&gt;&gt; m.image_overlay(data)
-&gt;&gt;&gt; # Put it only over a single city (Paris).
-&gt;&gt;&gt; m.image_overlay(data, min_lat=48.80418, max_lat=48.90970,
-...                 min_lon=2.25214, max_lon=2.44731)</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">sample_data</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">73</span><span class="p">,</span> <span class="mi">145</span><span class="p">)):</span>
+<span class="gp">... </span>   <span class="n">nlats</span><span class="p">,</span> <span class="n">nlons</span> <span class="o">=</span> <span class="n">shape</span>
+<span class="gp">... </span>   <span class="n">lats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">nlats</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">lons</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">nlons</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">lons</span><span class="p">,</span> <span class="n">lats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">lons</span><span class="p">,</span> <span class="n">lats</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">wave</span> <span class="o">=</span> <span class="mf">0.75</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">lats</span><span class="p">)</span> <span class="o">**</span> <span class="mi">8</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">4</span> <span class="o">*</span> <span class="n">lons</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">mean</span> <span class="o">=</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">lats</span><span class="p">)</span> <span class="o">*</span> <span class="p">((</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="mi">2</span> <span class="o">*</span> <span class="n">lats</span><span class="p">))</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">lats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rad2deg</span><span class="p">(</span><span class="n">lats</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">lons</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">rad2deg</span><span class="p">(</span><span class="n">lons</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">data</span> <span class="o">=</span> <span class="n">wave</span> <span class="o">+</span> <span class="n">mean</span>
+<span class="gp">... </span>   <span class="k">return</span> <span class="n">lons</span><span class="p">,</span> <span class="n">lats</span><span class="p">,</span> <span class="n">data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Lets create some data,</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lon</span><span class="p">,</span> <span class="n">lat</span><span class="p">,</span> <span class="n">data</span> <span class="o">=</span> <span class="n">sample_data</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mi">73</span><span class="p">,</span> <span class="mi">145</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lon</span> <span class="o">-=</span> <span class="mi">180</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># and color it.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">cm</span> <span class="o">=</span> <span class="n">matplotlib</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">get_cmap</span><span class="p">(</span><span class="s1">&#39;cubehelix&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">normed_data</span> <span class="o">=</span> <span class="p">(</span><span class="n">data</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span> <span class="o">/</span> <span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">min</span><span class="p">())</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">colored_data</span> <span class="o">=</span> <span class="n">cm</span><span class="p">(</span><span class="n">normed_data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># First no projection (wrong).</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">lon</span><span class="o">.</span><span class="n">mean</span><span class="p">()],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">image_overlay</span><span class="p">(</span><span class="n">colored_data</span><span class="p">,</span>
+<span class="gp">... </span>                  <span class="n">min_lat</span><span class="o">=</span><span class="n">lat</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">max_lat</span><span class="o">=</span><span class="n">lat</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+<span class="gp">... </span>                  <span class="n">min_lon</span><span class="o">=</span><span class="n">lon</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">max_lon</span><span class="o">=</span><span class="n">lon</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+<span class="gp">... </span>                  <span class="n">image_opacity</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Now lets project the data as to Web Mercator (correct).</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">lat</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">lon</span><span class="o">.</span><span class="n">mean</span><span class="p">()],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">project</span> <span class="o">=</span> <span class="n">geodetic_to_mercator</span><span class="p">(</span><span class="n">colored_data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">image_overlay</span><span class="p">(</span><span class="n">projected</span><span class="p">,</span>
+<span class="gp">... </span>                  <span class="n">min_lat</span><span class="o">=</span><span class="n">lat</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">max_lat</span><span class="o">=</span><span class="n">lat</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+<span class="gp">... </span>                  <span class="n">min_lon</span><span class="o">=</span><span class="n">lon</span><span class="o">.</span><span class="n">min</span><span class="p">(),</span> <span class="n">max_lon</span><span class="o">=</span><span class="n">lon</span><span class="o">.</span><span class="n">max</span><span class="p">(),</span>
+<span class="gp">... </span>                  <span class="n">image_opacity</span><span class="o">=</span><span class="mf">0.25</span><span class="p">)</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="method">
@@ -454,7 +384,7 @@ to the Mercator projection.</li>
 
 <dl class="method">
 <dt id="folium.folium.Map.line">
-<code class="descname">line</code><span class="sig-paren">(</span><em>locations</em>, <em>line_color=None</em>, <em>line_opacity=None</em>, <em>line_weight=None</em>, <em>popup=None</em>, <em>popup_width=300</em>, <em>latlon=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.line" title="Permalink to this definition">¶</a></dt>
+<code class="descname">line</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.line" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a line to the map with optional styles.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -469,10 +399,6 @@ to the Mercator projection.</li>
 or a tuple of the form (Vincent object, &#8216;vis_path.json&#8217;)
 It is possible to adjust the width of text/HTML popups
 using the optional keywords <cite>popup_width</cite> (default is 300px).</li>
-<li><strong>latlon</strong> (<em>bool, default True</em>) &#8211; Whether locations are given in the form [[lat, lon]]
-or not ([[lon, lat]] if False).
-Note that the default GeoJson format is latlon=False,
-while Leaflet polyline&#8217;s default is latlon=True.</li>
 <li><strong>Note</strong> (<em>If the optional styles are omitted, they will not be included</em>) &#8211; </li>
 <li><strong>the HTML output and will obtain the Leaflet defaults listed above.</strong> (<em>in</em>) &#8211; </li>
 </ul>
@@ -480,17 +406,17 @@ while Leaflet polyline&#8217;s default is latlon=True.</li>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
+<p class="rubric">Example</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">locations</span><span class="o">=</span><span class="p">[(</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">),</span> <span class="p">(</span><span class="mf">42.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">71.0</span><span class="p">)])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="n">locations</span><span class="o">=</span><span class="p">[(</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">),</span> <span class="p">(</span><span class="mf">42.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">71.0</span><span class="p">)],</span>
-<span class="go">             line_color=&#39;red&#39;, line_opacity=1.0)</span>
+<span class="go">            line_color=&#39;red&#39;, line_opacity=1.0)</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="folium.folium.Map.multiline">
-<code class="descname">multiline</code><span class="sig-paren">(</span><em>locations</em>, <em>line_color=None</em>, <em>line_opacity=None</em>, <em>line_weight=None</em>, <em>popup=None</em>, <em>popup_width=300</em>, <em>latlon=True</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.multiline" title="Permalink to this definition">¶</a></dt>
+<code class="descname">multiline</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.multiline" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add a multiPolyline to the map with optional styles.</p>
 <p>A multiPolyline is single layer that consists of several polylines that
 share styling/popup.</p>
@@ -503,14 +429,6 @@ share styling/popup.</p>
 <li><strong>line_color</strong> (<em>string, default Leaflet's default ('#03f')</em>) &#8211; </li>
 <li><strong>line_opacity</strong> (<em>float, default Leaflet's default (0.5)</em>) &#8211; </li>
 <li><strong>line_weight</strong> (<em>float, default Leaflet's default (5)</em>) &#8211; </li>
-<li><strong>popup</strong> (<em>string or tuple, default 'Pop Text'</em>) &#8211; Input text or visualization for object. Can pass either text,
-or a tuple of the form (Vincent object, &#8216;vis_path.json&#8217;)
-It is possible to adjust the width of text/HTML popups
-using the optional keywords <cite>popup_width</cite> (default is 300px).</li>
-<li><strong>latlon</strong> (<em>bool, default True</em>) &#8211; Whether locations are given in the form [[lat, lon]]
-or not ([[lon, lat]] if False).
-Note that the default GeoJson format is latlon=False,
-while Leaflet polyline&#8217;s default is latlon=True.</li>
 <li><strong>Note</strong> (<em>If the optional styles are omitted, they will not be included</em>) &#8211; </li>
 <li><strong>the HTML output and will obtain the Leaflet defaults listed above.</strong> (<em>in</em>) &#8211; </li>
 </ul>
@@ -518,23 +436,22 @@ while Leaflet polyline&#8217;s default is latlon=True.</li>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
+<p class="rubric">Example</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">multiline</span><span class="p">(</span><span class="n">locations</span><span class="o">=</span><span class="p">[[(</span><span class="mf">45.5236</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">),</span> <span class="p">(</span><span class="mf">45.5236</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">)],</span>
 <span class="go">                           [(45.5237, -122.675), (45.5237, -122.675)],</span>
 <span class="go">                           [(45.5238, -122.675), (45.5238, -122.675)]])</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="n">m</span><span class="o">.</span><span class="n">multiline</span><span class="p">(</span><span class="n">locations</span><span class="o">=</span><span class="p">[[(</span><span class="mf">45.5236</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">),</span> <span class="p">(</span><span class="mf">45.5236</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.675</span><span class="p">)],</span>
 <span class="go">                           [(45.5237, -122.675), (45.5237, -122.675)],</span>
 <span class="go">                           [(45.5238, -122.675), (45.5238, -122.675)]],</span>
-<span class="go">                line_color=&#39;red&#39;, line_weight=2,</span>
-<span class="go">                line_opacity=1.0)</span>
-<span class="go">FIXME: Add another example.</span>
+<span class="go">                           line_color=&#39;red&#39;, line_weight=2,</span>
+<span class="go">                           line_opacity=1.0)</span>
 </pre></div>
 </div>
 </dd></dl>
 
 <dl class="method">
 <dt id="folium.folium.Map.polygon_marker">
-<code class="descname">polygon_marker</code><span class="sig-paren">(</span><em>location=None</em>, <em>line_color='black'</em>, <em>line_opacity=1</em>, <em>line_weight=2</em>, <em>fill_color='blue'</em>, <em>fill_opacity=1</em>, <em>num_sides=4</em>, <em>rotation=0</em>, <em>radius=15</em>, <em>popup=None</em>, <em>popup_width=300</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.polygon_marker" title="Permalink to this definition">¶</a></dt>
+<code class="descname">polygon_marker</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.polygon_marker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Custom markers using the Leaflet Data Vis Framework.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -569,7 +486,7 @@ using the optional keywords <cite>popup_width</cite> (default is 300px).</li>
 
 <dl class="method">
 <dt id="folium.folium.Map.simple_marker">
-<code class="descname">simple_marker</code><span class="sig-paren">(</span><em>location=None</em>, <em>popup=None</em>, <em>marker_color='blue'</em>, <em>marker_icon='info-sign'</em>, <em>clustered_marker=False</em>, <em>icon_angle=0</em>, <em>popup_width=300</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.simple_marker" title="Permalink to this definition">¶</a></dt>
+<code class="descname">simple_marker</code><span class="sig-paren">(</span><em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#folium.folium.Map.simple_marker" title="Permalink to this definition">¶</a></dt>
 <dd><p>Create a simple stock Leaflet marker on the map, with optional
 popup text or Vincent visualization.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -598,7 +515,7 @@ other markers</li>
 </tr>
 </tbody>
 </table>
-<p class="rubric">Examples</p>
+<p class="rubric">Example</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">simple_marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="s1">&#39;Portland, OR&#39;</span><span class="p">)</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">map</span><span class="o">.</span><span class="n">simple_marker</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">45.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">122.3</span><span class="p">],</span> <span class="n">popup</span><span class="o">=</span><span class="p">(</span><span class="n">vis</span><span class="p">,</span> <span class="s1">&#39;vis.json&#39;</span><span class="p">))</span>
 </pre></div>
