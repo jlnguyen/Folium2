@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_a3cffbcaf2c74614b641ca53d371179f {
+            <style> #map_1d0dc9abd49d4d469a870273b4b424bb {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -33,7 +33,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a3cffbcaf2c74614b641ca53d371179f" ></div>
+            <div class="folium-map" id="map_1d0dc9abd49d4d469a870273b4b424bb" ></div>
         
 </body>
 <script>    
@@ -45,8 +45,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_a3cffbcaf2c74614b641ca53d371179f = L.map(
-                                  'map_a3cffbcaf2c74614b641ca53d371179f',
+            var map_1d0dc9abd49d4d469a870273b4b424bb = L.map(
+                                  'map_1d0dc9abd49d4d469a870273b4b424bb',
                                   {center: [41.9,-97.3],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -57,7 +57,7 @@
             
         
     
-            var tile_layer_fe637e3817af4b0192148f7d01de4a03 = L.tileLayer(
+            var tile_layer_58f7056eb6ef4c1e8d4d8e5d5b091cfd = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -67,7 +67,7 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_a3cffbcaf2c74614b641ca53d371179f);
+                ).addTo(map_1d0dc9abd49d4d469a870273b4b424bb);
 
         
     
@@ -76,8 +76,8 @@
                 title: 'Expand me',
                 titleCancel: 'Exit me',
                 forceSeparateButton: true,
-                }).addTo(map_a3cffbcaf2c74614b641ca53d371179f);
-            map_a3cffbcaf2c74614b641ca53d371179f.on('enterFullscreen', function(){
+                }).addTo(map_1d0dc9abd49d4d469a870273b4b424bb);
+            map_1d0dc9abd49d4d469a870273b4b424bb.on('enterFullscreen', function(){
                 console.log('entered fullscreen');
             });
 

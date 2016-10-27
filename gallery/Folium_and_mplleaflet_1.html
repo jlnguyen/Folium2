@@ -1,0 +1,2234 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_ae06ede46ff144da8cf2769ce44e5404 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_ae06ede46ff144da8cf2769ce44e5404" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_ae06ede46ff144da8cf2769ce44e5404 = L.map(
+                                  'map_ae06ede46ff144da8cf2769ce44e5404',
+                                  {center: [-13.00868051,-38.51386097],
+                                  zoom: 14,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_0bcb59a921774c47904f6706c9213a1d = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
+                    detectRetina: false
+                    }
+                ).addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+
+        
+    
+
+            var marker_ee88d23886394184bfb69b2cf28a37a6 = L.marker(
+                [-13.005415,-38.502605],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_b83d5753954941feb04d9aae55ff3179 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [5.53440067794,2.13146080869],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="16px" viewBox="-5.53440067794 -2.13146080869 8.0 16.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.922106928542 0.359381530104 L -0.557928021794 4.15687908595 L 1.64566736539 3.95353521762 L -4.71446872127 12.0964599127 L -3.88697420586 1.79724603699 L -2.40214187888 3.43811602575 L -0.922106928542 -0.359381530104 L 0.922106928542 0.359381530104" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_ee88d23886394184bfb69b2cf28a37a6.setIcon(div_icon_b83d5753954941feb04d9aae55ff3179);
+            
+    
+
+            var marker_56caf838f790411d8a9c774075c31109 = L.marker(
+                [-13.00616,-38.502205],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ede5f1f4662c46778e55cb85ee8be81f = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.43037110981,2.39650683799],
+                    
+                    className: 'empty',
+                    html: '<svg width="15px" height="16px" viewBox="-2.43037110981 -2.39650683799 15.0 16.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.730034145563 -0.668196391907 L 5.58555854434 4.63667901397 L 6.37743044356 2.57025208459 L 10.8692919259 11.8751827159 L 1.99722557018 6.57943043603 L 4.12549025321 5.97307179778 L -0.730034145563 0.668196391907 L 0.730034145563 -0.668196391907" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_56caf838f790411d8a9c774075c31109.setIcon(div_icon_ede5f1f4662c46778e55cb85ee8be81f);
+            
+    
+
+            var marker_c8e030a86cd84d1db4dc9a13f2f3c915 = L.marker(
+                [-13.0065666667,-38.5014466667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_b82b414c58d74c7db4fca041f962282b = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.57115733654,2.09174518258],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="9px" viewBox="-2.57115733654 -2.09174518258 22.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.31447518898 -0.938371795911 L 9.04128954167 1.98623293402 L 8.73186812372 -0.204985846781 L 17.1721605159 5.75488143075 L 6.84501698984 5.42524492868 L 8.41233916371 3.86297652584 L -0.31447518898 0.938371795911 L 0.31447518898 -0.938371795911" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_c8e030a86cd84d1db4dc9a13f2f3c915.setIcon(div_icon_b82b414c58d74c7db4fca041f962282b);
+            
+    
+
+            var marker_74c1bd4186874feeae0859ae163be926 = L.marker(
+                [-13.0067616667,-38.50066],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_bce4e4edebd14f3682073b0b48fa6023 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.12508146377,3.17624787523],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="8px" viewBox="-2.12508146377 -3.17624787523 17.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.234926671008 -0.961376997381 L 4.56729743805 0.0973017983924 L 4.07577378268 -2.06037886738 L 12.9847637435 3.17301883484 L 2.66621375664 3.70788311691 L 4.09744409603 2.02005579315 L -0.234926671008 0.961376997381 L 0.234926671008 -0.961376997381" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_74c1bd4186874feeae0859ae163be926.setIcon(div_icon_bce4e4edebd14f3682073b0b48fa6023);
+            
+    
+
+            var marker_51af085ebaa54a12bad59ed6aa44e543 = L.marker(
+                [-13.0070066667,-38.499775],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_cad2e9efca894d799fcbf279a872ed2d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.55482406357,2.48208834914],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-2.55482406357 -2.48208834914 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.198996089705 -0.969451818363 L 8.56327768701 0.747455922202 L 7.99181804805 -1.39044380423 L 17.0893479626 3.50787254791 L 6.79784150983 4.42626710595 L 8.1652855076 2.68635955893 L -0.198996089705 0.969451818363 L 0.198996089705 -0.969451818363" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_51af085ebaa54a12bad59ed6aa44e543.setIcon(div_icon_cad2e9efca894d799fcbf279a872ed2d);
+            
+    
+
+            var marker_6764da26d0e946fc9d998e2d66e933c4 = L.marker(
+                [-13.00732,-38.49902],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_dd775aa2716f4fa0aa57d3dea8d65acc = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.3564134754,2.24771005558],
+                    
+                    className: 'empty',
+                    html: '<svg width="15px" height="14px" viewBox="-2.3564134754 -2.24771005558 15.0 14.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.675149440749 -0.723608668066 L 5.1249939181 3.4282349221 L 5.75168413153 1.30586814522 L 10.9623224899 10.2281885569 L 1.70078748703 5.64752015362 L 3.7746950366 4.87545225824 L -0.675149440749 0.723608668066 L 0.675149440749 -0.723608668066" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_6764da26d0e946fc9d998e2d66e933c4.setIcon(div_icon_dd775aa2716f4fa0aa57d3dea8d65acc);
+            
+    
+
+            var marker_92161771ffd24299a1bb927d0aebd07b = L.marker(
+                [-13.00806,-38.498535],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ee78bf0e984b446984fe1e400b16d26c = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.94457442091,3.4405579808],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="26px" viewBox="-2.94457442091 -3.4405579808 17.0 26.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.845270321396 -0.514737171391 L 8.16875725846 11.5114511458 L 9.34456072986 9.63670648165 L 11.9561214796 19.6336212098 L 4.27293880148 12.72512951 L 6.47821661566 12.5409254886 L -0.845270321396 0.514737171391 L 0.845270321396 -0.514737171391" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_92161771ffd24299a1bb927d0aebd07b.setIcon(div_icon_ee78bf0e984b446984fe1e400b16d26c);
+            
+    
+
+            var marker_cb5e61f5ea084e2c9570a1f29ff7394d = L.marker(
+                [-13.00866,-38.49804],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_fde22baf44074b5fab3f81b60b39672d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.05535748124,2.28997288516],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="8px" viewBox="-2.05535748124 -2.28997288516 17.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.337061257307 -0.93049770589 L 5.18892819912 0.827030938557 L 4.93255300785 -1.37102573053 L 13.2263462948 4.79107996021 L 2.910185464 4.21196050481 L 4.51480568451 2.68802635034 L -0.337061257307 0.93049770589 L 0.337061257307 -0.93049770589" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_cb5e61f5ea084e2c9570a1f29ff7394d.setIcon(div_icon_fde22baf44074b5fab3f81b60b39672d);
+            
+    
+
+            var marker_aa9dd0f5d8874038b70265d74a82028a = L.marker(
+                [-13.00914,-38.49735],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_8fb6c82849184fcf8dcd68d57e0cb64f = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.11341348345,1.9624930312],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="14px" viewBox="-3.11341348345 -1.9624930312 8.0 14.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.922108742443 -0.359376875933 L 1.75435086893 1.77603525561 L 3.23919147788 0.135172761298 L 4.06663400988 10.4343908135 L -2.29346097678 2.29143401689 L -0.0898666159578 2.49478900747 L -0.922108742443 0.359376875933 L 0.922108742443 -0.359376875933" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_aa9dd0f5d8874038b70265d74a82028a.setIcon(div_icon_8fb6c82849184fcf8dcd68d57e0cb64f);
+            
+    
+
+            var marker_ead7c24681114d97a308251a33ff2451 = L.marker(
+                [-13.009925,-38.497105],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_cc8cfab06bed4605a21320098aadc577 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.22100445409,2.86616476132],
+                    
+                    className: 'empty',
+                    html: '<svg width="10px" height="22px" viewBox="-2.22100445409 -2.86616476132 10.0 22.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.92210912734 -0.359375888342 L 4.16782635143 7.9686883313 L 5.65266871777 6.32782742728 L 6.48010021917 16.6270463657 L 0.120013953732 8.48408275733 L 2.32360809675 8.68744010799 L -0.92210912734 0.359375888342 L 0.92210912734 -0.359375888342" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_ead7c24681114d97a308251a33ff2451.setIcon(div_icon_cc8cfab06bed4605a21320098aadc577);
+            
+    
+
+            var marker_8ed6d0ec50e44937801370ae45b2c521 = L.marker(
+                [-13.01042,-38.49741],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_f62a954389b0446785a9cc9cd39f08cd = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [20.3803615139,3.13272227822],
+                    
+                    className: 'empty',
+                    html: '<svg width="23px" height="8px" viewBox="-20.3803615139 -3.13272227822 23.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.106301390187 0.983939167982 L -8.90527051599 1.95751827995 L -7.70872856763 3.81909522573 L -17.867024418 1.93029162365 L -8.34653690876 -2.08453978216 L -9.11787329636 -0.0103600560138 L -0.106301390187 -0.983939167982 L 0.106301390187 0.983939167982" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_8ed6d0ec50e44937801370ae45b2c521.setIcon(div_icon_f62a954389b0446785a9cc9cd39f08cd);
+            
+    
+
+            var marker_c6ff19f0e89a49c7993d1d2b98ce9880 = L.marker(
+                [-13.010415,-38.49826],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_eefb9e83b108413a9cabf2b46369d0a6 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.3665794011,2.61407612702],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.3665794011 -2.61407612702 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.187019685821 0.971833272203 L -7.98665935247 2.544776831 L -6.64078670862 4.30142368959 L -16.9201784881 3.25612073119 L -7.76290482355 -1.52957594363 L -8.36069872411 0.601110286598 L -0.187019685821 -0.971833272203 L 0.187019685821 0.971833272203" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_c6ff19f0e89a49c7993d1d2b98ce9880.setIcon(div_icon_eefb9e83b108413a9cabf2b46369d0a6);
+            
+    
+
+            var marker_136b3188e81b4c9b9b2dd96c585e1d87 = L.marker(
+                [-13.0105366667,-38.49913],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_1b41367c49144f13acfdbaebd8f942fd = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [16.5523697639,3.32043321342],
+                    
+                    className: 'empty',
+                    html: '<svg width="19px" height="8px" viewBox="-16.5523697639 -3.32043321342 19.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.148770083084 0.978418997273 L -5.29896855242 1.80675586694 L -4.02300938898 3.6148237784 L -14.253509611 2.16726761743 L -4.91562988749 -2.25569020523 L -5.59650871859 -0.150082127604 L -0.148770083084 -0.978418997273 L 0.148770083084 0.978418997273" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_136b3188e81b4c9b9b2dd96c585e1d87.setIcon(div_icon_1b41367c49144f13acfdbaebd8f942fd);
+            
+    
+
+            var marker_207bb4b4261b4a10ab9cfd17cf84b971 = L.marker(
+                [-13.0106,-38.499955],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_749c13ba5be147fcb5663712456d7904 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.5818115288,2.97467256938],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.5818115288 -2.97467256938 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.13418147126 0.980526187623 L -8.33888736897 2.1400350895 L -7.08999823883 3.96690599349 L -17.2978045288 2.36714214322 L -7.89508706639 -1.91625113225 L -8.60725031149 0.178982714254 L -0.13418147126 -0.980526187623 L 0.13418147126 0.980526187623" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_207bb4b4261b4a10ab9cfd17cf84b971.setIcon(div_icon_749c13ba5be147fcb5663712456d7904);
+            
+    
+
+            var marker_d10d8d9ade03418ebc0105a85ada000e = L.marker(
+                [-13.01084,-38.5008216667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_42cdefa6c81749d49970adc55fb7731a = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [25.4153451092,2.43372072031],
+                    
+                    className: 'empty',
+                    html: '<svg width="29px" height="11px" viewBox="-25.4153451092 -2.43372072031 29.0 11.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.301354228256 0.942667439216 L -13.3466832655 5.30570538351 L -11.8013073698 6.88968603368 L -22.1320444467 7.07522599859 L -13.6094327393 1.23368139839 L -13.949391722 3.42037050507 L -0.301354228256 -0.942667439216 L 0.301354228256 0.942667439216" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_d10d8d9ade03418ebc0105a85ada000e.setIcon(div_icon_42cdefa6c81749d49970adc55fb7731a);
+            
+    
+
+            var marker_5500f75301904df6b3c1fc726385ebcb = L.marker(
+                [-13.010785,-38.5017],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_9ff1f9db0f8442959cfb5ebef00eed0e = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [17.6357804858,5.55891977485],
+                    
+                    className: 'empty',
+                    html: '<svg width="20px" height="8px" viewBox="-17.6357804858 -5.55891977485 20.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.250867827581 0.957340903195 L -7.15722849808 -0.852446699235 L -6.70162325005 1.31310293474 L -15.5224287993 -4.06759805066 L -5.19641628456 -4.43094248443 L -6.65549284292 -2.76712850562 L 0.250867827581 -0.957340903195 L -0.250867827581 0.957340903195" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_5500f75301904df6b3c1fc726385ebcb.setIcon(div_icon_9ff1f9db0f8442959cfb5ebef00eed0e);
+            
+    
+
+            var marker_5178d26ce9a346da94c534285b4a41e5 = L.marker(
+                [-13.0105433333,-38.5025166667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_a4bd5468a48e4072971ea24e01ed0488 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [21.290207376,4.78635401355],
+                    
+                    className: 'empty',
+                    html: '<svg width="24px" height="8px" viewBox="-21.290207376 -4.78635401355 24.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.0879755572406 0.985746708426 L -9.88464549059 0.111417137633 L -9.07484989665 2.17088611173 L -18.6683903092 -1.66610958596 L -8.54699655321 -3.74359413883 L -9.70869437611 -1.86007627922 L 0.0879755572406 -0.985746708426 L -0.0879755572406 0.985746708426" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_5178d26ce9a346da94c534285b4a41e5.setIcon(div_icon_a4bd5468a48e4072971ea24e01ed0488);
+            
+    
+
+            var marker_0ace28ee6c9b4fc59a9aedcf15ca867e = L.marker(
+                [-13.01072,-38.50339],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_322a1cef20f443d88da62897ef50ec4b = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [20.8560237072,2.13171301371],
+                    
+                    className: 'empty',
+                    html: '<svg width="24px" height="11px" viewBox="-20.8560237072 -2.13171301371 24.0 11.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.385255024672 0.911600152375 L -9.50764604312 5.09247905528 L -7.8255358414 6.53042433536 L -18.0973024392 7.64817412496 L -10.1370659894 1.06082342111 L -10.2781560925 3.26927875054 L -0.385255024672 -0.911600152375 L 0.385255024672 0.911600152375" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_0ace28ee6c9b4fc59a9aedcf15ca867e.setIcon(div_icon_322a1cef20f443d88da62897ef50ec4b);
+            
+    
+
+            var marker_3692b3f37cfc4b7faaf458988ae9ade6 = L.marker(
+                [-13.01105,-38.5041766667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_56f779c0456d4d00be28e415fad929b6 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [21.1851875286,2.19481372049],
+                    
+                    className: 'empty',
+                    html: '<svg width="24px" height="9px" viewBox="-21.1851875286 -2.19481372049 24.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.280948180448 0.948949098607 L -9.82983316965 3.94237164086 L -8.31898771015 5.55932165762 L -18.6513232376 5.52195616628 L -10.0046767928 -0.13437293402 L -10.3917295305 2.04447344364 L -0.280948180448 -0.948949098607 L 0.280948180448 0.948949098607" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_3692b3f37cfc4b7faaf458988ae9ade6.setIcon(div_icon_56f779c0456d4d00be28e415fad929b6);
+            
+    
+
+            var marker_2c181da86fa94ff2ae2aaf56e8d47ef5 = L.marker(
+                [-13.0114,-38.505],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_e029e8ea75d4479eaadb9afd17aac125 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [15.4969589014,2.27174750104],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="13px" viewBox="-15.4969589014 -2.27174750104 18.0 13.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.558860875304 0.816768506921 L -5.64300124046 5.06029413403 L -3.70851098293 6.13497027257 L -13.5527786781 9.27327350485 L -7.06167623476 1.23435923104 L -6.76072299107 3.42675712019 L -0.558860875304 -0.816768506921 L 0.558860875304 0.816768506921" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_2c181da86fa94ff2ae2aaf56e8d47ef5.setIcon(div_icon_e029e8ea75d4479eaadb9afd17aac125);
+            
+    
+
+            var marker_cf89f8db18c94d7dab99a85da313a9f8 = L.marker(
+                [-13.011535,-38.5057833333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_7e44313c960a43128fd9ac344f601866 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [15.8010040195,4.9728025642],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="8px" viewBox="-15.8010040195 -4.9728025642 18.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.224010924106 0.963978930125 L -5.37421951603 -0.232834558179 L -4.85826243412 1.91913422618 L -13.8260189631 -3.21291180526 L -3.51419688948 -3.86473935458 L -4.92619766782 -2.16079241843 L 0.224010924106 -0.963978930125 L -0.224010924106 0.963978930125" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_cf89f8db18c94d7dab99a85da313a9f8.setIcon(div_icon_7e44313c960a43128fd9ac344f601866);
+            
+    
+
+            var marker_19d01320a6454ce0911e3b36814829f7 = L.marker(
+                [-13.01137,-38.506645],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_284818dd0d504705b6f465e4f6f45e14 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.4647820077,4.0],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.4647820077 -4.0 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -1.21194971282e-16 0.989664726988 L -8.02258147251 0.989664726988 L -7.03291674552 2.96899418096 L -16.9295640154 -2.07320516607e-15 L -7.03291674552 -2.96899418096 L -8.02258147251 -0.989664726988 L 1.21194971282e-16 -0.989664726988 L -1.21194971282e-16 0.989664726988" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_19d01320a6454ce0911e3b36814829f7.setIcon(div_icon_284818dd0d504705b6f465e4f6f45e14);
+            
+    
+
+            var marker_1ae743e0232d4f0e8398826704fe8b75 = L.marker(
+                [-13.011305,-38.5074766667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_a90951dd635f49e48206ba706fb44bdf = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [16.7044235143,4.0],
+                    
+                    className: 'empty',
+                    html: '<svg width="19px" height="8px" viewBox="-16.7044235143 -4.0 19.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -1.21194971282e-16 0.989664726988 L -5.50186448563 0.989664726988 L -4.51219975864 2.96899418096 L -14.4088470285 -1.76451656224e-15 L -4.51219975864 -2.96899418096 L -5.50186448563 -0.989664726988 L 1.21194971282e-16 -0.989664726988 L -1.21194971282e-16 0.989664726988" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_1ae743e0232d4f0e8398826704fe8b75.setIcon(div_icon_a90951dd635f49e48206ba706fb44bdf);
+            
+    
+
+            var marker_3642fa7cb6de4939b8f77c5dafc1f9b7 = L.marker(
+                [-13.010965,-38.508285],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_27046a5abdb044198c73c9af50c27912 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [20.2874638943,5.97114235606],
+                    
+                    className: 'empty',
+                    html: '<svg width="23px" height="8px" viewBox="-20.2874638943 -5.97114235606 23.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.236702778047 0.960941239988 L -9.39986218484 -1.2961637702 L -8.91232650094 0.862421487822 L -17.8116305667 -4.38743001261 L -7.49210983266 -4.90322595211 L -8.92645662874 -3.21804625018 L 0.236702778047 -0.960941239988 L -0.236702778047 0.960941239988" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_3642fa7cb6de4939b8f77c5dafc1f9b7.setIcon(div_icon_27046a5abdb044198c73c9af50c27912);
+            
+    
+
+            var marker_fc7edca99115401a91784bae3ff74771 = L.marker(
+                [-13.010745,-38.50913],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ee2f3ec5271045f4a6b2c83e5d2b616a = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [14.7865031356,4.94849740644],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="8px" viewBox="-14.7865031356 -4.94849740644 17.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.27133846557 0.951741408654 L -4.55001052452 -0.268094463352 L -4.140946047 1.90672681953 L -12.8443447368 -3.66188206213 L -2.51291525358 -3.8037216324 L -4.00733359338 -2.17157728066 L 0.27133846557 -0.951741408654 L -0.27133846557 0.951741408654" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_fc7edca99115401a91784bae3ff74771.setIcon(div_icon_ee2f3ec5271045f4a6b2c83e5d2b616a);
+            
+    
+
+            var marker_0afe5e17bb2f49959be38f02d2977986 = L.marker(
+                [-13.01053,-38.5098966667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_54ca6308ac6142398d41027daa507d6c = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.62586266,5.21893896723],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.62586266 -5.21893896723 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.156027998134 0.977287846872 L -8.76819069438 -0.397679118487 L -8.10295884377 1.71292457339 L -17.4077533181 -2.77921894856 L -7.16679085497 -4.15080250784 L -8.45613469811 -2.35225481223 L 0.156027998134 -0.977287846872 L -0.156027998134 0.977287846872" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_0afe5e17bb2f49959be38f02d2977986.setIcon(div_icon_54ca6308ac6142398d41027daa507d6c);
+            
+    
+
+            var marker_cb384cb96d684f94ab3e10e37394c561 = L.marker(
+                [-13.010425,-38.5107],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_12132749b46048afba1bcb1db867fd01 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.4118681189,4.93544286117],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.4118681189 -4.93544286117 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.128570008082 0.981277751132 L -8.24937649387 -0.0827351181161 L -7.5252387589 2.00839039223 L -16.952306246 -2.22114294199 L -6.75381871041 -3.87927611456 L -7.9922364777 -2.04529062038 L 0.128570008082 -0.981277751132 L -0.128570008082 0.981277751132" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_cb384cb96d684f94ab3e10e37394c561.setIcon(div_icon_12132749b46048afba1bcb1db867fd01);
+            
+    
+
+            var marker_089e8836c8de43d2b5c3c8ea3d97647c = L.marker(
+                [-13.0102816667,-38.5115383333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_aa2895cc72a74e7cbf16e16313d66acd = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [18.4513290681,5.34787943649],
+                    
+                    className: 'empty',
+                    html: '<svg width="21px" height="8px" viewBox="-18.4513290681 -5.34787943649 21.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.203332440514 0.968551594124 L -7.59235867015 -0.582660282877 L -7.03047195705 1.55777534588 L -16.1059905767 -3.38120384163 L -5.81047731397 -4.25353421886 L -7.18569378912 -2.51976347112 L 0.203332440514 -0.968551594124 L -0.203332440514 0.968551594124" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_089e8836c8de43d2b5c3c8ea3d97647c.setIcon(div_icon_aa2895cc72a74e7cbf16e16313d66acd);
+            
+    
+
+            var marker_0ee22cfe79bd4af1a8fb7d9e35437c5f = L.marker(
+                [-13.010005,-38.512355],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_9890fade04814a8d9ed53039bb33a888 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [14.0335044835,2.35549089107],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="8px" viewBox="-14.0335044835 -2.35549089107 16.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.357771631289 0.922732752041 L -3.76241419868 2.52025446387 L -2.12413818406 4.00794833667 L -12.4247805983 4.81746639344 L -4.2707679718 -1.52844817558 L -4.47795746126 0.674788959791 L -0.357771631289 -0.922732752041 L 0.357771631289 0.922732752041" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_0ee22cfe79bd4af1a8fb7d9e35437c5f.setIcon(div_icon_9890fade04814a8d9ed53039bb33a888);
+            
+    
+
+            var marker_7ba28d53948547eeb1de08d9d95ad2d5 = L.marker(
+                [-13.0098716667,-38.513155],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_b81dc52719f446e1aedb1073f06a0500 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [17.5215181493,7.94311688815],
+                    
+                    className: 'empty',
+                    html: '<svg width="20px" height="10px" viewBox="-17.5215181493 -7.94311688815 20.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.398471572527 0.905901030871 L -7.68687016591 -2.29998962356 L -7.5779122801 -0.0897159892954 L -15.4415078712 -6.79213480718 L -5.18708284493 -5.52512217452 L -6.88992702086 -4.1117916853 L 0.398471572527 -0.905901030871 L -0.398471572527 0.905901030871" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_7ba28d53948547eeb1de08d9d95ad2d5.setIcon(div_icon_b81dc52719f446e1aedb1073f06a0500);
+            
+    
+
+            var marker_7c2c280e1049476e84e6c47f436542e2 = L.marker(
+                [-13.00976,-38.51401],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_c995d0d8eac24b14b452e1a9ed083aa1 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [20.4242406731,5.50087506625],
+                    
+                    className: 'empty',
+                    html: '<svg width="23px" height="8px" viewBox="-20.4242406731 -5.50087506625 23.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.176378063154 0.973820851431 L -9.43684980966 -0.703432277976 L -8.81578508454 1.42058748804 L -18.0248594094 -3.2646556978 L -7.75751670561 -4.42233762055 L -9.08409368335 -2.65107398084 L 0.176378063154 -0.973820851431 L -0.176378063154 0.973820851431" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_7c2c280e1049476e84e6c47f436542e2.setIcon(div_icon_c995d0d8eac24b14b452e1a9ed083aa1);
+            
+    
+
+            var marker_4aeb657d2cee4baa8c9b47b9d4bc0fc6 = L.marker(
+                [-13.00949,-38.514855],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_df9aab578c8e4ab79d37f4bac5d2c26e = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [13.9597145262,4.49755338731],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="8px" viewBox="-13.9597145262 -4.49755338731 16.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.198998013907 0.969451423386 L -3.59236226973 0.27290002217 L -3.02090687415 2.41080088285 L -12.1184270663 -2.48753352638 L -1.82691879071 -3.40590765747 L -3.19436624191 -1.6660028246 L 0.198998013907 -0.969451423386 L -0.198998013907 0.969451423386" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_4aeb657d2cee4baa8c9b47b9d4bc0fc6.setIcon(div_icon_df9aab578c8e4ab79d37f4bac5d2c26e);
+            
+    
+
+            var marker_1e8383be2709494a87f724299d3be0b2 = L.marker(
+                [-13.00891,-38.515425],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_443d854727da4209990b346e7350d264 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [9.69227100492,10.8711555003],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="13px" viewBox="-9.69227100492 -10.8711555003 12.0 13.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.748097662248 0.647909067372 L -3.04955572799 -2.00943204027 L -3.89784198511 0.0344837567236 L -8.13263967209 -9.39022006788 L 0.590743988377 -3.85297064751 L -1.55336040349 -3.30525017501 L 0.748097662248 -0.647909067372 L -0.748097662248 0.647909067372" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_1e8383be2709494a87f724299d3be0b2.setIcon(div_icon_443d854727da4209990b346e7350d264);
+            
+    
+
+            var marker_0a7b8c3582aa418a976946bcec9e7fa0 = L.marker(
+                [-13.00832,-38.5160116667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_d2cd42b1d05a482dbb4faae1684b85bb = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [9.91940274812,9.75600341291],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="12px" viewBox="-9.91940274812 -9.75600341291 12.0 12.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.6888128432 0.710614620513 L -2.82089959802 -1.35605935036 L -3.48791066391 0.753982733863 L -8.52761833944 -8.26598955968 L 0.644966395289 -3.50970498922 L -1.44327391162 -2.77728859139 L 0.6888128432 -0.710614620513 L -0.6888128432 0.710614620513" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_0a7b8c3582aa418a976946bcec9e7fa0.setIcon(div_icon_d2cd42b1d05a482dbb4faae1684b85bb);
+            
+    
+
+            var marker_ba0a5c8b63fc4b75a53a2a3b8e942057 = L.marker(
+                [-13.0079266667,-38.5167516667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_cb354f66cae047d8993a79071eb57a1d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.4612811752,7.10580293782],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="9px" viewBox="-19.4612811752 -7.10580293782 22.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.33197805335 0.932323358035 L -9.19560823474 -2.22380339549 L -8.9272409834 -0.0271786260719 L -17.2545404037 -6.14392923368 L -6.9353726633 -5.62111877428 L -8.53165212804 -4.08845011156 L 0.33197805335 -0.932323358035 L -0.33197805335 0.932323358035" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_ba0a5c8b63fc4b75a53a2a3b8e942057.setIcon(div_icon_cb354f66cae047d8993a79071eb57a1d);
+            
+    
+
+            var marker_ed9d3be0802a46bead57652cc334550a = L.marker(
+                [-13.0079566667,-38.51755],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_c683b0b83ee24c7d8f678c90f5597003 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.3014608848,2.95799920238],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.3014608848 -2.95799920238 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.146495390587 0.978762163338 L -7.79406229951 2.16725835155 L -6.522309355 3.97828728764 L -16.7494171601 2.5069547035 L -7.40128169852 -1.89428569239 L -8.08705308068 0.209734024874 L -0.146495390587 -0.978762163338 L 0.146495390587 0.978762163338" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_ed9d3be0802a46bead57652cc334550a.setIcon(div_icon_c683b0b83ee24c7d8f678c90f5597003);
+            
+    
+
+            var marker_8fdf546685f343aea638d09f44bb8836 = L.marker(
+                [-13.0080016667,-38.5183616667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_6288a0c1fd8949e58521a19ed23798c3 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [17.8030557594,3.86309384922],
+                    
+                    className: 'empty',
+                    html: '<svg width="20px" height="8px" viewBox="-17.8030557594 -3.86309384922 20.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.0236148959526 0.989382943321 L -6.70166502897 1.14990399005 L -5.66505229374 3.10505498074 L -15.6297264148 0.373055110304 L -5.80674166946 -2.83124267918 L -6.74889482088 -0.82886189659 L -0.0236148959526 -0.989382943321 L 0.0236148959526 0.989382943321" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_8fdf546685f343aea638d09f44bb8836.setIcon(div_icon_6288a0c1fd8949e58521a19ed23798c3);
+            
+    
+
+            var marker_ae536a6de5c24f77aa6607a64bffb71d = L.marker(
+                [-13.007995,-38.5192116667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_aea2841ca8474263b851f5dff62cb584 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [15.6952521421,2.17535118181],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="10px" viewBox="-15.6952521421 -2.17535118181 18.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.423669139841 0.89439405845 L -5.34095775815 3.62506349471 L -3.59922542002 4.99018247177 L -13.814173424 6.54369169483 L -6.14124025907 -0.376181878932 L -6.18829603784 1.83627537781 L -0.423669139841 -0.89439405845 L 0.423669139841 0.89439405845" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_ae536a6de5c24f77aa6607a64bffb71d.setIcon(div_icon_aea2841ca8474263b851f5dff62cb584);
+            
+    
+
+            var marker_c8e5c5c2329d4afb84ab635d34467316 = L.marker(
+                [-13.0084316667,-38.5199716667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_7b691a0f4230400c8803543d469df5c7 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [12.7974512344,2.33217974495],
+                    
+                    className: 'empty',
+                    html: '<svg width="15px" height="13px" viewBox="-12.7974512344 -2.33217974495 15.0 13.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.623623283697 0.768459674853 L -3.67876539503 4.25995030653 L -1.66305915278 5.17324637254 L -11.2185257524 9.10410018495 L -5.40479885496 0.562488323418 L -4.92601196242 2.72303095682 L -0.623623283697 -0.768459674853 L 0.623623283697 0.768459674853" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_c8e5c5c2329d4afb84ab635d34467316.setIcon(div_icon_7b691a0f4230400c8803543d469df5c7);
+            
+    
+
+            var marker_50bc99d0646e4b0292e375d896ca50f7 = L.marker(
+                [-13.0089883333,-38.520595],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_455538b94d2c4ab8a828b4023a0842bf = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [11.612184526,2.08269795045],
+                    
+                    className: 'empty',
+                    html: '<svg width="14px" height="14px" viewBox="-11.612184526 -2.08269795045 14.0 14.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.719056357869 0.679995754438 L -3.10440726215 4.72308838717 L -0.986298791976 5.36402353817 L -9.94342540996 10.5145998535 L -5.30063693919 1.28404901155 L -4.54251997789 3.36309687829 L -0.719056357869 -0.679995754438 L 0.719056357869 0.679995754438" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_50bc99d0646e4b0292e375d896ca50f7.setIcon(div_icon_455538b94d2c4ab8a828b4023a0842bf);
+            
+    
+
+            var marker_b213476c3c4b45a2886fbb2539aa5fb8 = L.marker(
+                [-13.0095366667,-38.521245],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_a2b63d8452ad4771874f3c6b24aa2273 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.7294749211,2.8962021739],
+                    
+                    className: 'empty',
+                    html: '<svg width="23px" height="17px" viewBox="-19.7294749211 -2.8962021739 23.0 17.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.570576623649 0.808627595615 L -9.18130148172 7.68966123058 L -7.2315206388 8.73633979817 L -17.0295264659 12.0162232478 L -10.6549803807 3.88457422447 L -10.322454729 6.07240603935 L -0.570576623649 -0.808627595615 L 0.570576623649 0.808627595615" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_b213476c3c4b45a2886fbb2539aa5fb8.setIcon(div_icon_a2b63d8452ad4771874f3c6b24aa2273);
+            
+    
+
+            var marker_39457873ac7e400e89a582a46e96f219 = L.marker(
+                [-13.00999,-38.5219233333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_fd5b5fe8f7a045e895e8edfe6d89ae3c = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.1713717774,2.02102541193],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="11px" viewBox="-19.1713717774 -2.02102541193 22.0 11.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.419899528541 0.896169993793 L -8.27721361061 4.97119340686 L -6.54124455974 6.34363386591 L -16.7626430833 7.85411916994 L -9.06064173098 0.966613903147 L -9.1170126677 3.17885341927 L -0.419899528541 -0.896169993793 L 0.419899528541 0.896169993793" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_39457873ac7e400e89a582a46e96f219.setIcon(div_icon_fd5b5fe8f7a045e895e8edfe6d89ae3c);
+            
+    
+
+            var marker_646a124894e74629b1f62921bb4b71c7 = L.marker(
+                [-13.01021,-38.52276],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_efb6ace103764d479469ade86a3ffdf8 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [15.5604947449,2.20601797509],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="8px" viewBox="-15.5604947449 -2.20601797509 18.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.337063119664 0.930497031272 L -4.7465162083 2.77197212443 L -3.1418929377 4.29590306731 L -13.4580526094 4.87504317014 L -5.16427165569 -1.28707912032 L -5.42064244763 0.910978061886 L -0.337063119664 -0.930497031272 L 0.337063119664 0.930497031272" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_646a124894e74629b1f62921bb4b71c7.setIcon(div_icon_efb6ace103764d479469ade86a3ffdf8);
+            
+    
+
+            var marker_4ea8917f9f5948a7b02c4e664f15d9e8 = L.marker(
+                [-13.010215,-38.52361],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_691c029ca7f647018170d8e0cbaf8b13 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [14.7758791055,4.61276419011],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="8px" viewBox="-14.7758791055 -4.61276419011 17.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.195249973222 0.970213234192 L -4.21033904977 0.162199070857 L -3.63062576203 2.29787551246 L -12.7470081843 -2.56526392234 L -2.45912592269 -3.52340389269 L -3.81983910333 -1.77822739753 L 0.195249973222 -0.970213234192 L -0.195249973222 0.970213234192" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_4ea8917f9f5948a7b02c4e664f15d9e8.setIcon(div_icon_691c029ca7f647018170d8e0cbaf8b13);
+            
+    
+
+            var marker_19685d2321e54273801277287956b869 = L.marker(
+                [-13.00983,-38.5243416667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_718ae7ef76bc40078b805800ba46c4b4 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [13.5363329498,8.06515821836],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="10px" viewBox="-13.5363329498 -8.06515821836 16.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.510685831601 0.847724161061 L -4.46452011332 -1.53414395232 L -4.63816761546 0.671990201408 L -11.5833517313 -6.97804059778 L -1.57405262585 -4.41435476496 L -3.44314845012 -3.22959227444 L 0.510685831601 -0.847724161061 L -0.510685831601 0.847724161061" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_19685d2321e54273801277287956b869.setIcon(div_icon_718ae7ef76bc40078b805800ba46c4b4);
+            
+    
+
+            var marker_89fd2a45540e4b69a655ec5a50f69197 = L.marker(
+                [-13.009475,-38.5251033333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_888118e00ac047fc81e2d2f04fa89d9b = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [14.5136333442,9.65738381662],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="12px" viewBox="-14.5136333442 -9.65738381662 17.0 12.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.538314337507 0.830454060066 L -5.62980882281 -2.46993859568 L -5.87598343776 -0.270716138044 L -12.5655810259 -8.14522169331 L -2.64609741272 -5.25344049844 L -4.5531801478 -4.13084671581 L 0.538314337507 -0.830454060066 L -0.538314337507 0.830454060066" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_89fd2a45540e4b69a655ec5a50f69197.setIcon(div_icon_888118e00ac047fc81e2d2f04fa89d9b);
+            
+    
+
+            var marker_37e51f730a2a461fa32f64439020b14b = L.marker(
+                [-13.00936,-38.52594],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_38b55c1ccfcd451cbd3f420cb1e4990b = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [16.5479332684,4.70004613731],
+                    
+                    className: 'empty',
+                    html: '<svg width="19px" height="8px" viewBox="-16.5479332684 -4.70004613731 19.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.153077966374 0.977754267726 L -5.60223406007 0.124630164042 L -4.93063572509 2.23321666587 L -14.2489445032 -2.23082580105 L -4.01216792685 -3.63330894049 L -5.29607812732 -1.83087837141 L 0.153077966374 -0.977754267726 L -0.153077966374 0.977754267726" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_37e51f730a2a461fa32f64439020b14b.setIcon(div_icon_38b55c1ccfcd451cbd3f420cb1e4990b);
+            
+    
+
+            var marker_664e6f206d844134afa7639b8e1fd664 = L.marker(
+                [-13.0094216667,-38.52684],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_e4be794a4cd6424e8ad94a487bec057d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [19.3456826485,3.44408138929],
+                    
+                    className: 'empty',
+                    html: '<svg width="22px" height="8px" viewBox="-19.3456826485 -3.44408138929 22.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.0794086696434 0.986473788314 L -7.81310120215 1.62180106866 L -6.66781007455 3.51533997565 L -16.7707739666 1.35000530714 L -7.14426209241 -2.40350275423 L -7.97191854144 -0.351146507963 L -0.0794086696434 -0.986473788314 L 0.0794086696434 0.986473788314" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_664e6f206d844134afa7639b8e1fd664.setIcon(div_icon_e4be794a4cd6424e8ad94a487bec057d);
+            
+    
+
+            var marker_159d00c9acfd43509254079d31bd1fc9 = L.marker(
+                [-13.0095116667,-38.5277],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_4054be65d61a4a2db897a6b210a0d9e4 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [23.8694928755,2.09255905637],
+                    
+                    className: 'empty',
+                    html: '<svg width="27px" height="8px" viewBox="-23.8694928755 -2.09255905637 27.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.166865623487 0.975495840864 L -11.9595231833 3.04980240798 L -10.6502960955 4.83392846622 L -20.9058513746 3.5760971785 L -11.6514898364 -1.01904657896 L -12.2932544303 1.09881072625 L -0.166865623487 -0.975495840864 L 0.166865623487 0.975495840864" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_159d00c9acfd43509254079d31bd1fc9.setIcon(div_icon_4054be65d61a4a2db897a6b210a0d9e4);
+            
+    
+
+            var marker_47a21f8abd324f95832acef7b05d32a5 = L.marker(
+                [-13.00965,-38.528575],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_9d1008722e2b4ee7b13c1cfe74a78495 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [20.1250752749,2.31771291191],
+                    
+                    className: 'empty',
+                    html: '<svg width="23px" height="8px" viewBox="-20.1250752749 -2.31771291191 23.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.209015719749 0.967341046758 L -8.544081129 2.8586438546 L -7.15870864275 4.58431022837 L -17.4591662696 3.77244428558 L -8.41280296124 -1.21973605218 L -8.9621125685 0.923961761084 L -0.209015719749 -0.967341046758 L 0.209015719749 0.967341046758" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_47a21f8abd324f95832acef7b05d32a5.setIcon(div_icon_9d1008722e2b4ee7b13c1cfe74a78495);
+            
+    
+
+            var marker_7896273a1c55475d8a4b18fbbb08a401 = L.marker(
+                [-13.009725,-38.529425],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_bdc155c9cad04a469b0cb8dfcdcdc364 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [14.1816368006,4.09921451711],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="8px" viewBox="-14.1816368006 -4.09921451711 16.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.0390363973987 0.988894550254 L -3.54129544362 0.85064363575 L -2.63047368816 2.86746913366 L -12.4023099985 -0.489578491093 L -2.39625530377 -3.06589816787 L -3.46322264882 -1.12714546476 L 0.0390363973987 -0.988894550254 L -0.0390363973987 0.988894550254" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_7896273a1c55475d8a4b18fbbb08a401.setIcon(div_icon_bdc155c9cad04a469b0cb8dfcdcdc364);
+            
+    
+
+            var marker_d68ca6d482d84f31825d7a0c16cde02a = L.marker(
+                [-13.009855,-38.53028],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_d70f3f837f0142eabdeb2d1a499b8e26 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [21.0025723288,2.1058993938],
+                    
+                    className: 'empty',
+                    html: '<svg width="24px" height="8px" viewBox="-21.0025723288 -2.1058993938 24.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.213902238786 0.966272272233 L -9.30869420743 3.07427511722 L -7.91461745763 4.7929174229 L -18.2190468963 4.03312299405 L -9.19803089034 -1.0047162105 L -9.736498685 1.14173057275 L -0.213902238786 -0.966272272233 L 0.213902238786 0.966272272233" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_d68ca6d482d84f31825d7a0c16cde02a.setIcon(div_icon_d70f3f837f0142eabdeb2d1a499b8e26);
+            
+    
+
+            var marker_49d44152124d48288fcf9e69e68704f8 = L.marker(
+                [-13.00994,-38.53114],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_6937fe80e0784072b7f9f6511c869a1d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [20.556023271,3.15837633714],
+                    
+                    className: 'empty',
+                    html: '<svg width="23px" height="8px" viewBox="-20.556023271 -3.15837633714 23.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.0990817945169 0.984692373201 L -9.24981518317 1.92539783057 L -8.06695922094 3.79570078246 L -18.2111283365 1.83244160802 L -8.66144998804 -2.11245345675 L -9.4479787722 -0.0439869158286 L -0.0990817945169 -0.984692373201 L 0.0990817945169 0.984692373201" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_49d44152124d48288fcf9e69e68704f8.setIcon(div_icon_6937fe80e0784072b7f9f6511c869a1d);
+            
+    
+
+            var marker_4f0e1037a0674598869565cc4631cbb1 = L.marker(
+                [-13.00983,-38.531855],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_2ca9a2205d0642a1be075e72ed3a8b92 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [4.75674380866,14.9790764934],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="17px" viewBox="-4.75674380866 -14.9790764934 8.0 17.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.967251974287 0.209427529431 L -1.93342331238 -4.25288521813 L -3.65849973152 -2.86677818498 L -2.85101910297 -13.1675805161 L 2.1450121142 -4.12334336157 L 0.00108063619369 -4.67174027699 L 0.967251974287 -0.209427529431 L -0.967251974287 0.209427529431" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_4f0e1037a0674598869565cc4631cbb1.setIcon(div_icon_2ca9a2205d0642a1be075e72ed3a8b92);
+            
+    
+
+            var marker_b24b8c63a2174fba94df0f54a1c82001 = L.marker(
+                [-13.0099,-38.53198],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_310c674ce7f14949b93947a5641486fd = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.53955054561,2.63857645844],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="19px" viewBox="-2.53955054561 -2.63857645844 13.0 19.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.842862769647 -0.518670052527 L 4.93859397534 6.13708215631 L 6.10564946211 4.25687928161 L 8.76376167843 14.2415171357 L 1.04847284423 7.36889959677 L 3.25286843605 7.17442226136 L -0.842862769647 0.518670052527 L 0.842862769647 -0.518670052527" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_b24b8c63a2174fba94df0f54a1c82001.setIcon(div_icon_310c674ce7f14949b93947a5641486fd);
+            
+    
+
+            var marker_384419886cb444b59d046e0645bd1467 = L.marker(
+                [-13.010025,-38.53125],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_5503e5f52fa54930b0a372f071ffc6d4 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.08330315646,6.76109831164],
+                    
+                    className: 'empty',
+                    html: '<svg width="24px" height="9px" viewBox="-3.08330315646 -6.76109831164 24.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.285999911545 -0.947438822532 L 9.3064442843 -3.84307506444 L 7.78700563868 -5.45195279796 L 18.1193935986 -5.46963544581 L 9.50300510795 0.232680137237 L 9.87844410739 -1.94819741937 L 0.285999911545 0.947438822532 L -0.285999911545 -0.947438822532" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_384419886cb444b59d046e0645bd1467.setIcon(div_icon_5503e5f52fa54930b0a372f071ffc6d4);
+            
+    
+
+            var marker_d267864f23e641e99475a5b0648a7416 = L.marker(
+                [-13.009925,-38.530395],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_f536fbacb9ca48e38bde565de7ffecca = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.78250819352,4.17988271668],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="8px" viewBox="-1.78250819352 -4.17988271668 16.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.0675578829253 -0.987356168917 L 3.54877809271 -1.23479676852 L 2.42630615794 -3.14195122343 L 12.5025414959 -0.855461545932 L 2.83165345549 2.78218579007 L 3.68389385856 0.739915569313 L 0.0675578829253 0.987356168917 L -0.0675578829253 -0.987356168917" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_d267864f23e641e99475a5b0648a7416.setIcon(div_icon_f536fbacb9ca48e38bde565de7ffecca);
+            
+    
+
+            var marker_a5b6c957adcc49588bf66e06b9509563 = L.marker(
+                [-13.0098,-38.529555],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_2a9f471fb9024cc5acc43d37e5028e68 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.31566756968,4.42052353024],
+                    
+                    className: 'empty',
+                    html: '<svg width="21px" height="8px" viewBox="-2.31566756968 -4.42052353024 21.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.063353360613 -0.987634863471 L 7.47995108939 -1.47151175432 L 6.36560950469 -3.38342812065 L 16.4320182212 -1.05405713637 L 6.74572966837 2.54238106017 L 7.60665781062 0.503757972618 L 0.063353360613 0.987634863471 L -0.063353360613 -0.987634863471" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_a5b6c957adcc49588bf66e06b9509563.setIcon(div_icon_2a9f471fb9024cc5acc43d37e5028e68);
+            
+    
+
+            var marker_8c00f82a42264065afdd8a078d9ee3ed = L.marker(
+                [-13.00972,-38.528705],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_d1159d70d2b94212bf480c7fb1bed344 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.31836129423,4.56503629697],
+                    
+                    className: 'empty',
+                    html: '<svg width="20px" height="8px" viewBox="-2.31836129423 -4.56503629697 20.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.0990817107924 -0.984692381625 L 6.50104597692 -1.64881038939 L 5.31819017371 -3.51911344185 L 15.4623591223 -1.5558534049 L 5.91268043846 2.3890408479 L 6.6992093985 0.32057437386 L 0.0990817107924 0.984692381625 L -0.0990817107924 -0.984692381625" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_8c00f82a42264065afdd8a078d9ee3ed.setIcon(div_icon_d1159d70d2b94212bf480c7fb1bed344);
+            
+    
+
+            var marker_66770b7d464840deb2c81faf9cfb5bb2 = L.marker(
+                [-13.009605,-38.5278416667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_a1474e57348f411fb624a09cfcf10f51 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.37321728334,4.42315620834],
+                    
+                    className: 'empty',
+                    html: '<svg width="20px" height="8px" viewBox="-2.37321728334 -4.42315620834 20.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.0764303947197 -0.986709008071 L 6.37318436069 -1.48629561113 L 5.23361456318 -3.38328323255 L 15.329995828 -1.18746015553 L 5.6921969315 2.53697081588 L 6.52604515013 0.487122405015 L 0.0764303947197 0.986709008071 L -0.0764303947197 -0.986709008071" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_66770b7d464840deb2c81faf9cfb5bb2.setIcon(div_icon_a1474e57348f411fb624a09cfcf10f51);
+            
+    
+
+            var marker_1446d17be454499fba50512f2ff9e621 = L.marker(
+                [-13.0094516667,-38.526965],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_efda4bb512d54dba835254ee9a99445d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.16160628438,6.39007293581],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="9px" viewBox="-2.16160628438 -6.39007293581 16.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.39258861943 -0.908465986011 L 3.50059355714 -2.59088342312 L 1.80695033227 -4.01522677572 L 12.0693760507 -5.21571501198 L 4.16248204885 1.43556914035 L 4.285770796 -0.773951451101 L 0.39258861943 0.908465986011 L -0.39258861943 -0.908465986011" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_1446d17be454499fba50512f2ff9e621.setIcon(div_icon_efda4bb512d54dba835254ee9a99445d);
+            
+    
+
+            var marker_6dd9de17a51e48ccbbfdd81954db75f6 = L.marker(
+                [-13.009365,-38.52611],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_bbd2d31bae534f718e90f1dc2940924a = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.52710361044,4.14616002735],
+                    
+                    className: 'empty',
+                    html: '<svg width="14px" height="8px" viewBox="-1.52710361044 -4.14616002735 14.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.116386950859 -0.982797206709 L 2.10061791873 -1.24534418491 L 0.885046810309 -3.09455164747 L 11.06217973 -1.31002953593 L 1.58336851546 2.80223159278 L 2.33339182045 0.720250228503 L 0.116386950859 0.982797206709 L -0.116386950859 -0.982797206709" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_6dd9de17a51e48ccbbfdd81954db75f6.setIcon(div_icon_bbd2d31bae534f718e90f1dc2940924a);
+            
+    
+
+            var marker_df8298c20ca14298a66ee601fc0adbe2 = L.marker(
+                [-13.00942,-38.525295],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_87c33a844fbc4579af64a687ce8c2c50 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.61537005358,3.67113230424],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="9px" viewBox="-2.61537005358 -3.67113230424 13.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.427504125467 -0.892567361354 L 1.38312081467 -0.434865125433 L 1.34556170425 -2.64750397361 L 8.98872294139 4.30523936512 L -1.21946304855 2.70790019451 L 0.528112563741 1.35026959727 L -0.427504125467 0.892567361354 L 0.427504125467 -0.892567361354" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_df8298c20ca14298a66ee601fc0adbe2.setIcon(div_icon_87c33a844fbc4579af64a687ce8c2c50);
+            
+    
+
+            var marker_f879817ed35d431cbcddb8f079e7c58e = L.marker(
+                [-13.00972,-38.5245216667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ef7879a840bc4d1ea5e8dff09a19af44 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.93313376851,2.78211649089],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="10px" viewBox="-1.93313376851 -2.78211649089 13.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.529488089767 -0.836109224109 L 2.66772562554 0.517985762093 L 2.89059258096 -1.68372077589 L 9.66322055275 6.1194877941 L -0.286335957637 3.33293456876 L 1.60874944601 2.19020421031 L -0.529488089767 0.836109224109 L 0.529488089767 -0.836109224109" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_f879817ed35d431cbcddb8f079e7c58e.setIcon(div_icon_ef7879a840bc4d1ea5e8dff09a19af44);
+            
+    
+
+            var marker_03c598da1c9e4d60a3efda106a22ce98 = L.marker(
+                [-13.0101316667,-38.523795],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_792f2a106e034d18ac13772f40f4e54b = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.89912222378,2.87266436673],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="10px" viewBox="-1.89912222378 -2.87266436673 13.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.518939229199 -0.842697067897 L 2.65536039977 0.472927250418 L 2.85054179027 -1.73140611458 L 9.72069478164 5.98607738111 L -0.263093584928 3.32477629281 L 1.61748194137 2.15832138621 L -0.518939229199 0.842697067897 L 0.518939229199 -0.842697067897" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_03c598da1c9e4d60a3efda106a22ce98.setIcon(div_icon_792f2a106e034d18ac13772f40f4e54b);
+            
+    
+
+            var marker_c9bc5eb0693a42249e1b60505bc59394 = L.marker(
+                [-13.01026,-38.523025],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_3863436b5b92449d8702586d214e0286 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.92289306918,4.28890835959],
+                    
+                    className: 'empty',
+                    html: '<svg width="17px" height="8px" viewBox="-1.92289306918 -4.28890835959 17.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.084337007884 -0.986064673815 L 4.2796317973 -1.35931004129 L 3.12489310771 -3.24710238103 L 13.2385508695 -1.13227843843 L 3.63091515502 2.66928566186 L 4.44830581307 0.612819306344 L 0.084337007884 0.986064673815 L -0.084337007884 -0.986064673815" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_c9bc5eb0693a42249e1b60505bc59394.setIcon(div_icon_3863436b5b92449d8702586d214e0286);
+            
+    
+
+            var marker_6f71282c842b48c78e656e292c0c7045 = L.marker(
+                [-13.01004,-38.52221],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_7fd63c470b20495e8cb09669b5eb8794 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.46995910314,5.47944191135],
+                    
+                    className: 'empty',
+                    html: '<svg width="19px" height="8px" viewBox="-2.46995910314 -5.47944191135 19.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.285999927419 -0.94743881774 L 5.53313243405 -2.70403924603 L 4.01369376148 -4.31291695409 L 14.3460817211 -4.33059977506 L 5.72969332599 1.37171595235 L 6.10513228889 -0.80916161055 L 0.285999927419 0.94743881774 L -0.285999927419 -0.94743881774" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_6f71282c842b48c78e656e292c0c7045.setIcon(div_icon_7fd63c470b20495e8cb09669b5eb8794);
+            
+    
+
+            var marker_23978aae8aa54bb08f5788611311907d = L.marker(
+                [-13.0097266667,-38.52144],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_977e8b5db5584609951aa9b0ad77f231 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.11169788559,6.68869846669],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="10px" viewBox="-3.11169788559 -6.68869846669 12.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.561580022201 -0.746134429541 L 0.184554407341 -1.30771445174 L -1.6847400666 -2.23840328862 L 7.46134429541 -5.61580022201 L 1.6847400666 2.23840328862 L 1.30771445174 0.184554407341 L 0.561580022201 0.746134429541 L -0.561580022201 -0.746134429541" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_23978aae8aa54bb08f5788611311907d.setIcon(div_icon_977e8b5db5584609951aa9b0ad77f231);
+            
+    
+
+            var marker_f41ea6dbd2ae483593908338cfb08e36 = L.marker(
+                [-13.0092183333,-38.5207866667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_566217f594584f0aabcf4783ce0c52c3 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.11146989932,6.36007231182],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="10px" viewBox="-2.11146989932 -6.36007231182 13.0 10.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.460942144341 -0.875767441399 L 1.11593140725 -1.70572233795 L -0.68172032283 -2.9963150764 L 9.45878052418 -4.97843419562 L 2.08393254322 2.25828957199 L 2.03781569594 0.0458125448505 L 0.460942144341 0.875767441399 L -0.460942144341 -0.875767441399" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_f41ea6dbd2ae483593908338cfb08e36.setIcon(div_icon_566217f594584f0aabcf4783ce0c52c3);
+            
+    
+
+            var marker_8b2fdea5243745c59cfadd5331f7fce7 = L.marker(
+                [-13.00861,-38.520145],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_992e41ca24fb438d948a2678b709c34b = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.81257932046,9.61984330698],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="12px" viewBox="-2.81257932046 -9.61984330698 12.0 12.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.726740448358 -0.671777189673 L 0.863682145024 -2.39232448774 L -1.26157594136 -3.00913841872 L 7.63641730044 -8.26121133328 L 3.09886674878 1.02152471932 L 2.31716304174 -1.04877010839 L 0.726740448358 0.671777189673 L -0.726740448358 -0.671777189673" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_8b2fdea5243745c59cfadd5331f7fce7.setIcon(div_icon_992e41ca24fb438d948a2678b709c34b);
+            
+    
+
+            var marker_72eabda1ee28417c97fe049a975e060a = L.marker(
+                [-13.0081033333,-38.519465],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_30860c8a2ae541469a3789ea7de1cf53 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.27245425776,8.15623768491],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="11px" viewBox="-2.27245425776 -8.15623768491 12.0 11.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.625601557346 -0.766850026596 L 0.972946414527 -2.07095652201 L -1.04510672676 -2.97905501786 L 8.50019821124 -6.93452051153 L 2.70850261731 1.62204514172 L 2.22414952922 -0.537256468822 L 0.625601557346 0.766850026596 L -0.625601557346 -0.766850026596" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_72eabda1ee28417c97fe049a975e060a.setIcon(div_icon_30860c8a2ae541469a3789ea7de1cf53);
+            
+    
+
+            var marker_bbd189b4b9a84c768a34d91b0c61b15f = L.marker(
+                [-13.0078516667,-38.518705],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_01944babf28e4adca39bcbd2c8e67034 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.04426579299,4.38716768994],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="8px" viewBox="-2.04426579299 -4.38716768994 18.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.0919396886179 -0.985384881912 L 5.04300447681 -1.46449226047 L 3.87374021766 -3.34332233567 L 14.0034081026 -1.30656457611 L 4.42537834937 2.5689869558 L 5.22688385405 0.506277503359 L 0.0919396886179 0.985384881912 L -0.0919396886179 -0.985384881912" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_bbd189b4b9a84c768a34d91b0c61b15f.setIcon(div_icon_01944babf28e4adca39bcbd2c8e67034);
+            
+    
+
+            var marker_463bfb40721d4d1784299e942eba0ab2 = L.marker(
+                [-13.007915,-38.51785],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_3f658c8911214ef68d596098ef50e6cd = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.05640118451,3.83746217616],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="8px" viewBox="-2.05640118451 -3.83746217616 18.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.0398003003513 -0.988864099832 L 5.0670213332 -0.786525975641 L 4.15775783407 -2.80405447566 L 13.9269979313 0.560540827352 L 3.91895603196 3.12913012334 L 4.9874207325 1.19120222402 L -0.0398003003513 0.988864099832 L 0.0398003003513 -0.988864099832" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_463bfb40721d4d1784299e942eba0ab2.setIcon(div_icon_3f658c8911214ef68d596098ef50e6cd);
+            
+    
+
+            var marker_6d4ca2bc2ac24a5e8e56501616ecfe4a = L.marker(
+                [-13.0079,-38.51697],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ca729de36c3442ce9780c5dfa92819a1 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.73783945038,6.774324697],
+                    
+                    className: 'empty',
+                    html: '<svg width="24px" height="9px" viewBox="-2.73783945038 -6.774324697 24.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.271335586729 -0.951742229398 L 9.95864103467 -3.86824275133 L 8.46422763181 -5.5003916234 L 18.795656686 -5.3585208025 L 10.0922411522 0.210061752985 L 10.5013122081 -1.96475829254 L 0.271335586729 0.951742229398 L -0.271335586729 -0.951742229398" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_6d4ca2bc2ac24a5e8e56501616ecfe4a.setIcon(div_icon_ca729de36c3442ce9780c5dfa92819a1);
+            
+    
+
+            var marker_a60739a93b364bf486caa172bd9636c8 = L.marker(
+                [-13.008015,-38.516145],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_55355da7055a460586296f485cdf9b55 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.48779193426,2.53119986128],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="16px" viewBox="-2.48779193426 -2.53119986128 18.0 16.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.643257646675 -0.752100971837 L 7.5420226783 5.14828145735 L 8.07643699981 3.000821867 L 13.6676737782 11.6897012493 L 4.21689111976 7.51342769803 L 6.25550738495 6.65248340103 L -0.643257646675 0.752100971837 L 0.643257646675 -0.752100971837" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_a60739a93b364bf486caa172bd9636c8.setIcon(div_icon_55355da7055a460586296f485cdf9b55);
+            
+    
+
+            var marker_14c56f1c1d3b465c9a0a26ed2c51ef29 = L.marker(
+                [-13.0086216667,-38.5156316667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_e6a0d004db644e9dab60f72d0f237892 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.12329562261,2.19850751395],
+                    
+                    className: 'empty',
+                    html: '<svg width="10px" height="15px" viewBox="-2.12329562261 -2.19850751395 10.0 15.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.847446555289 -0.511146366293 L 2.95073530044 2.97596597451 L 4.13448204472 1.10622668664 L 6.70360604178 11.1141313384 L -0.950197287009 4.17310488439 L 1.25584218986 3.99825870709 L -0.847446555289 0.511146366293 L 0.847446555289 -0.511146366293" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_14c56f1c1d3b465c9a0a26ed2c51ef29.setIcon(div_icon_e6a0d004db644e9dab60f72d0f237892);
+            
+    
+
+            var marker_a7802eba124a488aadf79b86f061fcd4 = L.marker(
+                [-13.009185,-38.51503],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_6380644731ba4c49989ac1ef0cc7159c = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.59409105432,2.08746935618],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="11px" viewBox="-2.59409105432 -2.08746935618 18.0 11.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.494811223143 -0.857086999841 L 6.08765733907 2.37176027936 L 6.22019278551 0.162775056531 L 13.3066291145 7.68214828748 L 3.25132544666 5.30529705558 L 5.09803489278 4.08593427904 L -0.494811223143 0.857086999841 L 0.494811223143 -0.857086999841" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_a7802eba124a488aadf79b86f061fcd4.setIcon(div_icon_6380644731ba4c49989ac1ef0cc7159c);
+            
+    
+
+            var marker_e87915f454b7472e9d82e9e3c63d7b37 = L.marker(
+                [-13.009595,-38.514305],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_91e19c44e11541b09e7d1eed96c50db4 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.72266195746,2.23782500445],
+                    
+                    className: 'empty',
+                    html: '<svg width="20px" height="14px" viewBox="-2.72266195746 -2.23782500445 20.0 14.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.558858104498 -0.816770402795 L 8.32145866893 4.49462705061 L 8.62240447513 2.30222814052 L 15.1135341896 10.3411203939 L 5.26925584814 7.20285055729 L 7.20374245993 6.12816785619 L -0.558858104498 0.816770402795 L 0.558858104498 -0.816770402795" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_e87915f454b7472e9d82e9e3c63d7b37.setIcon(div_icon_91e19c44e11541b09e7d1eed96c50db4);
+            
+    
+
+            var marker_db2ace35f03443cb919bae63569b71e2 = L.marker(
+                [-13.009815,-38.5134566667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_dda225bafce94efa9c63b9f4248339e5 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.10698548563,3.31012110139],
+                    
+                    className: 'empty',
+                    html: '<svg width="18px" height="8px" viewBox="-2.10698548563 -3.31012110139 18.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.161067022273 -0.976470012945 L 5.31993295678 -0.125524092066 L 4.66559698838 -2.23953114023 L 13.947096051 2.30054912134 L 3.69919485474 3.61928893744 L 4.99779891223 1.82741593382 L -0.161067022273 0.976470012945 L 0.161067022273 -0.976470012945" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_db2ace35f03443cb919bae63569b71e2.setIcon(div_icon_dda225bafce94efa9c63b9f4248339e5);
+            
+    
+
+            var marker_85469d7f11e74792b36101d434bd0369 = L.marker(
+                [-13.009955,-38.5126316667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_faf224410a0941f7b54763288140b74a = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.31763106066,2.31519506063],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="9px" viewBox="-2.31763106066 -2.31519506063 16.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.428560916 -0.892060431317 L 4.19331582881 0.916591491028 L 4.1583772295 -1.29609028761 L 11.7932987947 5.66570016634 L 1.5870117335 4.0562723003 L 3.33619399681 2.70071235366 L -0.428560916 0.892060431317 L 0.428560916 -0.892060431317" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_85469d7f11e74792b36101d434bd0369.setIcon(div_icon_faf224410a0941f7b54763288140b74a);
+            
+    
+
+            var marker_07f0613d288449948629c3c1f76cf8ef = L.marker(
+                [-13.01004,-38.51184],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_74c0575c992b442e9998396e04759172 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.10604809504,3.49795277292],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="8px" viewBox="-2.10604809504 -3.49795277292 16.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.209016033788 -0.967340978903 L 3.49986706738 -0.256277718035 L 2.95055815605 -2.39997570963 L 11.9969198437 2.59220756496 L 1.69646195332 3.40407016379 L 3.0818349998 1.67840423977 L -0.209016033788 0.967340978903 L 0.209016033788 -0.967340978903" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_07f0613d288449948629c3c1f76cf8ef.setIcon(div_icon_74c0575c992b442e9998396e04759172);
+            
+    
+
+            var marker_b3ff1546481247cfb165c2143499dd55 = L.marker(
+                [-13.0103266667,-38.51105],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_435968966ee64ee3a72fac8955f366e2 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.8365838193,3.72730671818],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="9px" viewBox="-1.8365838193 -3.72730671818 13.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.375854741686 -0.915515966544 L 1.94098916874 -0.272967701654 L 1.77718268556 -2.47985437643 L 9.80477812595 4.02524094006 L -0.47794576455 3.01324142284 L 1.18927968537 1.55806423143 L -0.375854741686 0.915515966544 L 0.375854741686 -0.915515966544" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_b3ff1546481247cfb165c2143499dd55.setIcon(div_icon_435968966ee64ee3a72fac8955f366e2);
+            
+    
+
+            var marker_337aaada4f5741fd8b17aae8081bff71 = L.marker(
+                [-13.010495,-38.5102366667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_e6943fd730c846c9a652eb065678600f = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.78163161251,3.34333269035],
+                    
+                    className: 'empty',
+                    html: '<svg width="14px" height="9px" viewBox="-1.78163161251 -3.34333269035 14.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.372814388835 -0.916758257842 L 2.93154123207 0.123788883233 L 2.76041175189 -2.08254202129 L 10.8095511638 4.39587664059 L 0.523525418885 3.41800752577 L 2.1859124544 1.95730539892 L -0.372814388835 0.916758257842 L 0.372814388835 -0.916758257842" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_337aaada4f5741fd8b17aae8081bff71.setIcon(div_icon_e6943fd730c846c9a652eb065678600f);
+            
+    
+
+            var marker_c8b1cfb5c83041a48be616ebdaee73d3 = L.marker(
+                [-13.010555,-38.509425],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_8e5a3e21bc024f37a45875b6a39a093f = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.0688879934,4.0],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="8px" viewBox="-2.0688879934 -4.0 13.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.189367729421 -0.943032720146 L 1.13240044957 -0.753664990725 L 0.568103188263 -2.82909816044 L 9.43032720146 1.89367729421 L -0.568103188263 2.82909816044 L 0.753664990725 1.13240044957 L -0.189367729421 0.943032720146 L 0.189367729421 -0.943032720146" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_c8b1cfb5c83041a48be616ebdaee73d3.setIcon(div_icon_8e5a3e21bc024f37a45875b6a39a093f);
+            
+    
+
+            var marker_845e00729d7b4e03be20e36787b3336c = L.marker(
+                [-13.00982,-38.50923],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ccdf11df5d9348dd8f054a1a456d5f73 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [4.49175520723,14.2229227882],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="16px" viewBox="-4.49175520723 -14.2229227882 8.0 16.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.975352254085 0.167702869076 L -1.63481033039 -3.66767528958 L -3.41781196948 -2.35691729734 L -2.16878389799 -12.6135484454 L 2.43430155503 -3.3631345118 L 0.315894177781 -4.00308102773 L 0.975352254085 -0.167702869076 L -0.975352254085 0.167702869076" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_845e00729d7b4e03be20e36787b3336c.setIcon(div_icon_ccdf11df5d9348dd8f054a1a456d5f73);
+            
+    
+
+            var marker_0b9ea4236d6b42e0a4cca49c5fb4761f = L.marker(
+                [-13.0089916667,-38.50912],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_6911398ee6134d759587fca7c59b0f5d = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [4.0,15.9038032197],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="18px" viewBox="-4.0 -15.9038032197 8.0 18.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.989664726988 -6.05974856412e-17 L -0.989664726988 -4.9006238966 L -2.96899418096 -3.91095916961 L 8.45444128844e-16 -13.8076064395 L 2.96899418096 -3.91095916961 L 0.989664726988 -4.9006238966 L 0.989664726988 6.05974856412e-17 L -0.989664726988 -6.05974856412e-17" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_0b9ea4236d6b42e0a4cca49c5fb4761f.setIcon(div_icon_6911398ee6134d759587fca7c59b0f5d);
+            
+    
+
+            var marker_db4ee6c0765a4049ac78ceacb2622120 = L.marker(
+                [-13.008155,-38.50913],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_a663d86ea30b4b1190215bf416d6de4c = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.3670386983,17.6207155385],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="20px" viewBox="-3.3670386983 -17.6207155385 8.0 20.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.983226220495 -0.112705240236 L -0.23755967856 -6.61780557309 L -2.31671735979 -5.85998983307 L 1.76001370406 -15.3541363173 L 3.58263996318 -5.18375839165 L 1.72889276243 -6.39239509262 L 0.983226220495 0.112705240236 L -0.983226220495 -0.112705240236" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_db4ee6c0765a4049ac78ceacb2622120.setIcon(div_icon_a663d86ea30b4b1190215bf416d6de4c);
+            
+    
+
+            var marker_4e3c5e05eb094243af31cfca489f0895 = L.marker(
+                [-13.007295,-38.509175],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_65dc3578486641659d4572aa032a1ced = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [4.68184364978,18.7561178475],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="21px" viewBox="-4.68184364978 -18.7561178475 8.0 21.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.984675503674 0.0992493038203 L -1.76576845727 -7.65015616199 L -3.6358701608 -6.46698205068 L -1.67433668798 -16.6114849989 L 2.27218286124 -7.0624778736 L 0.203582550073 -7.84865476963 L 0.984675503674 -0.0992493038203 L -0.984675503674 0.0992493038203" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_4e3c5e05eb094243af31cfca489f0895.setIcon(div_icon_65dc3578486641659d4572aa032a1ced);
+            
+    
+
+            var marker_50742fcc76a34d1ea79ef9bac540150c = L.marker(
+                [-13.006485,-38.50917],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_f0f1d519f07c412092f24418fa371649 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.03134932431,19.5714246253],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="22px" viewBox="-3.03134932431 -19.5714246253 8.0 22.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.981417548555 -0.127498498947 L 0.114731626087 -8.56508831146 L -1.97560196997 -7.8386677608 L 2.24363566516 -17.2703477495 L 3.91290332136 -7.07367676712 L 2.0775667232 -8.31009131357 L 0.981417548555 0.127498498947 L -0.981417548555 -0.127498498947" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_50742fcc76a34d1ea79ef9bac540150c.setIcon(div_icon_f0f1d519f07c412092f24418fa371649);
+            
+    
+
+            var marker_4bd742c9732a4e03b4491696c6b0b17c = L.marker(
+                [-13.0056716667,-38.509135],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_bbee3bec0aba4e319c2bc42f863ffe53 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [5.34170846188,15.6674041796],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="18px" viewBox="-5.34170846188 -15.6674041796 8.0 18.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.945280245922 0.293055504152 L -2.53268706007 -4.8272861458 L -4.13019204777 -3.29589489158 L -4.22490635152 -13.6278638633 L 1.54148942777 -5.05422791649 L -0.642126568228 -5.41339715411 L 0.945280245922 -0.293055504152 L -0.945280245922 0.293055504152" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_4bd742c9732a4e03b4491696c6b0b17c.setIcon(div_icon_bbee3bec0aba4e319c2bc42f863ffe53);
+            
+    
+
+            var marker_69545525a88b4aeeaa113122088ebe2d = L.marker(
+                [-13.004945,-38.50882],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_bd625423a05549e9ab27eb60e195d460 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.66058304073,14.6213926421],
+                    
+                    className: 'empty',
+                    html: '<svg width="9px" height="17px" viewBox="-2.66058304073 -14.6213926421 9.0 17.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.918499074319 -0.368504711395 L 0.824647650846 -4.71330303813 L -1.38085520919 -4.53181338661 L 5.05968912772 -12.6112899956 L 4.13013923673 -2.32078511823 L 2.66164579948 -3.97629361534 L 0.918499074319 0.368504711395 L -0.918499074319 -0.368504711395" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_69545525a88b4aeeaa113122088ebe2d.setIcon(div_icon_bd625423a05549e9ab27eb60e195d460);
+            
+    
+
+            var marker_04b513a5e2c94a828a73cfcdf04b65f5 = L.marker(
+                [-13.004325,-38.5082733333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_0c2fd3699f1548cea356072acb2ca1bf = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.37459091138,9.61730096232],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="12px" viewBox="-2.37459091138 -9.61730096232 12.0 12.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.699302545126 -0.700294382545 L 1.173882831 -2.57082673818 L -0.925016641795 -3.27211295814 L 8.17583481904 -8.16425526177 L 3.27079862896 0.929653337128 L 2.57248792126 -1.17023797309 L 0.699302545126 0.700294382545 L -0.699302545126 -0.700294382545" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_04b513a5e2c94a828a73cfcdf04b65f5.setIcon(div_icon_0c2fd3699f1548cea356072acb2ca1bf);
+            
+    
+
+            var marker_90c626033de9450c9c8a621579fc2fcd = L.marker(
+                [-13.003715,-38.50769],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_e59b46aedf6e44dd930dac293bf8f994 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.37429131889,12.7162746715],
+                    
+                    className: 'empty',
+                    html: '<svg width="12px" height="15px" viewBox="-2.37429131889 -12.7162746715 12.0 15.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.799047546614 -0.583917194553 L 1.99616261125 -4.40895581261 L -0.185849676532 -4.7777426551 L 8.05046490884 -11.0164665376 L 4.60843560315 -1.27423948778 L 3.59425770448 -3.2411214235 L 0.799047546614 0.583917194553 L -0.799047546614 -0.583917194553" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_90c626033de9450c9c8a621579fc2fcd.setIcon(div_icon_e59b46aedf6e44dd930dac293bf8f994);
+            
+    
+
+            var marker_07b9aa3b8a934c988896d1ecda0b63f6 = L.marker(
+                [-13.0031266667,-38.50714],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ea4ae8b2cdc04f7e812bc17f5168b046 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.33980043921,5.45943482647],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="8px" viewBox="-2.33980043921 -5.45943482647 8.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.430218614221 -0.461105496425 L 0.0308868822032 -0.891324110646 L -1.29065584266 -1.38331648927 L 4.61105496425 -4.30218614221 L 1.29065584266 1.38331648927 L 0.891324110646 0.0308868822032 L 0.430218614221 0.461105496425 L -0.430218614221 -0.461105496425" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_07b9aa3b8a934c988896d1ecda0b63f6.setIcon(div_icon_ea4ae8b2cdc04f7e812bc17f5168b046);
+            
+    
+
+            var marker_2a54d38589cf421eac850714e030b07b = L.marker(
+                [-13.002565,-38.5065],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_43758d580ecd465b9fb3bcbf4a639c10 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.26359755341,8.77083581286],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="11px" viewBox="-2.26359755341 -8.77083581286 16.0 11.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.518927816188 -0.84270409601 L 3.88846802909 -3.55672947205 L 2.00790830071 -4.72320984788 L 11.9917327094 -7.38437572173 L 5.12147519783 0.333014728173 L 4.92632366147 -1.87132128003 L 0.518927816188 0.84270409601 L -0.518927816188 -0.84270409601" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_2a54d38589cf421eac850714e030b07b.setIcon(div_icon_43758d580ecd465b9fb3bcbf4a639c10);
+            
+    
+
+            var marker_f4c51d3547df4db2bde990a9c63df6dd = L.marker(
+                [-13.00194,-38.5059],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_35962fb618584191ab65db63b72ff5b3 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.10926217989,10.02714608],
+                    
+                    className: 'empty',
+                    html: '<svg width="13px" height="12px" viewBox="-2.10926217989 -10.02714608 13.0 12.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.673417208625 -0.72522102491 L 2.25448641603 -3.44397933212 L 0.182430973869 -4.22100417332 L 9.45489284885 -8.77951318484 L 4.22293422562 0.130321976146 L 3.60132083328 -1.9935372823 L 0.673417208625 0.72522102491 L -0.673417208625 -0.72522102491" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_f4c51d3547df4db2bde990a9c63df6dd.setIcon(div_icon_35962fb618584191ab65db63b72ff5b3);
+            
+    
+
+            var marker_73e6aca13ecc4eba8b14fb45ed0aa202 = L.marker(
+                [-13.00151,-38.505215],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_6e7a8053c797419394b822e83d34b4f4 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [1.60200420841,4.0],
+                    
+                    className: 'empty',
+                    html: '<svg width="15px" height="8px" viewBox="-1.60200420841 -4.0 15.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.0 -0.989664726988 L 2.88900904029 -0.989664726988 L 1.8993443133 -2.96899418096 L 11.7959915832 -0.0 L 1.8993443133 2.96899418096 L 2.88900904029 0.989664726988 L 0.0 0.989664726988 L 0.0 -0.989664726988" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_73e6aca13ecc4eba8b14fb45ed0aa202.setIcon(div_icon_6e7a8053c797419394b822e83d34b4f4);
+            
+    
+
+            var marker_98a51b88d986476391da90f46cfc9065 = L.marker(
+                [-13.0018216667,-38.50444],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_521c80be34714759aa2413f73d2a40cf = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.10490020379,4.83930145363],
+                    
+                    className: 'empty',
+                    html: '<svg width="19px" height="8px" viewBox="-2.10490020379 -4.83930145363 19.0 8.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M -0.158309261907 -0.976920902345 L 5.99791147132 -1.97453161788 L 4.70437204516 -3.77006416067 L 14.9485088543 -2.4223940727 L 5.6542276166 2.09146125341 L 6.31452999513 -0.0206898131904 L 0.158309261907 0.976920902345 L -0.158309261907 -0.976920902345" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_98a51b88d986476391da90f46cfc9065.setIcon(div_icon_521c80be34714759aa2413f73d2a40cf);
+            
+    
+
+            var marker_9dab60a6b1164180b59dae5eb087a5d6 = L.marker(
+                [-13.00201,-38.503635],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_fe5a5e181a34439cb3a243d2970795f0 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.08232918899,3.53248926957],
+                    
+                    className: 'empty',
+                    html: '<svg width="14px" height="9px" viewBox="-2.08232918899 -3.53248926957 14.0 9.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.37893018932 -0.914247331671 L 2.36497601562 -0.0910863610125 L 2.20858906259 -2.29851121367 L 10.2142718113 4.23353267454 L -0.0649920733258 3.18697277635 L 1.60711563698 1.73740830233 L -0.37893018932 0.914247331671 L 0.37893018932 -0.914247331671" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_9dab60a6b1164180b59dae5eb087a5d6.setIcon(div_icon_fe5a5e181a34439cb3a243d2970795f0);
+            
+    
+
+            var marker_867c98ba512748559ba6979230ae3618 = L.marker(
+                [-13.00259,-38.503015],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_ccddb2e10f514ba5bffcb3554e3bec6e = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [2.58240075518,2.7110036741],
+                    
+                    className: 'empty',
+                    html: '<svg width="16px" height="20px" viewBox="-2.58240075518 -2.7110036741 16.0 20.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.78582068372 -0.601599638367 L 6.99244311177 7.50560649832 L 7.96248484084 5.51658653787 L 11.6210191734 15.1795922902 L 3.24756073852 9.12618436807 L 5.42080174433 8.70880577506 L -0.78582068372 0.601599638367 L 0.78582068372 -0.601599638367" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_867c98ba512748559ba6979230ae3618.setIcon(div_icon_ccddb2e10f514ba5bffcb3554e3bec6e);
+            
+    
+
+            var marker_a2e4e562d7e049c7bb0098f46d1fd3ac = L.marker(
+                [-13.0033666667,-38.5027433333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_576aa679f58248e98a267b78369bd572 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.92661105768,1.85428710585],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="14px" viewBox="-3.92661105768 -1.85428710585 8.0 14.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.982141728318 -0.121794488143 L 1.17732515878 1.45215023345 L 3.01981412727 0.226419528845 L 1.29133382375 10.4132202764 L -2.87303624263 0.957186457704 L -0.786958297856 1.69573920974 L -0.982141728318 0.121794488143 L 0.982141728318 -0.121794488143" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_a2e4e562d7e049c7bb0098f46d1fd3ac.setIcon(div_icon_576aa679f58248e98a267b78369bd572);
+            
+    
+
+            var marker_1bdb3735dbaf4e7289a0d5749cc4bf92 = L.marker(
+                [-13.004195,-38.50256],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_882aca1e82fc4c6291966d7d93b38ea0 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [3.97657355789,1.41904499958],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="13px" viewBox="-3.97657355789 -1.41904499958 8.0 13.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.987488050262 -0.0656020002277 L 1.0765164926 1.27451754849 L 2.98589059289 0.155825497768 L 0.679446444385 10.2275120011 L -2.93903770868 0.549437499134 L -0.898459607927 1.40572154894 L -0.987488050262 0.0656020002277 L 0.987488050262 -0.0656020002277" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_1bdb3735dbaf4e7289a0d5749cc4bf92.setIcon(div_icon_882aca1e82fc4c6291966d7d93b38ea0);
+            
+    
+
+            var marker_f6398e7ba1394deeb3f368c76b3b7c6a = L.marker(
+                [-13.0049366667,-38.502375],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_ae06ede46ff144da8cf2769ce44e5404);
+            
+    
+
+                var div_icon_4925cbbab3864f859d467dab4e4fba51 = L.divIcon({
+                    iconSize: [14,14],
+                    iconAnchor: [4.50163895625,2.64587779988],
+                    
+                    className: 'empty',
+                    html: '<svg width="8px" height="23px" viewBox="-4.50163895625 -2.64587779988 8.0 23.0" xmlns="http://www.w3.org/2000/svg" version="1.1">  <path d="M 0.987672664972 0.0627612835364 L 0.423272425188 8.94471298256 L 2.46137903867 8.08256288466 L -1.12925179161 17.7710056838 L -3.46465695117 7.70599518344 L -1.55207290476 8.81919041549 L -0.987672664972 -0.0627612835364 L 0.987672664972 0.0627612835364" stroke-opacity="0.8" stroke="#000000" stroke-width="0" fill="#00BFFF" fill-opacity="0.8" /></svg>',
+                    });
+                marker_f6398e7ba1394deeb3f368c76b3b7c6a.setIcon(div_icon_4925cbbab3864f859d467dab4e4fba51);
+            
+</script>
