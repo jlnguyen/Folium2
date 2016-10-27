@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_eefa453bda174449883aff7a9f884f51 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_eefa453bda174449883aff7a9f884f51" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_eefa453bda174449883aff7a9f884f51 = L.map(
+                                  'map_eefa453bda174449883aff7a9f884f51',
+                                  {center: [45.372,-121.6972],
+                                  zoom: 12,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_1e4c6bab259c4196910e60988a3aeef7 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_eefa453bda174449883aff7a9f884f51);
+
+        
+    
+            var feature_group_b4ccdace64c643659715ffc7a809b70e = L.featureGroup(
+                ).addTo(map_eefa453bda174449883aff7a9f884f51);
+        
+    
+
+            var marker_4fe07748826e44b6863cb50892034192 = L.marker(
+                [45.3288,-121.6625],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_b4ccdace64c643659715ffc7a809b70e);
+            
+    
+            var popup_5da19319233e4a339c75f72f3b411917 = L.popup({maxWidth: '300'});
+
+            
+                var html_46184d4e2f594561b0d847d2cd1929e0 = $('<div id="html_46184d4e2f594561b0d847d2cd1929e0" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_5da19319233e4a339c75f72f3b411917.setContent(html_46184d4e2f594561b0d847d2cd1929e0);
+            
+
+            marker_4fe07748826e44b6863cb50892034192.bindPopup(popup_5da19319233e4a339c75f72f3b411917);
+
+            
+        
+    
+
+            var marker_695500c510ac4d5087ca419b98ef29d9 = L.marker(
+                [45.3311,-121.7113],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_b4ccdace64c643659715ffc7a809b70e);
+            
+    
+            var popup_6918cc6d99644a28a6226e434d17f7d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_9b675d3b1b354fc181a029ca4fe1c8fd = $('<div id="html_9b675d3b1b354fc181a029ca4fe1c8fd" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
+                popup_6918cc6d99644a28a6226e434d17f7d3.setContent(html_9b675d3b1b354fc181a029ca4fe1c8fd);
+            
+
+            marker_695500c510ac4d5087ca419b98ef29d9.bindPopup(popup_6918cc6d99644a28a6226e434d17f7d3);
+
+            
+        
+    
+            var layer_control_a3dc482f0fdd4c619addd1ca3ff45c1f = {
+                base_layers : { "stamenterrain" : tile_layer_1e4c6bab259c4196910e60988a3aeef7, },
+                overlays : { "Some icons" : feature_group_b4ccdace64c643659715ffc7a809b70e, }
+                };
+            L.control.layers(
+                layer_control_a3dc482f0fdd4c619addd1ca3ff45c1f.base_layers,
+                layer_control_a3dc482f0fdd4c619addd1ca3ff45c1f.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_eefa453bda174449883aff7a9f884f51);
+        
+</script>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_f48e38a199ad4d89bddaee13173a5509 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    
+                <style>
+                    #scroll_zoom_toggler_9eb775b3680f4e5cbeddec450119a3ee {
+                        position:absolute;
+                        width:35px;
+                        bottom:10px;
+                        height:35px;
+                        left:10px;
+                        background-color:#fff;
+                        text-align:center;
+                        line-height:35px;
+                        vertical-align: middle;
+                        }
+                </style>
+            
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f48e38a199ad4d89bddaee13173a5509" ></div>
+        
+    
+            <img id="scroll_zoom_toggler_9eb775b3680f4e5cbeddec450119a3ee" alt="scroll"
+                 src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/png/512/arrow-move.png"
+                 style="z-index: 999999"       
+                 onclick="map_f48e38a199ad4d89bddaee13173a5509.toggleScroll()">
+            </img>
+            
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_f48e38a199ad4d89bddaee13173a5509 = L.map(
+                                  'map_f48e38a199ad4d89bddaee13173a5509',
+                                  {center: [45,3],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_56e18fdc648849a0b217850ce678947f = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_f48e38a199ad4d89bddaee13173a5509);
+
+        
+    
+                    map_f48e38a199ad4d89bddaee13173a5509.scrollEnabled = true;
+
+                    map_f48e38a199ad4d89bddaee13173a5509.toggleScroll = function() {
+                        if (this.scrollEnabled) {
+                            this.scrollEnabled = false;
+                            this.scrollWheelZoom.disable();
+                            }
+                        else {
+                            this.scrollEnabled = true;
+                            this.scrollWheelZoom.enable();
+                            }
+                        };
+
+                    map_f48e38a199ad4d89bddaee13173a5509.toggleScroll();
+            
+</script>

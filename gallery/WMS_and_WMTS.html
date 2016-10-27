@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_b5dbfbf1f0d74f148f97d96c40eab8ef {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b5dbfbf1f0d74f148f97d96c40eab8ef" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var southWest = L.latLng(-90, -180);
+                var northEast = L.latLng(90, 180);
+                var bounds = L.latLngBounds(southWest, northEast);
+            
+
+            var map_b5dbfbf1f0d74f148f97d96c40eab8ef = L.map(
+                                  'map_b5dbfbf1f0d74f148f97d96c40eab8ef',
+                                  {center: [41,-70],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_391f289121d646aba56fe4b3dfeb42db = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_b5dbfbf1f0d74f148f97d96c40eab8ef);
+
+        
+    
+            var macro_element_2f4e548692d54cc980a1a3e1a761950c = L.tileLayer.wms(
+                'http://demo.opengeo.org/geoserver/ows',
+                {
+                    layers: 'nasa:bluemarble',
+                    styles: '',
+                    format: 'image/png',
+                    transparent: true,
+                    version: '1.1.1',
+                    
+                    }
+                ).addTo(map_b5dbfbf1f0d74f148f97d96c40eab8ef);
+
+        
+    
+            var tile_layer_2f2ecd1a839c44e59cd35f5cf835e7c2 = L.tileLayer(
+                'http://hfradar.ndbc.noaa.gov/tilesavg.php?s=20&e=100&x={x}&y={y}&z={z}&t=2016-10-27 12:00&rez=1',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    continuousWorld: false,
+                    noWrap: false,
+                    attribution: 'hfradar.ndbc.noaa.gov',
+                    detectRetina: false
+                    }
+                ).addTo(map_b5dbfbf1f0d74f148f97d96c40eab8ef);
+
+        
+    
+            var layer_control_c679d6a244154c6b9a5936e87e39c96d = {
+                base_layers : { "openstreetmap" : tile_layer_391f289121d646aba56fe4b3dfeb42db, },
+                overlays : { "bluemarble" : macro_element_2f4e548692d54cc980a1a3e1a761950c,"hfradar 1km" : tile_layer_2f2ecd1a839c44e59cd35f5cf835e7c2, }
+                };
+            L.control.layers(
+                layer_control_c679d6a244154c6b9a5936e87e39c96d.base_layers,
+                layer_control_c679d6a244154c6b9a5936e87e39c96d.overlays,
+                {position: 'topright',
+                 collapsed: true,
+                 autoZIndex: true
+                }).addTo(map_b5dbfbf1f0d74f148f97d96c40eab8ef);
+        
+</script>
