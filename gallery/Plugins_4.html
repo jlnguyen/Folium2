@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_cf78f88967ea41aa807462072ba67265 {
+            <style> #map_0bc52555a21b402e99ce968a953dcd02 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -33,7 +33,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_cf78f88967ea41aa807462072ba67265" ></div>
+            <div class="folium-map" id="map_0bc52555a21b402e99ce968a953dcd02" ></div>
         
 </body>
 <script>    
@@ -45,8 +45,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_cf78f88967ea41aa807462072ba67265 = L.map(
-                                  'map_cf78f88967ea41aa807462072ba67265',
+            var map_0bc52555a21b402e99ce968a953dcd02 = L.map(
+                                  'map_0bc52555a21b402e99ce968a953dcd02',
                                   {center: [41.9,-97.3],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -57,7 +57,7 @@
             
         
     
-            var tile_layer_1c19041ccb264c57a36eb3fc2b2abed2 = L.tileLayer(
+            var tile_layer_7ba0637516b74d31b2c7931c1c9d3ae0 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -67,7 +67,7 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_cf78f88967ea41aa807462072ba67265);
+                ).addTo(map_0bc52555a21b402e99ce968a953dcd02);
 
         
     
@@ -76,8 +76,8 @@
                 title: 'Expand me',
                 titleCancel: 'Exit me',
                 forceSeparateButton: true,
-                }).addTo(map_cf78f88967ea41aa807462072ba67265);
-            map_cf78f88967ea41aa807462072ba67265.on('enterFullscreen', function(){
+                }).addTo(map_0bc52555a21b402e99ce968a953dcd02);
+            map_0bc52555a21b402e99ce968a953dcd02.on('enterFullscreen', function(){
                 console.log('entered fullscreen');
             });
 

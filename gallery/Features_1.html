@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_52839c48e536424394f36c6def42c3ba {
+            <style> #map_2f21cb2b32f4419d90d8674e9fc2e5f6 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_52839c48e536424394f36c6def42c3ba" ></div>
+            <div class="folium-map" id="map_2f21cb2b32f4419d90d8674e9fc2e5f6" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_52839c48e536424394f36c6def42c3ba = L.map(
-                                  'map_52839c48e536424394f36c6def42c3ba',
+            var map_2f21cb2b32f4419d90d8674e9fc2e5f6 = L.map(
+                                  'map_2f21cb2b32f4419d90d8674e9fc2e5f6',
                                   {center: [40,-100],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_bce81984e054421ebe4700038e6ba392 = L.tileLayer(
+            var tile_layer_25b8336dfb684b91aa34c0ce3b39147d = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,11 +65,11 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_52839c48e536424394f36c6def42c3ba);
+                ).addTo(map_2f21cb2b32f4419d90d8674e9fc2e5f6);
 
         
     
-            var macro_element_b2ca30d0449d4dcf8c407f234f2efeaf = L.tileLayer.wms(
+            var macro_element_37520e8dd1ea47d99a71520951f088da = L.tileLayer.wms(
                 'http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi',
                 {
                     layers: 'nexrad-n0r-900913',
@@ -79,7 +79,7 @@
                     version: '1.1.1',
                      attribution: 'Weather data © 2012 IEM Nexrad'
                     }
-                ).addTo(map_52839c48e536424394f36c6def42c3ba);
+                ).addTo(map_2f21cb2b32f4419d90d8674e9fc2e5f6);
 
         
 </script>
