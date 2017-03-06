@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_610fc1a11b174b8ca7f9f0e5abb85cb1 {
+            <style> #map_638a21682d0847feaa4d7eec876be978 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -30,7 +30,7 @@
         
     
                 <style>
-                    #scroll_zoom_toggler_a0b24d6988cc4edabfd2a927a7140fec {
+                    #scroll_zoom_toggler_abeeea8145d346a9a225b28c5c386c63 {
                         position:absolute;
                         width:35px;
                         bottom:10px;
@@ -46,13 +46,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_610fc1a11b174b8ca7f9f0e5abb85cb1" ></div>
+            <div class="folium-map" id="map_638a21682d0847feaa4d7eec876be978" ></div>
         
     
-            <img id="scroll_zoom_toggler_a0b24d6988cc4edabfd2a927a7140fec" alt="scroll"
+            <img id="scroll_zoom_toggler_abeeea8145d346a9a225b28c5c386c63" alt="scroll"
                  src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/png/512/arrow-move.png"
-                 style="z-index: 999999"       
-                 onclick="map_610fc1a11b174b8ca7f9f0e5abb85cb1.toggleScroll()">
+                 style="z-index: 999999"
+                 onclick="map_638a21682d0847feaa4d7eec876be978.toggleScroll()">
             </img>
             
 </body>
@@ -65,8 +65,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_610fc1a11b174b8ca7f9f0e5abb85cb1 = L.map(
-                                  'map_610fc1a11b174b8ca7f9f0e5abb85cb1',
+            var map_638a21682d0847feaa4d7eec876be978 = L.map(
+                                  'map_638a21682d0847feaa4d7eec876be978',
                                   {center: [45,3],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -77,7 +77,7 @@
             
         
     
-            var tile_layer_971109f98c4c43eba5c3453b930a89c8 = L.tileLayer(
+            var tile_layer_6f2d535407d445f4a27cc5f2989e84f8 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -87,13 +87,13 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_610fc1a11b174b8ca7f9f0e5abb85cb1);
+                ).addTo(map_638a21682d0847feaa4d7eec876be978);
 
         
     
-                    map_610fc1a11b174b8ca7f9f0e5abb85cb1.scrollEnabled = true;
+                    map_638a21682d0847feaa4d7eec876be978.scrollEnabled = true;
 
-                    map_610fc1a11b174b8ca7f9f0e5abb85cb1.toggleScroll = function() {
+                    map_638a21682d0847feaa4d7eec876be978.toggleScroll = function() {
                         if (this.scrollEnabled) {
                             this.scrollEnabled = false;
                             this.scrollWheelZoom.disable();
@@ -104,6 +104,6 @@
                             }
                         };
 
-                    map_610fc1a11b174b8ca7f9f0e5abb85cb1.toggleScroll();
+                    map_638a21682d0847feaa4d7eec876be978.toggleScroll();
             
 </script>
