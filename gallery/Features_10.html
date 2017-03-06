@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_52a4451f8dbb423e90af3711dee64ad7 {
+            <style> #map_218ef1a887bb4b11be53e7a594d4d9a0 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_52a4451f8dbb423e90af3711dee64ad7" ></div>
+            <div class="folium-map" id="map_218ef1a887bb4b11be53e7a594d4d9a0" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_52a4451f8dbb423e90af3711dee64ad7 = L.map(
-                                  'map_52a4451f8dbb423e90af3711dee64ad7',
+            var map_218ef1a887bb4b11be53e7a594d4d9a0 = L.map(
+                                  'map_218ef1a887bb4b11be53e7a594d4d9a0',
                                   {center: [0,0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_4dac3bd1ab934bd88471a0334659801f = L.tileLayer(
+            var tile_layer_79a3fbebb4254e0087735aa5cba325c3 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,11 +65,11 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_52a4451f8dbb423e90af3711dee64ad7);
+                ).addTo(map_218ef1a887bb4b11be53e7a594d4d9a0);
 
         
     
-            var tile_layer_9813e2fad36f4f2fa33b3646625e944e = L.tileLayer(
+            var tile_layer_5f39cccbd3a843dc994fb530b4e30926 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -79,20 +79,20 @@
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_52a4451f8dbb423e90af3711dee64ad7);
+                ).addTo(map_218ef1a887bb4b11be53e7a594d4d9a0);
 
         
     
-            var layer_control_9c70b8abc13b42279dc142b4147e521e = {
-                base_layers : { "openstreetmap" : tile_layer_4dac3bd1ab934bd88471a0334659801f,"stamentoner" : tile_layer_9813e2fad36f4f2fa33b3646625e944e, },
+            var layer_control_0c791aa4e842497bb19162d2957e04b9 = {
+                base_layers : { "openstreetmap" : tile_layer_79a3fbebb4254e0087735aa5cba325c3,"stamentoner" : tile_layer_5f39cccbd3a843dc994fb530b4e30926, },
                 overlays : {  }
                 };
             L.control.layers(
-                layer_control_9c70b8abc13b42279dc142b4147e521e.base_layers,
-                layer_control_9c70b8abc13b42279dc142b4147e521e.overlays,
+                layer_control_0c791aa4e842497bb19162d2957e04b9.base_layers,
+                layer_control_0c791aa4e842497bb19162d2957e04b9.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_52a4451f8dbb423e90af3711dee64ad7);
+                }).addTo(map_218ef1a887bb4b11be53e7a594d4d9a0);
         
 </script>
