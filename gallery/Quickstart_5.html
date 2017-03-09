@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_ee897d09bef84ec58b71eb1d7361fe2c {
+            <style> #map_91509de7f45f46728d7bc2c3a0db866e {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_ee897d09bef84ec58b71eb1d7361fe2c" ></div>
+            <div class="folium-map" id="map_91509de7f45f46728d7bc2c3a0db866e" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_ee897d09bef84ec58b71eb1d7361fe2c = L.map(
-                                  'map_ee897d09bef84ec58b71eb1d7361fe2c',
+            var map_91509de7f45f46728d7bc2c3a0db866e = L.map(
+                                  'map_91509de7f45f46728d7bc2c3a0db866e',
                                   {center: [46.8527,-121.7649],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_149a5eb69b234f9f94ebab39f8a6cd03 = L.tileLayer(
+            var tile_layer_2c60607f14c345519b8ded3f4f16f842 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -65,40 +65,40 @@
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_ee897d09bef84ec58b71eb1d7361fe2c);
+                ).addTo(map_91509de7f45f46728d7bc2c3a0db866e);
 
         
     
 
-            var marker_056f414379fe4093ab0dc339321d8317 = L.marker(
+            var marker_73a6e98768c84e27a0523ad8be6555b5 = L.marker(
                 [46.8354,-121.7325],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_ee897d09bef84ec58b71eb1d7361fe2c);
+                .addTo(map_91509de7f45f46728d7bc2c3a0db866e);
             
     
-            var popup_80c6a498853e486aab1d92594e03792d = L.popup({maxWidth: '300'});
+            var popup_ffed350f14d8453d92169ab351c44d66 = L.popup({maxWidth: '300'});
 
             
-                var html_62bf59e824114bc09b327c43ffb00b39 = $('<div id="html_62bf59e824114bc09b327c43ffb00b39" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
-                popup_80c6a498853e486aab1d92594e03792d.setContent(html_62bf59e824114bc09b327c43ffb00b39);
+                var html_4e1923c5b38045e2be1bc009944d0e1d = $('<div id="html_4e1923c5b38045e2be1bc009944d0e1d" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
+                popup_ffed350f14d8453d92169ab351c44d66.setContent(html_4e1923c5b38045e2be1bc009944d0e1d);
             
 
-            marker_056f414379fe4093ab0dc339321d8317.bindPopup(popup_80c6a498853e486aab1d92594e03792d);
+            marker_73a6e98768c84e27a0523ad8be6555b5.bindPopup(popup_ffed350f14d8453d92169ab351c44d66);
 
             
         
     
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_ee897d09bef84ec58b71eb1d7361fe2c);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_91509de7f45f46728d7bc2c3a0db866e);
                     new_mark.dragging.enable();
-                    new_mark.on('dblclick', function(e){ map_ee897d09bef84ec58b71eb1d7361fe2c.removeLayer(e.target)})
+                    new_mark.on('dblclick', function(e){ map_91509de7f45f46728d7bc2c3a0db866e.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup("Waypoint");
                     };
-                map_ee897d09bef84ec58b71eb1d7361fe2c.on('click', newMarker);
+                map_91509de7f45f46728d7bc2c3a0db866e.on('click', newMarker);
             
 </script>
