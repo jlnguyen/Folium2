@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_998029e9328f45b68fbe44b2bf6f6f0c {
+            <style> #map_d0266a1183b149a7a5a70758d8b1d735 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -30,7 +30,7 @@
         
     
                 <style>
-                    #scroll_zoom_toggler_cda224a6066d4dd8bb17f099d27617e8 {
+                    #scroll_zoom_toggler_59305ab41fbb47c598b0dba42edc69ec {
                         position:absolute;
                         width:35px;
                         bottom:10px;
@@ -46,13 +46,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_998029e9328f45b68fbe44b2bf6f6f0c" ></div>
+            <div class="folium-map" id="map_d0266a1183b149a7a5a70758d8b1d735" ></div>
         
     
-            <img id="scroll_zoom_toggler_cda224a6066d4dd8bb17f099d27617e8" alt="scroll"
+            <img id="scroll_zoom_toggler_59305ab41fbb47c598b0dba42edc69ec" alt="scroll"
                  src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/png/512/arrow-move.png"
                  style="z-index: 999999"
-                 onclick="map_998029e9328f45b68fbe44b2bf6f6f0c.toggleScroll()">
+                 onclick="map_d0266a1183b149a7a5a70758d8b1d735.toggleScroll()">
             </img>
             
 </body>
@@ -65,8 +65,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_998029e9328f45b68fbe44b2bf6f6f0c = L.map(
-                                  'map_998029e9328f45b68fbe44b2bf6f6f0c',
+            var map_d0266a1183b149a7a5a70758d8b1d735 = L.map(
+                                  'map_d0266a1183b149a7a5a70758d8b1d735',
                                   {center: [45,3],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -77,7 +77,7 @@
             
         
     
-            var tile_layer_ef2fb6cc983b4a83902b9ca5fed4ea0f = L.tileLayer(
+            var tile_layer_989ccab557ec44fea63bdd5f25c1d631 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -87,13 +87,13 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_998029e9328f45b68fbe44b2bf6f6f0c);
+                ).addTo(map_d0266a1183b149a7a5a70758d8b1d735);
 
         
     
-                    map_998029e9328f45b68fbe44b2bf6f6f0c.scrollEnabled = true;
+                    map_d0266a1183b149a7a5a70758d8b1d735.scrollEnabled = true;
 
-                    map_998029e9328f45b68fbe44b2bf6f6f0c.toggleScroll = function() {
+                    map_d0266a1183b149a7a5a70758d8b1d735.toggleScroll = function() {
                         if (this.scrollEnabled) {
                             this.scrollEnabled = false;
                             this.scrollWheelZoom.disable();
@@ -104,6 +104,6 @@
                             }
                         };
 
-                    map_998029e9328f45b68fbe44b2bf6f6f0c.toggleScroll();
+                    map_d0266a1183b149a7a5a70758d8b1d735.toggleScroll();
             
 </script>
