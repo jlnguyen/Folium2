@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_6edcd6880c114f869958d52717b35d7a {
+            <style> #map_8279c71f956a48e888019e9c2cbf6255 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_6edcd6880c114f869958d52717b35d7a" ></div>
+            <div class="folium-map" id="map_8279c71f956a48e888019e9c2cbf6255" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_6edcd6880c114f869958d52717b35d7a = L.map(
-                                  'map_6edcd6880c114f869958d52717b35d7a',
+            var map_8279c71f956a48e888019e9c2cbf6255 = L.map(
+                                  'map_8279c71f956a48e888019e9c2cbf6255',
                                   {center: [43,-100],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_f384789559ee40e7b9758b5bb88fe060 = L.tileLayer(
+            var tile_layer_b3124b1994e3468b8da25120ea04df5a = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,18 +65,18 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_6edcd6880c114f869958d52717b35d7a);
+                ).addTo(map_8279c71f956a48e888019e9c2cbf6255);
 
         
     
 
             
 
-                var geo_json_5781f6614c1b470fb7f50446cf63c78b = L.geoJson(
+                var geo_json_cadab872cbc545b0b4a85466bfb1db9a = L.geoJson(
                     "us-states.json"
                     
-                    ).addTo(map_6edcd6880c114f869958d52717b35d7a);
-                geo_json_5781f6614c1b470fb7f50446cf63c78b.setStyle(function(feature) {return feature.properties.style;});
+                    ).addTo(map_8279c71f956a48e888019e9c2cbf6255);
+                geo_json_cadab872cbc545b0b4a85466bfb1db9a.setStyle(function(feature) {return feature.properties.style;});
 
             
 </script>
