@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_5352d9656cf24cc59ff740338becc640 {
+            <style> #map_1c26951c5cef4cd5815c7aff84fcfd03 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_5352d9656cf24cc59ff740338becc640" ></div>
+            <div class="folium-map" id="map_1c26951c5cef4cd5815c7aff84fcfd03" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_5352d9656cf24cc59ff740338becc640 = L.map(
-                                  'map_5352d9656cf24cc59ff740338becc640',
+            var map_1c26951c5cef4cd5815c7aff84fcfd03 = L.map(
+                                  'map_1c26951c5cef4cd5815c7aff84fcfd03',
                                   {center: [41,-70],
                                   zoom: 5,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_9f9c011ce9694da68aa9d6748150c710 = L.tileLayer(
+            var tile_layer_1a7818b8735a45c3ae41806d6736cf2a = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,11 +65,11 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_5352d9656cf24cc59ff740338becc640);
+                ).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
 
         
     
-            var macro_element_a0349010480349deb81767917f33449d = L.tileLayer.wms(
+            var macro_element_fc19a98508ec4b5ca5cf4275a85af9f7 = L.tileLayer.wms(
                 'http://demo.opengeo.org/geoserver/ows',
                 {
                     layers: 'nasa:bluemarble',
@@ -79,12 +79,12 @@
                     version: '1.1.1',
                     
                     }
-                ).addTo(map_5352d9656cf24cc59ff740338becc640);
+                ).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
 
         
     
-            var tile_layer_f291ad76032f400ebcb222b8e00c93d6 = L.tileLayer(
-                'http://hfradar.ndbc.noaa.gov/tilesavg.php?s=20&e=100&x={x}&y={y}&z={z}&t=2017-05-26 12:00&rez=1',
+            var tile_layer_aec1df7f8e57448099da96803ca75540 = L.tileLayer(
+                'http://hfradar.ndbc.noaa.gov/tilesavg.php?s=20&e=100&x={x}&y={y}&z={z}&t=2017-06-02 12:00&rez=1',
                 {
                     maxZoom: 18,
                     minZoom: 1,
@@ -93,20 +93,20 @@
                     attribution: 'hfradar.ndbc.noaa.gov',
                     detectRetina: false
                     }
-                ).addTo(map_5352d9656cf24cc59ff740338becc640);
+                ).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
 
         
     
-            var layer_control_6781a4966370432582b082612cc5c5c7 = {
-                base_layers : { "openstreetmap" : tile_layer_9f9c011ce9694da68aa9d6748150c710, },
-                overlays : { "bluemarble" : macro_element_a0349010480349deb81767917f33449d,"hfradar 1km" : tile_layer_f291ad76032f400ebcb222b8e00c93d6, }
+            var layer_control_e467a0c1c5bd474f80eb96d97aa96552 = {
+                base_layers : { "openstreetmap" : tile_layer_1a7818b8735a45c3ae41806d6736cf2a, },
+                overlays : { "bluemarble" : macro_element_fc19a98508ec4b5ca5cf4275a85af9f7,"hfradar 1km" : tile_layer_aec1df7f8e57448099da96803ca75540, }
                 };
             L.control.layers(
-                layer_control_6781a4966370432582b082612cc5c5c7.base_layers,
-                layer_control_6781a4966370432582b082612cc5c5c7.overlays,
+                layer_control_e467a0c1c5bd474f80eb96d97aa96552.base_layers,
+                layer_control_e467a0c1c5bd474f80eb96d97aa96552.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_5352d9656cf24cc59ff740338becc640);
+                }).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
         
 </script>

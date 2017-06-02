@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_40f184d87f974c07954b19915ccd7747 {
+            <style> #map_9da87c2237bf4b26b31cb5e4cfa94de7 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_40f184d87f974c07954b19915ccd7747" ></div>
+            <div class="folium-map" id="map_9da87c2237bf4b26b31cb5e4cfa94de7" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_40f184d87f974c07954b19915ccd7747 = L.map(
-                                  'map_40f184d87f974c07954b19915ccd7747',
+            var map_9da87c2237bf4b26b31cb5e4cfa94de7 = L.map(
+                                  'map_9da87c2237bf4b26b31cb5e4cfa94de7',
                                   {center: [37,0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_6928e045e634471b90a14acb155771a9 = L.tileLayer(
+            var tile_layer_465420e15f3a4059a4d837595344a5d0 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,27 +65,27 @@
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_40f184d87f974c07954b19915ccd7747);
+                ).addTo(map_9da87c2237bf4b26b31cb5e4cfa94de7);
 
         
     
-                var image_overlay_c3639cd3e7414b89b7f65dab13618f44 = L.imageOverlay(
+                var image_overlay_48689c015a274c2480fd970f751b5235 = L.imageOverlay(
                     'merc.png',
                     [[-82, -180], [82, 180]],
                     {"opacity": 0.8}
-                    ).addTo(map_40f184d87f974c07954b19915ccd7747);
+                    ).addTo(map_9da87c2237bf4b26b31cb5e4cfa94de7);
             
     
-            var layer_control_dc917a5a17f6427d967397634e7d1505 = {
-                base_layers : { "stamentoner" : tile_layer_6928e045e634471b90a14acb155771a9, },
-                overlays : { "macro_element_c3639cd3e7414b89b7f65dab13618f44" : image_overlay_c3639cd3e7414b89b7f65dab13618f44, }
+            var layer_control_fefec21b50944e97a9d2b02e16580cf8 = {
+                base_layers : { "stamentoner" : tile_layer_465420e15f3a4059a4d837595344a5d0, },
+                overlays : { "macro_element_48689c015a274c2480fd970f751b5235" : image_overlay_48689c015a274c2480fd970f751b5235, }
                 };
             L.control.layers(
-                layer_control_dc917a5a17f6427d967397634e7d1505.base_layers,
-                layer_control_dc917a5a17f6427d967397634e7d1505.overlays,
+                layer_control_fefec21b50944e97a9d2b02e16580cf8.base_layers,
+                layer_control_fefec21b50944e97a9d2b02e16580cf8.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_40f184d87f974c07954b19915ccd7747);
+                }).addTo(map_9da87c2237bf4b26b31cb5e4cfa94de7);
         
 </script>
