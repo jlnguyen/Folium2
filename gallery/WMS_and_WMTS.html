@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1c26951c5cef4cd5815c7aff84fcfd03 {
+            <style> #map_8c782d1d67714a248ad59348aef9201e {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1c26951c5cef4cd5815c7aff84fcfd03" ></div>
+            <div class="folium-map" id="map_8c782d1d67714a248ad59348aef9201e" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1c26951c5cef4cd5815c7aff84fcfd03 = L.map(
-                                  'map_1c26951c5cef4cd5815c7aff84fcfd03',
+            var map_8c782d1d67714a248ad59348aef9201e = L.map(
+                                  'map_8c782d1d67714a248ad59348aef9201e',
                                   {center: [41,-70],
                                   zoom: 5,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1a7818b8735a45c3ae41806d6736cf2a = L.tileLayer(
+            var tile_layer_d47dd5d4db3e4657a9a9afcc09875d98 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,13 +63,14 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
+                ).addTo(map_8c782d1d67714a248ad59348aef9201e);
 
         
     
-            var macro_element_fc19a98508ec4b5ca5cf4275a85af9f7 = L.tileLayer.wms(
+            var macro_element_0f75f3b048fe44cc810ba6f5c7c09181 = L.tileLayer.wms(
                 'http://demo.opengeo.org/geoserver/ows',
                 {
                     layers: 'nasa:bluemarble',
@@ -79,34 +80,35 @@
                     version: '1.1.1',
                     
                     }
-                ).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
+                ).addTo(map_8c782d1d67714a248ad59348aef9201e);
 
         
     
-            var tile_layer_aec1df7f8e57448099da96803ca75540 = L.tileLayer(
-                'http://hfradar.ndbc.noaa.gov/tilesavg.php?s=20&e=100&x={x}&y={y}&z={z}&t=2017-06-02 12:00&rez=1',
+            var tile_layer_27398031ba9d42ae894152d28c4740aa = L.tileLayer(
+                'http://hfradar.ndbc.noaa.gov/tilesavg.php?s=20&e=100&x={x}&y={y}&z={z}&t=2017-06-08 12:00&rez=1',
                 {
                     maxZoom: 18,
                     minZoom: 1,
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'hfradar.ndbc.noaa.gov',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
+                ).addTo(map_8c782d1d67714a248ad59348aef9201e);
 
         
     
-            var layer_control_e467a0c1c5bd474f80eb96d97aa96552 = {
-                base_layers : { "openstreetmap" : tile_layer_1a7818b8735a45c3ae41806d6736cf2a, },
-                overlays : { "bluemarble" : macro_element_fc19a98508ec4b5ca5cf4275a85af9f7,"hfradar 1km" : tile_layer_aec1df7f8e57448099da96803ca75540, }
+            var layer_control_89ba986b9ed94e0d9e1cf7aa9b25324f = {
+                base_layers : { "openstreetmap" : tile_layer_d47dd5d4db3e4657a9a9afcc09875d98, },
+                overlays : { "bluemarble" : macro_element_0f75f3b048fe44cc810ba6f5c7c09181,"hfradar 1km" : tile_layer_27398031ba9d42ae894152d28c4740aa, }
                 };
             L.control.layers(
-                layer_control_e467a0c1c5bd474f80eb96d97aa96552.base_layers,
-                layer_control_e467a0c1c5bd474f80eb96d97aa96552.overlays,
+                layer_control_89ba986b9ed94e0d9e1cf7aa9b25324f.base_layers,
+                layer_control_89ba986b9ed94e0d9e1cf7aa9b25324f.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_1c26951c5cef4cd5815c7aff84fcfd03);
+                }).addTo(map_8c782d1d67714a248ad59348aef9201e);
         
 </script>

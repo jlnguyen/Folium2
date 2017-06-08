@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_4e553b8278c14081a21cf0a69c227223 {
+            <style> #map_720ac1f29e8144119f3a3af8b4fa9ae0 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_4e553b8278c14081a21cf0a69c227223" ></div>
+            <div class="folium-map" id="map_720ac1f29e8144119f3a3af8b4fa9ae0" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_4e553b8278c14081a21cf0a69c227223 = L.map(
-                                  'map_4e553b8278c14081a21cf0a69c227223',
+            var map_720ac1f29e8144119f3a3af8b4fa9ae0 = L.map(
+                                  'map_720ac1f29e8144119f3a3af8b4fa9ae0',
                                   {center: [45.5236,-122.675],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_8cbb91629a3e426b8911e23541f658b0 = L.tileLayer(
+            var tile_layer_56e3a5fe86bf4ee183aaf011bf07bab9 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,36 +63,37 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_4e553b8278c14081a21cf0a69c227223);
+                ).addTo(map_720ac1f29e8144119f3a3af8b4fa9ae0);
 
         
     
 
-            var marker_cb6395317c754fe2857257c4566bebab = L.marker(
+            var marker_e9a4ebcd7fce4a149ca5a12a1177104b = L.marker(
                 [45.5244,-122.6699],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_4e553b8278c14081a21cf0a69c227223);
+                .addTo(map_720ac1f29e8144119f3a3af8b4fa9ae0);
             
     
-            var popup_9a428677c9ba4a0da8bda7ad8f4a88b9 = L.popup({maxWidth: '300'});
+            var popup_2602c51471244c359344779d9cf4efc7 = L.popup({maxWidth: '300'});
 
             
-                var html_f794d8151f114e0c92e9cfb216542aaf = $('<div id="html_f794d8151f114e0c92e9cfb216542aaf" style="width: 100.0%; height: 100.0%;">The Waterfront</div>')[0];
-                popup_9a428677c9ba4a0da8bda7ad8f4a88b9.setContent(html_f794d8151f114e0c92e9cfb216542aaf);
+                var html_ac8bfb7237af439090dfcb525e6a7f02 = $('<div id="html_ac8bfb7237af439090dfcb525e6a7f02" style="width: 100.0%; height: 100.0%;">The Waterfront</div>')[0];
+                popup_2602c51471244c359344779d9cf4efc7.setContent(html_ac8bfb7237af439090dfcb525e6a7f02);
             
 
-            marker_cb6395317c754fe2857257c4566bebab.bindPopup(popup_9a428677c9ba4a0da8bda7ad8f4a88b9);
+            marker_e9a4ebcd7fce4a149ca5a12a1177104b.bindPopup(popup_2602c51471244c359344779d9cf4efc7);
 
             
         
     
 
-            var circle_marker_67c90dd9e7ac46dea7048ec1bf4dc551 = L.circleMarker(
+            var circle_marker_54a56149a71d4e2986e65f06af8850f0 = L.circleMarker(
                 [45.5215,-122.6261],
                 {
                     color: '#3186cc',
@@ -102,17 +103,17 @@
                     }
                 )
                 .setRadius(50)
-                .addTo(map_4e553b8278c14081a21cf0a69c227223);
+                .addTo(map_720ac1f29e8144119f3a3af8b4fa9ae0);
             
     
-            var popup_7b9e34ae71024a929f040becd136aa35 = L.popup({maxWidth: '300'});
+            var popup_9e03cb3d8e3646c6ac0fb22653a48bf7 = L.popup({maxWidth: '300'});
 
             
-                var html_a335cd34f07d4704a2be72e7d04e037a = $('<div id="html_a335cd34f07d4704a2be72e7d04e037a" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
-                popup_7b9e34ae71024a929f040becd136aa35.setContent(html_a335cd34f07d4704a2be72e7d04e037a);
+                var html_ac5d5dee251b4f2a974cb2f140e438a6 = $('<div id="html_ac5d5dee251b4f2a974cb2f140e438a6" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
+                popup_9e03cb3d8e3646c6ac0fb22653a48bf7.setContent(html_ac5d5dee251b4f2a974cb2f140e438a6);
             
 
-            circle_marker_67c90dd9e7ac46dea7048ec1bf4dc551.bindPopup(popup_7b9e34ae71024a929f040becd136aa35);
+            circle_marker_54a56149a71d4e2986e65f06af8850f0.bindPopup(popup_9e03cb3d8e3646c6ac0fb22653a48bf7);
 
             
         

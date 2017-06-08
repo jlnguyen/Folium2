@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_bd70f690530849d88ca0d6666f88cdbe {
+            <style> #map_777ec6f9785d42ca827e42f559599bc8 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_bd70f690530849d88ca0d6666f88cdbe" ></div>
+            <div class="folium-map" id="map_777ec6f9785d42ca827e42f559599bc8" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_bd70f690530849d88ca0d6666f88cdbe = L.map(
-                                  'map_bd70f690530849d88ca0d6666f88cdbe',
+            var map_777ec6f9785d42ca827e42f559599bc8 = L.map(
+                                  'map_777ec6f9785d42ca827e42f559599bc8',
                                   {center: [46.8527,-121.7649],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_a7e1afacd2634cdcaf0549aeaad38813 = L.tileLayer(
+            var tile_layer_df0dc553a9ac43b99035e1ce7118a52b = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -63,42 +63,43 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_bd70f690530849d88ca0d6666f88cdbe);
+                ).addTo(map_777ec6f9785d42ca827e42f559599bc8);
 
         
     
 
-            var marker_ed69c8fde5024456b63e1fd790e95903 = L.marker(
+            var marker_89aa4954018c40d691c6007e7110762f = L.marker(
                 [46.8354,-121.7325],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_bd70f690530849d88ca0d6666f88cdbe);
+                .addTo(map_777ec6f9785d42ca827e42f559599bc8);
             
     
-            var popup_4daaa5a64c2246518e97e4b0ec3ef28a = L.popup({maxWidth: '300'});
+            var popup_b2bdfa13c8854ecaa1d4cc09503df9be = L.popup({maxWidth: '300'});
 
             
-                var html_ac183598b8dc4a028c276c4f9f83a98b = $('<div id="html_ac183598b8dc4a028c276c4f9f83a98b" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
-                popup_4daaa5a64c2246518e97e4b0ec3ef28a.setContent(html_ac183598b8dc4a028c276c4f9f83a98b);
+                var html_ed054457eb16467b920c6c9de3946abd = $('<div id="html_ed054457eb16467b920c6c9de3946abd" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
+                popup_b2bdfa13c8854ecaa1d4cc09503df9be.setContent(html_ed054457eb16467b920c6c9de3946abd);
             
 
-            marker_ed69c8fde5024456b63e1fd790e95903.bindPopup(popup_4daaa5a64c2246518e97e4b0ec3ef28a);
+            marker_89aa4954018c40d691c6007e7110762f.bindPopup(popup_b2bdfa13c8854ecaa1d4cc09503df9be);
 
             
         
     
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_bd70f690530849d88ca0d6666f88cdbe);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_777ec6f9785d42ca827e42f559599bc8);
                     new_mark.dragging.enable();
-                    new_mark.on('dblclick', function(e){ map_bd70f690530849d88ca0d6666f88cdbe.removeLayer(e.target)})
+                    new_mark.on('dblclick', function(e){ map_777ec6f9785d42ca827e42f559599bc8.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup("Waypoint");
                     };
-                map_bd70f690530849d88ca0d6666f88cdbe.on('click', newMarker);
+                map_777ec6f9785d42ca827e42f559599bc8.on('click', newMarker);
             
 </script>

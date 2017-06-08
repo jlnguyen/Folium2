@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_70c5017834ac4fdb884a06e1c5716243 {
+            <style> #map_ef0fd96448bd4aa9898e93b3e0903694 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_70c5017834ac4fdb884a06e1c5716243" ></div>
+            <div class="folium-map" id="map_ef0fd96448bd4aa9898e93b3e0903694" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_70c5017834ac4fdb884a06e1c5716243 = L.map(
-                                  'map_70c5017834ac4fdb884a06e1c5716243',
+            var map_ef0fd96448bd4aa9898e93b3e0903694 = L.map(
+                                  'map_ef0fd96448bd4aa9898e93b3e0903694',
                                   {center: [0,0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1171e3bccbbe40a9ae8ef5988663be5e = L.tileLayer(
+            var tile_layer_aa71a91818dc482b922f7efea8d2f15d = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,49 +63,50 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_70c5017834ac4fdb884a06e1c5716243);
+                ).addTo(map_ef0fd96448bd4aa9898e93b3e0903694);
 
         
     
-                var poly_line_dac7504cb41840d0a8edd1f5538be0d0 = L.polyline(
+                var poly_line_8e437846244545838720f73e760d8809 = L.polyline(
                     [[2, 179], [2, -179]],
                     {
                         color: 'red',
                         weight: 4,
                         opacity: 1.0,
                         });
-                map_70c5017834ac4fdb884a06e1c5716243.addLayer(poly_line_dac7504cb41840d0a8edd1f5538be0d0);
+                map_ef0fd96448bd4aa9898e93b3e0903694.addLayer(poly_line_8e437846244545838720f73e760d8809);
             
     
-                var poly_line_7c3a0d2e73a04ccea80a20b93ba89339 = L.polyline(
+                var poly_line_b12406e934474d0c9cd9ed3b3a4be725 = L.polyline(
                     [[-2, 179], [-2, 181]],
                     {
                         color: 'blue',
                         weight: 4,
                         opacity: 1.0,
                         });
-                map_70c5017834ac4fdb884a06e1c5716243.addLayer(poly_line_7c3a0d2e73a04ccea80a20b93ba89339);
+                map_ef0fd96448bd4aa9898e93b3e0903694.addLayer(poly_line_b12406e934474d0c9cd9ed3b3a4be725);
             
     
-                var poly_line_32a648e93dc74199a24066f9f5810fb4 = L.polyline(
+                var poly_line_c7883bcf39a5405b8951cb9777edfe00 = L.polyline(
                     [[-6, -179], [-6, 179]],
                     {
                         color: 'green',
                         weight: 4,
                         opacity: 1.0,
                         });
-                map_70c5017834ac4fdb884a06e1c5716243.addLayer(poly_line_32a648e93dc74199a24066f9f5810fb4);
+                map_ef0fd96448bd4aa9898e93b3e0903694.addLayer(poly_line_c7883bcf39a5405b8951cb9777edfe00);
             
     
-                var poly_line_a10cccdc161b4177b5ee45a37dcbda82 = L.polyline(
+                var poly_line_bd40fbf267ba43da80f024a7aec34630 = L.polyline(
                     [[12, -179], [12, 190]],
                     {
                         color: 'orange',
                         weight: 4,
                         opacity: 1.0,
                         });
-                map_70c5017834ac4fdb884a06e1c5716243.addLayer(poly_line_a10cccdc161b4177b5ee45a37dcbda82);
+                map_ef0fd96448bd4aa9898e93b3e0903694.addLayer(poly_line_bd40fbf267ba43da80f024a7aec34630);
             
 </script>

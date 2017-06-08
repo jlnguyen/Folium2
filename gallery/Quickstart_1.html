@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_b5aef7c5e9dd474d9e5eaf4948bc76a4 {
+            <style> #map_7e5d22f111ca49bc9092d6794bdba6ba {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_b5aef7c5e9dd474d9e5eaf4948bc76a4" ></div>
+            <div class="folium-map" id="map_7e5d22f111ca49bc9092d6794bdba6ba" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_b5aef7c5e9dd474d9e5eaf4948bc76a4 = L.map(
-                                  'map_b5aef7c5e9dd474d9e5eaf4948bc76a4',
+            var map_7e5d22f111ca49bc9092d6794bdba6ba = L.map(
+                                  'map_7e5d22f111ca49bc9092d6794bdba6ba',
                                   {center: [45.372,-121.6972],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_9c74a2d8feb24a6397798f7a7bdca3f8 = L.tileLayer(
+            var tile_layer_88741a8827064e3e9c70718997cde998 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -63,52 +63,53 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_b5aef7c5e9dd474d9e5eaf4948bc76a4);
+                ).addTo(map_7e5d22f111ca49bc9092d6794bdba6ba);
 
         
     
 
-            var marker_010c7476d0c8436c98b2564d92782487 = L.marker(
+            var marker_c114cf0d5fd244d1998ca11e164b0243 = L.marker(
                 [45.3288,-121.6625],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_b5aef7c5e9dd474d9e5eaf4948bc76a4);
+                .addTo(map_7e5d22f111ca49bc9092d6794bdba6ba);
             
     
-            var popup_c3ba064b55ab4e988099b285a9e9eb5b = L.popup({maxWidth: '300'});
+            var popup_6a290584750b412aa204ab877a54d064 = L.popup({maxWidth: '300'});
 
             
-                var html_6bf18ed8da464d589478be90a241b652 = $('<div id="html_6bf18ed8da464d589478be90a241b652" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
-                popup_c3ba064b55ab4e988099b285a9e9eb5b.setContent(html_6bf18ed8da464d589478be90a241b652);
+                var html_8f37b9a35bdd45dda45ae729aa16c75e = $('<div id="html_8f37b9a35bdd45dda45ae729aa16c75e" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_6a290584750b412aa204ab877a54d064.setContent(html_8f37b9a35bdd45dda45ae729aa16c75e);
             
 
-            marker_010c7476d0c8436c98b2564d92782487.bindPopup(popup_c3ba064b55ab4e988099b285a9e9eb5b);
+            marker_c114cf0d5fd244d1998ca11e164b0243.bindPopup(popup_6a290584750b412aa204ab877a54d064);
 
             
         
     
 
-            var marker_18528c30a21543859f0a5aa0648cd481 = L.marker(
+            var marker_b388d67cde8f4818806247e5c9a77998 = L.marker(
                 [45.3311,-121.7113],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_b5aef7c5e9dd474d9e5eaf4948bc76a4);
+                .addTo(map_7e5d22f111ca49bc9092d6794bdba6ba);
             
     
-            var popup_592b0837c99e44849cf8500293a00c6f = L.popup({maxWidth: '300'});
+            var popup_72ca346edee64447a68eea29691bf12c = L.popup({maxWidth: '300'});
 
             
-                var html_367d983eb8bc44cda1297f8753359341 = $('<div id="html_367d983eb8bc44cda1297f8753359341" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
-                popup_592b0837c99e44849cf8500293a00c6f.setContent(html_367d983eb8bc44cda1297f8753359341);
+                var html_02f8cc1afac346aeb4209fab922c7fe7 = $('<div id="html_02f8cc1afac346aeb4209fab922c7fe7" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
+                popup_72ca346edee64447a68eea29691bf12c.setContent(html_02f8cc1afac346aeb4209fab922c7fe7);
             
 
-            marker_18528c30a21543859f0a5aa0648cd481.bindPopup(popup_592b0837c99e44849cf8500293a00c6f);
+            marker_b388d67cde8f4818806247e5c9a77998.bindPopup(popup_72ca346edee64447a68eea29691bf12c);
 
             
         

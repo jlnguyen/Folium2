@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_d69e5a5109fb49d7b4a9e1cd535066e8 {
+            <style> #map_5173dda4199e43e7a33fa607a453b185 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_d69e5a5109fb49d7b4a9e1cd535066e8" ></div>
+            <div class="folium-map" id="map_5173dda4199e43e7a33fa607a453b185" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_d69e5a5109fb49d7b4a9e1cd535066e8 = L.map(
-                                  'map_d69e5a5109fb49d7b4a9e1cd535066e8',
+            var map_5173dda4199e43e7a33fa607a453b185 = L.map(
+                                  'map_5173dda4199e43e7a33fa607a453b185',
                                   {center: [35.67,139.78],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_444b331ee2eb4fcfbe29736d14a8ecc3 = L.tileLayer(
+            var tile_layer_59947e7cab4a4168a14c12a356c9795a = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,29 +63,30 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_d69e5a5109fb49d7b4a9e1cd535066e8);
+                ).addTo(map_5173dda4199e43e7a33fa607a453b185);
 
         
     
-            var polygon_marker_66cce02bb29a4ddbb0cfabb1e9cbc87c = L.polygon([[35.6762, 139.7795], [35.6718, 139.7831], [35.6767, 139.7868], [35.6795, 139.7824], [35.6787, 139.7791]],
+            var polygon_marker_d9b57bc0490e404cb5e9d8d8af5e22c7 = L.polygon([[35.6762, 139.7795], [35.6718, 139.7831], [35.6767, 139.7868], [35.6795, 139.7824], [35.6787, 139.7791]],
                 {
                     color: 'blue',
                     fillColor: 'red',
                     fillOpacity: 0.5,
                     weight: 10
-                }).addTo(map_d69e5a5109fb49d7b4a9e1cd535066e8);
+                }).addTo(map_5173dda4199e43e7a33fa607a453b185);
             
     
-            var popup_6ea1a94a9ccc4677852fc2890b008dbd = L.popup({maxWidth: '300'});
+            var popup_a35d544df0ec4da7a31b78b7f243c730 = L.popup({maxWidth: '300'});
 
             
-                var html_275660efad854e1a8e6396eedfe7c876 = $('<div id="html_275660efad854e1a8e6396eedfe7c876" style="width: 100.0%; height: 100.0%;">Tokyo, Japan</div>')[0];
-                popup_6ea1a94a9ccc4677852fc2890b008dbd.setContent(html_275660efad854e1a8e6396eedfe7c876);
+                var html_dd4f3c4f7e1044508f4e8f0bcc0bf4ed = $('<div id="html_dd4f3c4f7e1044508f4e8f0bcc0bf4ed" style="width: 100.0%; height: 100.0%;">Tokyo, Japan</div>')[0];
+                popup_a35d544df0ec4da7a31b78b7f243c730.setContent(html_dd4f3c4f7e1044508f4e8f0bcc0bf4ed);
             
 
-            polygon_marker_66cce02bb29a4ddbb0cfabb1e9cbc87c.bindPopup(popup_6ea1a94a9ccc4677852fc2890b008dbd);
+            polygon_marker_d9b57bc0490e404cb5e9d8d8af5e22c7.bindPopup(popup_a35d544df0ec4da7a31b78b7f243c730);
 
             
         

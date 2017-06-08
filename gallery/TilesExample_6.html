@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_b038a089977245b3b3988474f1548f82 {
+            <style> #map_2c42504201aa46908d028569e3869607 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_b038a089977245b3b3988474f1548f82" ></div>
+            <div class="folium-map" id="map_2c42504201aa46908d028569e3869607" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_b038a089977245b3b3988474f1548f82 = L.map(
-                                  'map_b038a089977245b3b3988474f1548f82',
+            var map_2c42504201aa46908d028569e3869607 = L.map(
+                                  'map_2c42504201aa46908d028569e3869607',
                                   {center: [-12.875,-38.625],
                                   zoom: 8,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_8edf557ee8364c4c8eb3363f8681226b = L.tileLayer(
+            var tile_layer_89566dbffee04e9ebabf5e045d17ae44 = L.tileLayer(
                 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,9 +63,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: '(c) <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors (c) <a href="http://cartodb.com/attributions">CartoDB</a>, CartoDB <a href ="http://cartodb.com/attributions">attributions</a>',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_b038a089977245b3b3988474f1548f82);
+                ).addTo(map_2c42504201aa46908d028569e3869607);
 
         
 </script>

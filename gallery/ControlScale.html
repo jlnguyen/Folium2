@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_58edd131a3e34bc9aeee6e6841553ce5 {
+            <style> #map_510e0fbefedf4a588c6481e6aa1c8d2a {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_58edd131a3e34bc9aeee6e6841553ce5" ></div>
+            <div class="folium-map" id="map_510e0fbefedf4a588c6481e6aa1c8d2a" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_58edd131a3e34bc9aeee6e6841553ce5 = L.map(
-                                  'map_58edd131a3e34bc9aeee6e6841553ce5',
+            var map_510e0fbefedf4a588c6481e6aa1c8d2a = L.map(
+                                  'map_510e0fbefedf4a588c6481e6aa1c8d2a',
                                   {center: [-12.875,-38.625],
                                   zoom: 8,
                                   maxBounds: bounds,
@@ -52,10 +52,10 @@
                                   worldCopyJump: false,
                                   crs: L.CRS.EPSG3857
                                  });
-            L.control.scale().addTo(map_58edd131a3e34bc9aeee6e6841553ce5);
+            L.control.scale().addTo(map_510e0fbefedf4a588c6481e6aa1c8d2a);
         
     
-            var tile_layer_4fa622d9f141435a833102eacc4b3618 = L.tileLayer(
+            var tile_layer_3b840f0b576c4e3195a76fb6ccf2ba74 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,9 +63,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_58edd131a3e34bc9aeee6e6841553ce5);
+                ).addTo(map_510e0fbefedf4a588c6481e6aa1c8d2a);
 
         
 </script>

@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1cf69e454edf4e828dc78f79bf015a26 {
+            <style> #map_c3d44b056c8540cda4390498efb08972 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -28,7 +28,7 @@
                 }
             </style>
         
-    <style> #div_08f3ff91d8284cd095965fff3618c086 {
+    <style> #div_018fd894576f4873a9e6a6f5986af34e {
         position : absolute;
         width : 45.0%;
         height: 90.0%;
@@ -36,7 +36,7 @@
         top: 5.0%;
     </style>
     
-            <style> #map_51e29c2baeb84e13b49efbe9b490d979 {
+            <style> #map_0652d866205648739f390292db798f68 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -45,7 +45,7 @@
                 }
             </style>
         
-    <style> #div_35bd66959422435188bd2f134a9cd3e0 {
+    <style> #div_fa49d6b69dca45f4b0085e68f06370fe {
         position : absolute;
         width : 45.0%;
         height: 90.0%;
@@ -54,11 +54,11 @@
     </style>
 </head>
 <body>    
-    <div id="div_08f3ff91d8284cd095965fff3618c086">
-            <div class="folium-map" id="map_1cf69e454edf4e828dc78f79bf015a26" ></div>
+    <div id="div_018fd894576f4873a9e6a6f5986af34e">
+            <div class="folium-map" id="map_c3d44b056c8540cda4390498efb08972" ></div>
         </div>
-    <div id="div_35bd66959422435188bd2f134a9cd3e0">
-            <div class="folium-map" id="map_51e29c2baeb84e13b49efbe9b490d979" ></div>
+    <div id="div_fa49d6b69dca45f4b0085e68f06370fe">
+            <div class="folium-map" id="map_0652d866205648739f390292db798f68" ></div>
         </div>
 </body>
 <script>    
@@ -70,8 +70,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1cf69e454edf4e828dc78f79bf015a26 = L.map(
-                                  'map_1cf69e454edf4e828dc78f79bf015a26',
+            var map_c3d44b056c8540cda4390498efb08972 = L.map(
+                                  'map_c3d44b056c8540cda4390498efb08972',
                                   {center: [0,0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -82,7 +82,7 @@
             
         
     
-            var tile_layer_e01a536c2ffb4e90b60e68a4a6422921 = L.tileLayer(
+            var tile_layer_a52d8cc1e7b847cf88184dfbdd28000a = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -90,9 +90,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_1cf69e454edf4e828dc78f79bf015a26);
+                ).addTo(map_c3d44b056c8540cda4390498efb08972);
 
         
     
@@ -103,8 +104,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_51e29c2baeb84e13b49efbe9b490d979 = L.map(
-                                  'map_51e29c2baeb84e13b49efbe9b490d979',
+            var map_0652d866205648739f390292db798f68 = L.map(
+                                  'map_0652d866205648739f390292db798f68',
                                   {center: [46,3],
                                   zoom: 5,
                                   maxBounds: bounds,
@@ -115,7 +116,7 @@
             
         
     
-            var tile_layer_91242cd9baf648d797181fd3a0920911 = L.tileLayer(
+            var tile_layer_cfc327820e934dc8a284f7f185157af5 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -123,9 +124,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_51e29c2baeb84e13b49efbe9b490d979);
+                ).addTo(map_0652d866205648739f390292db798f68);
 
         
 </script>

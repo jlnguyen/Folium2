@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_b3ffc76f3ac24dc2a1a8e7ea241167d1 {
+            <style> #map_7bbe82a49b8f4c57bc35fa0791ae4f0c {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -32,7 +32,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_b3ffc76f3ac24dc2a1a8e7ea241167d1" ></div>
+            <div class="folium-map" id="map_7bbe82a49b8f4c57bc35fa0791ae4f0c" ></div>
         
 </body>
 <script>    
@@ -44,8 +44,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_b3ffc76f3ac24dc2a1a8e7ea241167d1 = L.map(
-                                  'map_b3ffc76f3ac24dc2a1a8e7ea241167d1',
+            var map_7bbe82a49b8f4c57bc35fa0791ae4f0c = L.map(
+                                  'map_7bbe82a49b8f4c57bc35fa0791ae4f0c',
                                   {center: [30,0],
                                   zoom: 3,
                                   maxBounds: bounds,
@@ -56,7 +56,7 @@
             
         
     
-            var tile_layer_f0eacf40b2434b81bf6e227d88ac20c9 = L.tileLayer(
+            var tile_layer_cbcda4f623264956a8fd997cdb839e8d = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -64,23 +64,24 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_b3ffc76f3ac24dc2a1a8e7ea241167d1);
+                ).addTo(map_7bbe82a49b8f4c57bc35fa0791ae4f0c);
 
         
     
-                var poly_line_94d966d4d0364c8cae4dc5a98979bf5c = L.polyline(
+                var poly_line_8b06aa7be9b64c7cbff4ddf1ca621e72 = L.polyline(
                     [[59.3556, -31.99219], [55.17887, -42.89062], [47.7541, -43.94531], [38.27269, -37.96875], [27.05913, -41.13281], [16.29905, -36.5625], [8.40717, -30.23437], [1.05463, -22.5], [-8.75479, -18.28125], [-21.61658, -20.03906], [-31.35364, -24.25781], [-39.90974, -30.9375], [-43.83453, -41.13281], [-47.7541, -49.92187], [-50.95843, -54.14062], [-55.9738, -56.60156]],
                     {
                         color: '#8EE9FF',
                         weight: 15,
                         
                         });
-                map_b3ffc76f3ac24dc2a1a8e7ea241167d1.addLayer(poly_line_94d966d4d0364c8cae4dc5a98979bf5c);
+                map_7bbe82a49b8f4c57bc35fa0791ae4f0c.addLayer(poly_line_8b06aa7be9b64c7cbff4ddf1ca621e72);
             
     
-                poly_line_94d966d4d0364c8cae4dc5a98979bf5c.setText(") ", {
+                poly_line_8b06aa7be9b64c7cbff4ddf1ca621e72.setText(") ", {
                     repeat: true,
                     center: false,
                     below: false,
@@ -90,17 +91,17 @@
                 });
             
     
-                var poly_line_c1f6658fa7e346de80fca4057f8b84d9 = L.polyline(
+                var poly_line_8bddff64e0764e998e81a9566c1e29e3 = L.polyline(
                     [[-40.311, -31.952], [-12.086, -18.727]],
                     {
                         color: 'orange',
                         weight: 10,
                         opacity: 0.8,
                         });
-                map_b3ffc76f3ac24dc2a1a8e7ea241167d1.addLayer(poly_line_c1f6658fa7e346de80fca4057f8b84d9);
+                map_7bbe82a49b8f4c57bc35fa0791ae4f0c.addLayer(poly_line_8bddff64e0764e998e81a9566c1e29e3);
             
     
-                poly_line_c1f6658fa7e346de80fca4057f8b84d9.setText("►", {
+                poly_line_8bddff64e0764e998e81a9566c1e29e3.setText("►", {
                     repeat: true,
                     center: false,
                     below: false,
@@ -110,17 +111,17 @@
                 });
             
     
-                var poly_line_fb058c6ac8f0497ba7b89a79fd6a07e2 = L.polyline(
+                var poly_line_7c9cf41e42ed474494c82091f19dbe86 = L.polyline(
                     [[-49.38237, -37.26562], [-1.75754, -14.41406], [51.61802, -23.20312]],
                     {
                         color: 'black',
                         weight: 1,
                         
                         });
-                map_b3ffc76f3ac24dc2a1a8e7ea241167d1.addLayer(poly_line_fb058c6ac8f0497ba7b89a79fd6a07e2);
+                map_7bbe82a49b8f4c57bc35fa0791ae4f0c.addLayer(poly_line_7c9cf41e42ed474494c82091f19dbe86);
             
     
-                poly_line_fb058c6ac8f0497ba7b89a79fd6a07e2.setText("✈     ", {
+                poly_line_7c9cf41e42ed474494c82091f19dbe86.setText("✈     ", {
                     repeat: true,
                     center: false,
                     below: false,
@@ -130,27 +131,27 @@
                 });
             
     
-                var poly_line_91ca13189ae34d54ae68db08add0c3a3 = L.polyline(
+                var poly_line_143028f1eb864d5fa441048736017cdd = L.polyline(
                     [[46.67959447, 3.33984375], [46.5588603, 29.53125], [42.29356419, 51.328125], [35.74651226, 68.5546875], [28.65203063, 76.81640625]],
                     {
                         
                         
                         
                         });
-                map_b3ffc76f3ac24dc2a1a8e7ea241167d1.addLayer(poly_line_91ca13189ae34d54ae68db08add0c3a3);
+                map_7bbe82a49b8f4c57bc35fa0791ae4f0c.addLayer(poly_line_143028f1eb864d5fa441048736017cdd);
             
     
-                var poly_line_20b14cc82b484a5abc9a9c9c46b2b9ee = L.polyline(
+                var poly_line_3736fb19a60d43bc851044477310babe = L.polyline(
                     [[28.76765911, 77.60742188], [27.83907609, 88.72558594], [25.68113734, 97.3828125], [21.24842224, 105.77636719]],
                     {
                         
                         
                         
                         });
-                map_b3ffc76f3ac24dc2a1a8e7ea241167d1.addLayer(poly_line_20b14cc82b484a5abc9a9c9c46b2b9ee);
+                map_7bbe82a49b8f4c57bc35fa0791ae4f0c.addLayer(poly_line_3736fb19a60d43bc851044477310babe);
             
     
-                poly_line_91ca13189ae34d54ae68db08add0c3a3.setText("To New Delhi", {
+                poly_line_143028f1eb864d5fa441048736017cdd.setText("To New Delhi", {
                     repeat: false,
                     center: false,
                     below: false,
@@ -160,7 +161,7 @@
                 });
             
     
-                poly_line_20b14cc82b484a5abc9a9c9c46b2b9ee.setText("To Hanoi", {
+                poly_line_3736fb19a60d43bc851044477310babe.setText("To Hanoi", {
                     repeat: false,
                     center: false,
                     below: false,

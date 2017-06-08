@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1852da72c8ac4bfead00af814339582b {
+            <style> #map_dc016b151b824c5db85f844343e047f6 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1852da72c8ac4bfead00af814339582b" ></div>
+            <div class="folium-map" id="map_dc016b151b824c5db85f844343e047f6" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1852da72c8ac4bfead00af814339582b = L.map(
-                                  'map_1852da72c8ac4bfead00af814339582b',
+            var map_dc016b151b824c5db85f844343e047f6 = L.map(
+                                  'map_dc016b151b824c5db85f844343e047f6',
                                   {center: [0,0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_d59804b3cdf44b6c9ded18603a905d7a = L.tileLayer(
+            var tile_layer_440c2922075b42739835d16add338301 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,13 +63,14 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_1852da72c8ac4bfead00af814339582b);
+                ).addTo(map_dc016b151b824c5db85f844343e047f6);
 
         
     
-            var tile_layer_43d3119f7ce34d3398c9aa1130665b1c = L.tileLayer(
+            var tile_layer_9d168a0749e34d819b3a4399ce7848b7 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -77,22 +78,23 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_1852da72c8ac4bfead00af814339582b);
+                ).addTo(map_dc016b151b824c5db85f844343e047f6);
 
         
     
-            var layer_control_49cbffba345a4538841abf86c4eadd01 = {
-                base_layers : { "openstreetmap" : tile_layer_d59804b3cdf44b6c9ded18603a905d7a,"stamentoner" : tile_layer_43d3119f7ce34d3398c9aa1130665b1c, },
+            var layer_control_5abc6fe398de4769aa39341aa3067b8c = {
+                base_layers : { "openstreetmap" : tile_layer_440c2922075b42739835d16add338301,"stamentoner" : tile_layer_9d168a0749e34d819b3a4399ce7848b7, },
                 overlays : {  }
                 };
             L.control.layers(
-                layer_control_49cbffba345a4538841abf86c4eadd01.base_layers,
-                layer_control_49cbffba345a4538841abf86c4eadd01.overlays,
+                layer_control_5abc6fe398de4769aa39341aa3067b8c.base_layers,
+                layer_control_5abc6fe398de4769aa39341aa3067b8c.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_1852da72c8ac4bfead00af814339582b);
+                }).addTo(map_dc016b151b824c5db85f844343e047f6);
         
 </script>

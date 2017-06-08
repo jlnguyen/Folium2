@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_3d90fe8a858246bd861832f1f6dc389e {
+            <style> #map_ea65b4c7a0514a448de70b94ec7f6b15 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_3d90fe8a858246bd861832f1f6dc389e" ></div>
+            <div class="folium-map" id="map_ea65b4c7a0514a448de70b94ec7f6b15" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_3d90fe8a858246bd861832f1f6dc389e = L.map(
-                                  'map_3d90fe8a858246bd861832f1f6dc389e',
+            var map_ea65b4c7a0514a448de70b94ec7f6b15 = L.map(
+                                  'map_ea65b4c7a0514a448de70b94ec7f6b15',
                                   {center: [-12.875,-38.625],
                                   zoom: 8,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_defb49d451d44554a695d131aa7835b5 = L.tileLayer(
+            var tile_layer_b6e9fe4daa1040c8a70b2bcf4504213e = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -63,9 +63,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_3d90fe8a858246bd861832f1f6dc389e);
+                ).addTo(map_ea65b4c7a0514a448de70b94ec7f6b15);
 
         
 </script>

@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_52d9ca1cee4949aba8829409618513d6 {
+            <style> #map_36ee1068fbe74515a0df083d5f490017 {
                 position : relative;
                 width : 50.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_52d9ca1cee4949aba8829409618513d6" ></div>
+            <div class="folium-map" id="map_36ee1068fbe74515a0df083d5f490017" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_52d9ca1cee4949aba8829409618513d6 = L.map(
-                                  'map_52d9ca1cee4949aba8829409618513d6',
+            var map_36ee1068fbe74515a0df083d5f490017 = L.map(
+                                  'map_36ee1068fbe74515a0df083d5f490017',
                                   {center: [46.1991,-122.1889],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_931c281c2d124c7cb3ad534ad8a9ee9b = L.tileLayer(
+            var tile_layer_1bf4915c3158427fb31d0a85134bd5a0 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -63,9 +63,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_52d9ca1cee4949aba8829409618513d6);
+                ).addTo(map_36ee1068fbe74515a0df083d5f490017);
 
         
 </script>

@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_779fb7e9bdc6440aa1d0f4c75cf92193 {
+            <style> #map_0bf3bd097fe544acb009ba7e66535452 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_779fb7e9bdc6440aa1d0f4c75cf92193" ></div>
+            <div class="folium-map" id="map_0bf3bd097fe544acb009ba7e66535452" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_779fb7e9bdc6440aa1d0f4c75cf92193 = L.map(
-                                  'map_779fb7e9bdc6440aa1d0f4c75cf92193',
+            var map_0bf3bd097fe544acb009ba7e66535452 = L.map(
+                                  'map_0bf3bd097fe544acb009ba7e66535452',
                                   {center: [45.372,-121.6972],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_80bc5c48c15241fb827d4328c38c4bc3 = L.tileLayer(
+            var tile_layer_798d3fdcf256431baade7300f8643ff4 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -63,24 +63,25 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_779fb7e9bdc6440aa1d0f4c75cf92193);
+                ).addTo(map_0bf3bd097fe544acb009ba7e66535452);
 
         
     
 
-            var marker_3b7a1efa1b524b239a06fcd6ce127daa = L.marker(
+            var marker_abc7a465608847b39667e3d07632de10 = L.marker(
                 [45.3288,-121.6625],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_779fb7e9bdc6440aa1d0f4c75cf92193);
+                .addTo(map_0bf3bd097fe544acb009ba7e66535452);
             
     
 
-                var custom_icon_4a9ede1299c8490bb2846399fb77c29a = L.icon({
+                var custom_icon_6486e88c8d84413c932efc33a99dae48 = L.icon({
                     iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-red.png',
                     iconSize: [38,95],
                     iconAnchor: [22,94],
@@ -91,17 +92,17 @@
 
                     popupAnchor: [-3,-76],
                     });
-                marker_3b7a1efa1b524b239a06fcd6ce127daa.setIcon(custom_icon_4a9ede1299c8490bb2846399fb77c29a);
+                marker_abc7a465608847b39667e3d07632de10.setIcon(custom_icon_6486e88c8d84413c932efc33a99dae48);
             
     
-            var popup_52bdbf9636c44b47a6939a0b9612c5a7 = L.popup({maxWidth: '300'});
+            var popup_813a910eaa5444918518590a78f50703 = L.popup({maxWidth: '300'});
 
             
-                var html_773980864f5346a582b30b92b5d76c12 = $('<div id="html_773980864f5346a582b30b92b5d76c12" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
-                popup_52bdbf9636c44b47a6939a0b9612c5a7.setContent(html_773980864f5346a582b30b92b5d76c12);
+                var html_3d5eb47416514a09a96450225ca8e137 = $('<div id="html_3d5eb47416514a09a96450225ca8e137" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_813a910eaa5444918518590a78f50703.setContent(html_3d5eb47416514a09a96450225ca8e137);
             
 
-            marker_3b7a1efa1b524b239a06fcd6ce127daa.bindPopup(popup_52bdbf9636c44b47a6939a0b9612c5a7);
+            marker_abc7a465608847b39667e3d07632de10.bindPopup(popup_813a910eaa5444918518590a78f50703);
 
             
         

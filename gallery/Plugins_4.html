@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_bd33bfadf10f45789a4e8deb52a1f2ac {
+            <style> #map_7b6358346cb94c5d99455fb8770e45a3 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -33,7 +33,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_bd33bfadf10f45789a4e8deb52a1f2ac" ></div>
+            <div class="folium-map" id="map_7b6358346cb94c5d99455fb8770e45a3" ></div>
         
 </body>
 <script>    
@@ -45,8 +45,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_bd33bfadf10f45789a4e8deb52a1f2ac = L.map(
-                                  'map_bd33bfadf10f45789a4e8deb52a1f2ac',
+            var map_7b6358346cb94c5d99455fb8770e45a3 = L.map(
+                                  'map_7b6358346cb94c5d99455fb8770e45a3',
                                   {center: [41.9,-97.3],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -57,7 +57,7 @@
             
         
     
-            var tile_layer_ae7c9cb0f5e94136bef7ef5329883295 = L.tileLayer(
+            var tile_layer_75f1ec6091df4317a09f80d5a01dea8d = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -65,9 +65,10 @@
                     continuousWorld: false,
                     noWrap: false,
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
-                    detectRetina: false
+                    detectRetina: false,
+                    subdomains: 'abc'
                     }
-                ).addTo(map_bd33bfadf10f45789a4e8deb52a1f2ac);
+                ).addTo(map_7b6358346cb94c5d99455fb8770e45a3);
 
         
     
@@ -76,8 +77,8 @@
                 title: 'Expand me',
                 titleCancel: 'Exit me',
                 forceSeparateButton: true,
-                }).addTo(map_bd33bfadf10f45789a4e8deb52a1f2ac);
-            map_bd33bfadf10f45789a4e8deb52a1f2ac.on('enterFullscreen', function(){
+                }).addTo(map_7b6358346cb94c5d99455fb8770e45a3);
+            map_7b6358346cb94c5d99455fb8770e45a3.on('enterFullscreen', function(){
                 console.log('entered fullscreen');
             });
 
