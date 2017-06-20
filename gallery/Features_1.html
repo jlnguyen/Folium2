@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_d5a32a4fdd3e4dbd9534b270a15af4a9 {
+            <style> #map_19e3f5b75c7746cdb7c6afe58b5bb971 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_d5a32a4fdd3e4dbd9534b270a15af4a9" ></div>
+            <div class="folium-map" id="map_19e3f5b75c7746cdb7c6afe58b5bb971" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_d5a32a4fdd3e4dbd9534b270a15af4a9 = L.map(
-                                  'map_d5a32a4fdd3e4dbd9534b270a15af4a9',
+            var map_19e3f5b75c7746cdb7c6afe58b5bb971 = L.map(
+                                  'map_19e3f5b75c7746cdb7c6afe58b5bb971',
                                   {center: [40,-100],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_f3a91f9f761442c9ac1fcd98707407a8 = L.tileLayer(
+            var tile_layer_1542e3a663c64ee495f2418c903c9a37 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,11 +66,11 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_d5a32a4fdd3e4dbd9534b270a15af4a9);
+                ).addTo(map_19e3f5b75c7746cdb7c6afe58b5bb971);
 
         
     
-            var macro_element_ccb68cad50f243a4a92458a3e3090974 = L.tileLayer.wms(
+            var macro_element_f8fe344d26e341c4ae33627776cc3127 = L.tileLayer.wms(
                 'http://mesonet.agron.iastate.edu/cgi-bin/wms/nexrad/n0r.cgi',
                 {
                     layers: 'nexrad-n0r-900913',
@@ -80,7 +80,7 @@
                     version: '1.1.1',
                      attribution: 'Weather data © 2012 IEM Nexrad'
                     }
-                ).addTo(map_d5a32a4fdd3e4dbd9534b270a15af4a9);
+                ).addTo(map_19e3f5b75c7746cdb7c6afe58b5bb971);
 
         
 </script>
