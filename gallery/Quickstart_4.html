@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_8e1ebfd46f214ee5848d05da7a7c3b2a {
+            <style> #map_eb4c53f07bee4e49b283c3280ddfcc09 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_8e1ebfd46f214ee5848d05da7a7c3b2a" ></div>
+            <div class="folium-map" id="map_eb4c53f07bee4e49b283c3280ddfcc09" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_8e1ebfd46f214ee5848d05da7a7c3b2a = L.map(
-                                  'map_8e1ebfd46f214ee5848d05da7a7c3b2a',
+            var map_eb4c53f07bee4e49b283c3280ddfcc09 = L.map(
+                                  'map_eb4c53f07bee4e49b283c3280ddfcc09',
                                   {center: [46.1991,-122.1889],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_2aefff0143ca4e02b0707550729d7c50 = L.tileLayer(
+            var tile_layer_0db81f7fcade41549b2e31c706281b95 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,18 +66,18 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_8e1ebfd46f214ee5848d05da7a7c3b2a);
+                ).addTo(map_eb4c53f07bee4e49b283c3280ddfcc09);
 
         
     
-                var lat_lng_popup_3acf19491a4244d8b7d3950526c341d7 = L.popup();
+                var lat_lng_popup_501a94fc3ff44dad96dc00892dbf0231 = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_3acf19491a4244d8b7d3950526c341d7
+                    lat_lng_popup_501a94fc3ff44dad96dc00892dbf0231
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_8e1ebfd46f214ee5848d05da7a7c3b2a);
+                        .openOn(map_eb4c53f07bee4e49b283c3280ddfcc09);
                     }
-                map_8e1ebfd46f214ee5848d05da7a7c3b2a.on('click', latLngPop);
+                map_eb4c53f07bee4e49b283c3280ddfcc09.on('click', latLngPop);
             
 </script>
