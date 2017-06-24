@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_5650ca854dac40dc80eb950bdb7876d7 {
+            <style> #map_d9ffc587f62e45e4a515a0e57ca18b89 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_5650ca854dac40dc80eb950bdb7876d7" ></div>
+            <div class="folium-map" id="map_d9ffc587f62e45e4a515a0e57ca18b89" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_5650ca854dac40dc80eb950bdb7876d7 = L.map(
-                                  'map_5650ca854dac40dc80eb950bdb7876d7',
+            var map_d9ffc587f62e45e4a515a0e57ca18b89 = L.map(
+                                  'map_d9ffc587f62e45e4a515a0e57ca18b89',
                                   {center: [0,0],
                                   zoom: 1,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_d18b485d62f7478caefb0d3ae62e9d8f = L.tileLayer(
+            var tile_layer_a4ebf64face340de9eef674771971070 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,11 +66,11 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_5650ca854dac40dc80eb950bdb7876d7);
+                ).addTo(map_d9ffc587f62e45e4a515a0e57ca18b89);
 
         
     
-            var tile_layer_e867afb93f7243f9b3e748c62b38b39f = L.tileLayer(
+            var tile_layer_8f1d64a2ab714e439fb0fd4ffb191ced = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -81,20 +81,20 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_5650ca854dac40dc80eb950bdb7876d7);
+                ).addTo(map_d9ffc587f62e45e4a515a0e57ca18b89);
 
         
     
-            var layer_control_fd92db6194724b5f97a055031c473c8a = {
-                base_layers : { "openstreetmap" : tile_layer_d18b485d62f7478caefb0d3ae62e9d8f,"stamentoner" : tile_layer_e867afb93f7243f9b3e748c62b38b39f, },
+            var layer_control_417d3c75a88746668e9197fe8978e77a = {
+                base_layers : { "openstreetmap" : tile_layer_a4ebf64face340de9eef674771971070,"stamentoner" : tile_layer_8f1d64a2ab714e439fb0fd4ffb191ced, },
                 overlays : {  }
                 };
             L.control.layers(
-                layer_control_fd92db6194724b5f97a055031c473c8a.base_layers,
-                layer_control_fd92db6194724b5f97a055031c473c8a.overlays,
+                layer_control_417d3c75a88746668e9197fe8978e77a.base_layers,
+                layer_control_417d3c75a88746668e9197fe8978e77a.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_5650ca854dac40dc80eb950bdb7876d7);
+                }).addTo(map_d9ffc587f62e45e4a515a0e57ca18b89);
         
 </script>

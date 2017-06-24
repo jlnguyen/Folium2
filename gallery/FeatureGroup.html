@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_680cc20cf7da463fad21594f97f7527e {
+            <style> #map_9c0eb8ba3f704fda9dde0d7f10f4837c {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_680cc20cf7da463fad21594f97f7527e" ></div>
+            <div class="folium-map" id="map_9c0eb8ba3f704fda9dde0d7f10f4837c" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_680cc20cf7da463fad21594f97f7527e = L.map(
-                                  'map_680cc20cf7da463fad21594f97f7527e',
+            var map_9c0eb8ba3f704fda9dde0d7f10f4837c = L.map(
+                                  'map_9c0eb8ba3f704fda9dde0d7f10f4837c',
                                   {center: [45.372,-121.6972],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1b4b5e1ad6284bbf9c94fb51f9b45e22 = L.tileLayer(
+            var tile_layer_dff03092128343d2adeffcdefb52295e = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,68 +66,68 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_680cc20cf7da463fad21594f97f7527e);
+                ).addTo(map_9c0eb8ba3f704fda9dde0d7f10f4837c);
 
         
     
-            var feature_group_fabc09a0ef7a4a30aa2fba7162d41e2c = L.featureGroup(
-                ).addTo(map_680cc20cf7da463fad21594f97f7527e);
+            var feature_group_4f278c78fd2e4698a3f5b067ce79cf85 = L.featureGroup(
+                ).addTo(map_9c0eb8ba3f704fda9dde0d7f10f4837c);
         
     
 
-            var marker_73b07575a5e746b98aad4e414ea2e732 = L.marker(
+            var marker_c7b17421066a4c5782b7e3b34274034b = L.marker(
                 [45.3288,-121.6625],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_fabc09a0ef7a4a30aa2fba7162d41e2c);
+                .addTo(feature_group_4f278c78fd2e4698a3f5b067ce79cf85);
             
     
-            var popup_4fd04ffdc0ee4b43a1d5465c3633e3bd = L.popup({maxWidth: '300'});
+            var popup_2af0b31c4b5d40aab79cbb6550221927 = L.popup({maxWidth: '300'});
 
             
-                var html_abf673e032804b709cae4acd673f99e4 = $('<div id="html_abf673e032804b709cae4acd673f99e4" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
-                popup_4fd04ffdc0ee4b43a1d5465c3633e3bd.setContent(html_abf673e032804b709cae4acd673f99e4);
+                var html_0766a2272dc4400ba597e3065f57b33b = $('<div id="html_0766a2272dc4400ba597e3065f57b33b" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_2af0b31c4b5d40aab79cbb6550221927.setContent(html_0766a2272dc4400ba597e3065f57b33b);
             
 
-            marker_73b07575a5e746b98aad4e414ea2e732.bindPopup(popup_4fd04ffdc0ee4b43a1d5465c3633e3bd);
+            marker_c7b17421066a4c5782b7e3b34274034b.bindPopup(popup_2af0b31c4b5d40aab79cbb6550221927);
 
             
         
     
 
-            var marker_8a3284e598bd4295a5c2d0b86bd95b7c = L.marker(
+            var marker_58638805fed2487ca3e5b779c6d4f5f1 = L.marker(
                 [45.3311,-121.7113],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(feature_group_fabc09a0ef7a4a30aa2fba7162d41e2c);
+                .addTo(feature_group_4f278c78fd2e4698a3f5b067ce79cf85);
             
     
-            var popup_059768718a8c448cb4cad4e8fc3ff392 = L.popup({maxWidth: '300'});
+            var popup_5fc4e0479ead41b088df2ac719ea2e27 = L.popup({maxWidth: '300'});
 
             
-                var html_6c05e03e392644dca83b35183eb8de33 = $('<div id="html_6c05e03e392644dca83b35183eb8de33" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
-                popup_059768718a8c448cb4cad4e8fc3ff392.setContent(html_6c05e03e392644dca83b35183eb8de33);
+                var html_a39c5f4b3b5143d4897a567da948dcfd = $('<div id="html_a39c5f4b3b5143d4897a567da948dcfd" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
+                popup_5fc4e0479ead41b088df2ac719ea2e27.setContent(html_a39c5f4b3b5143d4897a567da948dcfd);
             
 
-            marker_8a3284e598bd4295a5c2d0b86bd95b7c.bindPopup(popup_059768718a8c448cb4cad4e8fc3ff392);
+            marker_58638805fed2487ca3e5b779c6d4f5f1.bindPopup(popup_5fc4e0479ead41b088df2ac719ea2e27);
 
             
         
     
-            var layer_control_e935db2fd65d46329f1e7bed154d791c = {
-                base_layers : { "stamenterrain" : tile_layer_1b4b5e1ad6284bbf9c94fb51f9b45e22, },
-                overlays : { "Some icons" : feature_group_fabc09a0ef7a4a30aa2fba7162d41e2c, }
+            var layer_control_c398b9d033e04224ba7ee64d8a79067b = {
+                base_layers : { "stamenterrain" : tile_layer_dff03092128343d2adeffcdefb52295e, },
+                overlays : { "Some icons" : feature_group_4f278c78fd2e4698a3f5b067ce79cf85, }
                 };
             L.control.layers(
-                layer_control_e935db2fd65d46329f1e7bed154d791c.base_layers,
-                layer_control_e935db2fd65d46329f1e7bed154d791c.overlays,
+                layer_control_c398b9d033e04224ba7ee64d8a79067b.base_layers,
+                layer_control_c398b9d033e04224ba7ee64d8a79067b.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_680cc20cf7da463fad21594f97f7527e);
+                }).addTo(map_9c0eb8ba3f704fda9dde0d7f10f4837c);
         
 </script>
