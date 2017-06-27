@@ -20,7 +20,7 @@
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
             <script src="https://www.webglearth.com/v2/api.js"></script>
-            <style> #map_8582a4dd708345588d24c764664db906 {
+            <style> #map_49bb7945b0e943b296de486682ed5377 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -32,7 +32,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_8582a4dd708345588d24c764664db906" ></div>
+            <div class="folium-map" id="map_49bb7945b0e943b296de486682ed5377" ></div>
         
 </body>
 <script>    
@@ -42,8 +42,8 @@
             var northEast = L.latLng(90, 180);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_8582a4dd708345588d24c764664db906 = WE.map('map_8582a4dd708345588d24c764664db906', {
-                                           center:[-42,-42],
+            var map_49bb7945b0e943b296de486682ed5377 = WE.map('map_49bb7945b0e943b296de486682ed5377', {
+                                           center:[-42.0,-42.0],
                                            zoom: 2,
                                            maxBounds: bounds,
                                            layers: [],
@@ -51,7 +51,7 @@
                                          });
         
     
-            var tile_layer_ac0024e0199344a1b1ca55a7685db75c = WE.tileLayer(
+            var tile_layer_a8ab83936e73475b8c3cbe5d153a5aba = WE.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -59,11 +59,11 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_8582a4dd708345588d24c764664db906);
+                ).addTo(map_49bb7945b0e943b296de486682ed5377);
 
         
     
-            var tile_layer_c61941c420e64bb88fe7d3e12fc3f738 = L.tileLayer(
+            var tile_layer_5432fc3e4e1940a69a3deb567addabfa = L.tileLayer(
                 'http://services.arcgisonline.com/arcgis/rest/servicesOcean/World_Ocean_BaseMapServer/tile/{z}/{y}/{x}',
                 {
                     maxZoom: 18,
@@ -74,7 +74,7 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_8582a4dd708345588d24c764664db906);
+                ).addTo(map_49bb7945b0e943b296de486682ed5377);
 
         
 </script>

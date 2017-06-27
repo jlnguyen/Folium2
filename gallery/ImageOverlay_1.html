@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_c96017290c7646b58bceaf546cf20d79 {
+            <style> #map_e5007e61488b4c3a85d840d9e2938d37 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_c96017290c7646b58bceaf546cf20d79" ></div>
+            <div class="folium-map" id="map_e5007e61488b4c3a85d840d9e2938d37" ></div>
         
 </body>
 <script>    
@@ -43,9 +43,9 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_c96017290c7646b58bceaf546cf20d79 = L.map(
-                                  'map_c96017290c7646b58bceaf546cf20d79',
-                                  {center: [37,0],
+            var map_e5007e61488b4c3a85d840d9e2938d37 = L.map(
+                                  'map_e5007e61488b4c3a85d840d9e2938d37',
+                                  {center: [37.0,0.0],
                                   zoom: 1,
                                   maxBounds: bounds,
                                   layers: [],
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_075e8bfc72d54d4db8cc847e01697e89 = L.tileLayer(
+            var tile_layer_9c22462680974fc091c8715b9463ea71 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,27 +66,27 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_c96017290c7646b58bceaf546cf20d79);
+                ).addTo(map_e5007e61488b4c3a85d840d9e2938d37);
 
         
     
-                var image_overlay_48736f06bb6b4c89b10b23a57a1c0bf8 = L.imageOverlay(
+                var image_overlay_3c617ac1113a4ef287fed4fb308a0d9f = L.imageOverlay(
                     'merc.png',
                     [[-82, -180], [82, 180]],
                     {"opacity": 0.8}
-                    ).addTo(map_c96017290c7646b58bceaf546cf20d79);
+                    ).addTo(map_e5007e61488b4c3a85d840d9e2938d37);
             
     
-            var layer_control_797d607bf6d048acb67c67d2944bdda6 = {
-                base_layers : { "stamentoner" : tile_layer_075e8bfc72d54d4db8cc847e01697e89, },
-                overlays : { "macro_element_48736f06bb6b4c89b10b23a57a1c0bf8" : image_overlay_48736f06bb6b4c89b10b23a57a1c0bf8, }
+            var layer_control_4ee602679a644f4fa8ea8d47240b385e = {
+                base_layers : { "stamentoner" : tile_layer_9c22462680974fc091c8715b9463ea71, },
+                overlays : { "macro_element_3c617ac1113a4ef287fed4fb308a0d9f" : image_overlay_3c617ac1113a4ef287fed4fb308a0d9f, }
                 };
             L.control.layers(
-                layer_control_797d607bf6d048acb67c67d2944bdda6.base_layers,
-                layer_control_797d607bf6d048acb67c67d2944bdda6.overlays,
+                layer_control_4ee602679a644f4fa8ea8d47240b385e.base_layers,
+                layer_control_4ee602679a644f4fa8ea8d47240b385e.overlays,
                 {position: 'topright',
                  collapsed: true,
                  autoZIndex: true
-                }).addTo(map_c96017290c7646b58bceaf546cf20d79);
+                }).addTo(map_e5007e61488b4c3a85d840d9e2938d37);
         
 </script>

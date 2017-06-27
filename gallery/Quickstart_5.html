@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_6a765aade8774942b513d2aaab0b5674 {
+            <style> #map_b0259b40925145b59c3222ffa7e6e8bc {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_6a765aade8774942b513d2aaab0b5674" ></div>
+            <div class="folium-map" id="map_b0259b40925145b59c3222ffa7e6e8bc" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_6a765aade8774942b513d2aaab0b5674 = L.map(
-                                  'map_6a765aade8774942b513d2aaab0b5674',
+            var map_b0259b40925145b59c3222ffa7e6e8bc = L.map(
+                                  'map_b0259b40925145b59c3222ffa7e6e8bc',
                                   {center: [46.8527,-121.7649],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_e9017a06d8544bf4a20cdc52c478c3ce = L.tileLayer(
+            var tile_layer_a280ea6c4c604c8ba696f5b0c32914a5 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,40 +66,40 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_6a765aade8774942b513d2aaab0b5674);
+                ).addTo(map_b0259b40925145b59c3222ffa7e6e8bc);
 
         
     
 
-            var marker_a832ed7ccf5747d08c7b6425a167f084 = L.marker(
+            var marker_5e747f27e56d482cb0412a0ef0f7fe7b = L.marker(
                 [46.8354,-121.7325],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_6a765aade8774942b513d2aaab0b5674);
+                .addTo(map_b0259b40925145b59c3222ffa7e6e8bc);
             
     
-            var popup_8ebcf3ba229340ee98200c00bb6b4271 = L.popup({maxWidth: '300'});
+            var popup_771fd33820ce41a09357e939ca798be3 = L.popup({maxWidth: '300'});
 
             
-                var html_1b263536166d45ba99f5acdf20cb277d = $('<div id="html_1b263536166d45ba99f5acdf20cb277d" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
-                popup_8ebcf3ba229340ee98200c00bb6b4271.setContent(html_1b263536166d45ba99f5acdf20cb277d);
+                var html_a0150c1d725842d999b61285e3cf663d = $('<div id="html_a0150c1d725842d999b61285e3cf663d" style="width: 100.0%; height: 100.0%;">Camp Muir</div>')[0];
+                popup_771fd33820ce41a09357e939ca798be3.setContent(html_a0150c1d725842d999b61285e3cf663d);
             
 
-            marker_a832ed7ccf5747d08c7b6425a167f084.bindPopup(popup_8ebcf3ba229340ee98200c00bb6b4271);
+            marker_5e747f27e56d482cb0412a0ef0f7fe7b.bindPopup(popup_771fd33820ce41a09357e939ca798be3);
 
             
         
     
                 function newMarker(e){
-                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_6a765aade8774942b513d2aaab0b5674);
+                    var new_mark = L.marker().setLatLng(e.latlng).addTo(map_b0259b40925145b59c3222ffa7e6e8bc);
                     new_mark.dragging.enable();
-                    new_mark.on('dblclick', function(e){ map_6a765aade8774942b513d2aaab0b5674.removeLayer(e.target)})
+                    new_mark.on('dblclick', function(e){ map_b0259b40925145b59c3222ffa7e6e8bc.removeLayer(e.target)})
                     var lat = e.latlng.lat.toFixed(4),
                        lng = e.latlng.lng.toFixed(4);
                     new_mark.bindPopup("Waypoint");
                     };
-                map_6a765aade8774942b513d2aaab0b5674.on('click', newMarker);
+                map_b0259b40925145b59c3222ffa7e6e8bc.on('click', newMarker);
             
 </script>
