@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_5f36ac4281b44c74a4b231c809052df2 {
+            <style> #map_3b2c8c9ffd4d410387ec07eeaab85dc9 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -32,7 +32,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_5f36ac4281b44c74a4b231c809052df2" ></div>
+            <div class="folium-map" id="map_3b2c8c9ffd4d410387ec07eeaab85dc9" ></div>
         
 </body>
 <script>    
@@ -44,8 +44,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_5f36ac4281b44c74a4b231c809052df2 = L.map(
-                                  'map_5f36ac4281b44c74a4b231c809052df2',
+            var map_3b2c8c9ffd4d410387ec07eeaab85dc9 = L.map(
+                                  'map_3b2c8c9ffd4d410387ec07eeaab85dc9',
                                   {center: [30.0,0.0],
                                   zoom: 3,
                                   maxBounds: bounds,
@@ -56,7 +56,7 @@
             
         
     
-            var tile_layer_31d9dddea5c843aab02964046a57ee39 = L.tileLayer(
+            var tile_layer_16b9a5ccb3db49b4bef531297b2a739e = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -67,19 +67,19 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_5f36ac4281b44c74a4b231c809052df2);
+                ).addTo(map_3b2c8c9ffd4d410387ec07eeaab85dc9);
 
         
     
-                var boat_marker_153fe92518494de1a2016340cab60e59 = L.boatMarker(
+                var boat_marker_39b7089cb59343fc8004b06d39a502a2 = L.boatMarker(
                     [34,-43],
-                    {"color": "#8f8"}).addTo(map_5f36ac4281b44c74a4b231c809052df2);
-                boat_marker_153fe92518494de1a2016340cab60e59.setHeadingWind(45, 45, 150);
+                    {"color": "#8f8"}).addTo(map_3b2c8c9ffd4d410387ec07eeaab85dc9);
+                boat_marker_39b7089cb59343fc8004b06d39a502a2.setHeadingWind(45, 45, 150);
             
     
-                var boat_marker_4fbccacb79e3409a9c6d591d1f46b108 = L.boatMarker(
+                var boat_marker_ea8b5a89e76b4f2b974a9237953c567c = L.boatMarker(
                     [46,-30],
-                    {"color": "#88f"}).addTo(map_5f36ac4281b44c74a4b231c809052df2);
-                boat_marker_4fbccacb79e3409a9c6d591d1f46b108.setHeadingWind(-20, 25, 46);
+                    {"color": "#88f"}).addTo(map_3b2c8c9ffd4d410387ec07eeaab85dc9);
+                boat_marker_ea8b5a89e76b4f2b974a9237953c567c.setHeadingWind(-20, 25, 46);
             
 </script>

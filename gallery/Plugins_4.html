@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_2518caba11944978840b163319cecc18 {
+            <style> #map_514b044c379443a8853da6a95414650b {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -33,7 +33,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_2518caba11944978840b163319cecc18" ></div>
+            <div class="folium-map" id="map_514b044c379443a8853da6a95414650b" ></div>
         
 </body>
 <script>    
@@ -45,8 +45,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_2518caba11944978840b163319cecc18 = L.map(
-                                  'map_2518caba11944978840b163319cecc18',
+            var map_514b044c379443a8853da6a95414650b = L.map(
+                                  'map_514b044c379443a8853da6a95414650b',
                                   {center: [41.9,-97.3],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -57,7 +57,7 @@
             
         
     
-            var tile_layer_d937c783164b4f7b889c38c05e585867 = L.tileLayer(
+            var tile_layer_1b2bf8dc8bdc4665be12df9bb6f91579 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -68,7 +68,7 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_2518caba11944978840b163319cecc18);
+                ).addTo(map_514b044c379443a8853da6a95414650b);
 
         
     
@@ -77,8 +77,8 @@
                 title: 'Expand me',
                 titleCancel: 'Exit me',
                 forceSeparateButton: true,
-                }).addTo(map_2518caba11944978840b163319cecc18);
-            map_2518caba11944978840b163319cecc18.on('enterFullscreen', function(){
+                }).addTo(map_514b044c379443a8853da6a95414650b);
+            map_514b044c379443a8853da6a95414650b.on('enterFullscreen', function(){
                 console.log('entered fullscreen');
             });
 

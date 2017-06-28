@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_8f4cc726a36c40eaa1703960e3915088 {
+            <style> #map_bd38f350ea7244f59ea80cc25abb4873 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_8f4cc726a36c40eaa1703960e3915088" ></div>
+            <div class="folium-map" id="map_bd38f350ea7244f59ea80cc25abb4873" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_8f4cc726a36c40eaa1703960e3915088 = L.map(
-                                  'map_8f4cc726a36c40eaa1703960e3915088',
+            var map_bd38f350ea7244f59ea80cc25abb4873 = L.map(
+                                  'map_bd38f350ea7244f59ea80cc25abb4873',
                                   {center: [46.1991,-122.1889],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_d4ebc2904c304f86b7a0dd5c3125b79d = L.tileLayer(
+            var tile_layer_e22fc9e52f4e4208bc5fe8ab3a2b2d10 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,18 +66,18 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_8f4cc726a36c40eaa1703960e3915088);
+                ).addTo(map_bd38f350ea7244f59ea80cc25abb4873);
 
         
     
-                var lat_lng_popup_c0764e65d7f4414d8bf9cfd6c161ff6a = L.popup();
+                var lat_lng_popup_f5cd5fb9ab784803b26dd28e179ba896 = L.popup();
                 function latLngPop(e) {
-                    lat_lng_popup_c0764e65d7f4414d8bf9cfd6c161ff6a
+                    lat_lng_popup_f5cd5fb9ab784803b26dd28e179ba896
                         .setLatLng(e.latlng)
                         .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
                                     "<br>Longitude: " + e.latlng.lng.toFixed(4))
-                        .openOn(map_8f4cc726a36c40eaa1703960e3915088);
+                        .openOn(map_bd38f350ea7244f59ea80cc25abb4873);
                     }
-                map_8f4cc726a36c40eaa1703960e3915088.on('click', latLngPop);
+                map_bd38f350ea7244f59ea80cc25abb4873.on('click', latLngPop);
             
 </script>

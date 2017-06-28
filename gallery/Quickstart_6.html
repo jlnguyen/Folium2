@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1be14f05210443259a8a939ca9ba4cd8 {
+            <style> #map_d563f13c65b9490792c8f372f59ad5ff {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -32,7 +32,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1be14f05210443259a8a939ca9ba4cd8" ></div>
+            <div class="folium-map" id="map_d563f13c65b9490792c8f372f59ad5ff" ></div>
         
 </body>
 <script>    
@@ -44,8 +44,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1be14f05210443259a8a939ca9ba4cd8 = L.map(
-                                  'map_1be14f05210443259a8a939ca9ba4cd8',
+            var map_d563f13c65b9490792c8f372f59ad5ff = L.map(
+                                  'map_d563f13c65b9490792c8f372f59ad5ff',
                                   {center: [45.5236,-122.675],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -56,7 +56,7 @@
             
         
     
-            var tile_layer_d250fdd7540740d1b566aa71f04c8002 = L.tileLayer(
+            var tile_layer_72174f321f844e0bbcd8c714a8c4518d = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -67,11 +67,11 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_1be14f05210443259a8a939ca9ba4cd8);
+                ).addTo(map_d563f13c65b9490792c8f372f59ad5ff);
 
         
     
-            var regular_polygon_marker_36adaaeaacce48e39ea6dddc44b55685 = new L.RegularPolygonMarker(
+            var regular_polygon_marker_ceb3f5c2c64747f3b8bec1405ed9d9f7 = new L.RegularPolygonMarker(
                 new L.LatLng(45.5012,-122.6655),
                 {
                     icon : new L.Icon.Default(),
@@ -85,22 +85,22 @@
                     radius: 10
                     }
                 )
-                .addTo(map_1be14f05210443259a8a939ca9ba4cd8);
+                .addTo(map_d563f13c65b9490792c8f372f59ad5ff);
             
     
-            var popup_c4dfcb940c2e485da149c1cb68cd9847 = L.popup({maxWidth: '300'});
+            var popup_e8b5109d9d834307b7c8cd1b2f578ee9 = L.popup({maxWidth: '300'});
 
             
-                var html_5e26436b873346e49bc78a0fcc6af79d = $('<div id="html_5e26436b873346e49bc78a0fcc6af79d" style="width: 100.0%; height: 100.0%;">Ross Island Bridge</div>')[0];
-                popup_c4dfcb940c2e485da149c1cb68cd9847.setContent(html_5e26436b873346e49bc78a0fcc6af79d);
+                var html_75afc823c3d0409fb5d59c4fb0e90918 = $('<div id="html_75afc823c3d0409fb5d59c4fb0e90918" style="width: 100.0%; height: 100.0%;">Ross Island Bridge</div>')[0];
+                popup_e8b5109d9d834307b7c8cd1b2f578ee9.setContent(html_75afc823c3d0409fb5d59c4fb0e90918);
             
 
-            regular_polygon_marker_36adaaeaacce48e39ea6dddc44b55685.bindPopup(popup_c4dfcb940c2e485da149c1cb68cd9847);
+            regular_polygon_marker_ceb3f5c2c64747f3b8bec1405ed9d9f7.bindPopup(popup_e8b5109d9d834307b7c8cd1b2f578ee9);
 
             
         
     
-            var regular_polygon_marker_f0f02f0009914340abd7a15a2d572615 = new L.RegularPolygonMarker(
+            var regular_polygon_marker_98339bb710824ad5902dbd56407a03c5 = new L.RegularPolygonMarker(
                 new L.LatLng(45.5132,-122.6708),
                 {
                     icon : new L.Icon.Default(),
@@ -114,22 +114,22 @@
                     radius: 10
                     }
                 )
-                .addTo(map_1be14f05210443259a8a939ca9ba4cd8);
+                .addTo(map_d563f13c65b9490792c8f372f59ad5ff);
             
     
-            var popup_cfd774f6c51c471ca76ee7d927f95fcc = L.popup({maxWidth: '300'});
+            var popup_2495423438cb4e1c8e8762bccb6cd1ac = L.popup({maxWidth: '300'});
 
             
-                var html_b03ad2e74d584bd7b7746349267d4f75 = $('<div id="html_b03ad2e74d584bd7b7746349267d4f75" style="width: 100.0%; height: 100.0%;">Hawthorne Bridge</div>')[0];
-                popup_cfd774f6c51c471ca76ee7d927f95fcc.setContent(html_b03ad2e74d584bd7b7746349267d4f75);
+                var html_87f20143f76b4246a2c5ba0b054b34f5 = $('<div id="html_87f20143f76b4246a2c5ba0b054b34f5" style="width: 100.0%; height: 100.0%;">Hawthorne Bridge</div>')[0];
+                popup_2495423438cb4e1c8e8762bccb6cd1ac.setContent(html_87f20143f76b4246a2c5ba0b054b34f5);
             
 
-            regular_polygon_marker_f0f02f0009914340abd7a15a2d572615.bindPopup(popup_cfd774f6c51c471ca76ee7d927f95fcc);
+            regular_polygon_marker_98339bb710824ad5902dbd56407a03c5.bindPopup(popup_2495423438cb4e1c8e8762bccb6cd1ac);
 
             
         
     
-            var regular_polygon_marker_8fc981df12e24ed7bf59bf85c58844c5 = new L.RegularPolygonMarker(
+            var regular_polygon_marker_d4aad895c04248439244c496234b06ac = new L.RegularPolygonMarker(
                 new L.LatLng(45.5275,-122.6692),
                 {
                     icon : new L.Icon.Default(),
@@ -143,22 +143,22 @@
                     radius: 10
                     }
                 )
-                .addTo(map_1be14f05210443259a8a939ca9ba4cd8);
+                .addTo(map_d563f13c65b9490792c8f372f59ad5ff);
             
     
-            var popup_421933e74efb485b91462f59c2ef15a0 = L.popup({maxWidth: '300'});
+            var popup_600159819c8346839f7e38eb6c558e12 = L.popup({maxWidth: '300'});
 
             
-                var html_dec2a3f32123404fba56784427a4b117 = $('<div id="html_dec2a3f32123404fba56784427a4b117" style="width: 100.0%; height: 100.0%;">Steel Bridge</div>')[0];
-                popup_421933e74efb485b91462f59c2ef15a0.setContent(html_dec2a3f32123404fba56784427a4b117);
+                var html_2c4aaf1502714b75bd207ccaf70ef621 = $('<div id="html_2c4aaf1502714b75bd207ccaf70ef621" style="width: 100.0%; height: 100.0%;">Steel Bridge</div>')[0];
+                popup_600159819c8346839f7e38eb6c558e12.setContent(html_2c4aaf1502714b75bd207ccaf70ef621);
             
 
-            regular_polygon_marker_8fc981df12e24ed7bf59bf85c58844c5.bindPopup(popup_421933e74efb485b91462f59c2ef15a0);
+            regular_polygon_marker_d4aad895c04248439244c496234b06ac.bindPopup(popup_600159819c8346839f7e38eb6c558e12);
 
             
         
     
-            var regular_polygon_marker_33da810cf68b477aa676c50e1c41a246 = new L.RegularPolygonMarker(
+            var regular_polygon_marker_c113579e5b044e399aa267e2f0724ab5 = new L.RegularPolygonMarker(
                 new L.LatLng(45.5318,-122.6745),
                 {
                     icon : new L.Icon.Default(),
@@ -172,17 +172,17 @@
                     radius: 10
                     }
                 )
-                .addTo(map_1be14f05210443259a8a939ca9ba4cd8);
+                .addTo(map_d563f13c65b9490792c8f372f59ad5ff);
             
     
-            var popup_2a8323a19eca45cebb6c614c5f9e4ba2 = L.popup({maxWidth: '300'});
+            var popup_37cef409858c45d88567bea32011e7bb = L.popup({maxWidth: '300'});
 
             
-                var html_b9cf3d1c27b447cba9d31bc4f4d5ad27 = $('<div id="html_b9cf3d1c27b447cba9d31bc4f4d5ad27" style="width: 100.0%; height: 100.0%;">Broadway Bridge</div>')[0];
-                popup_2a8323a19eca45cebb6c614c5f9e4ba2.setContent(html_b9cf3d1c27b447cba9d31bc4f4d5ad27);
+                var html_385e0bc4d6f8435d96e7f88ae2125329 = $('<div id="html_385e0bc4d6f8435d96e7f88ae2125329" style="width: 100.0%; height: 100.0%;">Broadway Bridge</div>')[0];
+                popup_37cef409858c45d88567bea32011e7bb.setContent(html_385e0bc4d6f8435d96e7f88ae2125329);
             
 
-            regular_polygon_marker_33da810cf68b477aa676c50e1c41a246.bindPopup(popup_2a8323a19eca45cebb6c614c5f9e4ba2);
+            regular_polygon_marker_c113579e5b044e399aa267e2f0724ab5.bindPopup(popup_37cef409858c45d88567bea32011e7bb);
 
             
         

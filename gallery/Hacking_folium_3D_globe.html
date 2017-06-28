@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -20,7 +20,7 @@
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
             <script src="https://www.webglearth.com/v2/api.js"></script>
-            <style> #map_49bb7945b0e943b296de486682ed5377 {
+            <style> #map_5cc43c18d39346f3a4bec04119ce5c8d {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -32,7 +32,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_49bb7945b0e943b296de486682ed5377" ></div>
+            <div class="folium-map" id="map_5cc43c18d39346f3a4bec04119ce5c8d" ></div>
         
 </body>
 <script>    
@@ -42,7 +42,7 @@
             var northEast = L.latLng(90, 180);
             var bounds = L.latLngBounds(southWest, northEast);
 
-            var map_49bb7945b0e943b296de486682ed5377 = WE.map('map_49bb7945b0e943b296de486682ed5377', {
+            var map_5cc43c18d39346f3a4bec04119ce5c8d = WE.map('map_5cc43c18d39346f3a4bec04119ce5c8d', {
                                            center:[-42.0,-42.0],
                                            zoom: 2,
                                            maxBounds: bounds,
@@ -51,7 +51,7 @@
                                          });
         
     
-            var tile_layer_a8ab83936e73475b8c3cbe5d153a5aba = WE.tileLayer(
+            var tile_layer_3019fed3772e407f9707e9764aacc1fc = WE.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -59,11 +59,11 @@
                     attribution: 'Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.',
                     detectRetina: false
                     }
-                ).addTo(map_49bb7945b0e943b296de486682ed5377);
+                ).addTo(map_5cc43c18d39346f3a4bec04119ce5c8d);
 
         
     
-            var tile_layer_5432fc3e4e1940a69a3deb567addabfa = L.tileLayer(
+            var tile_layer_944a9e66a2c044beb656d086309dd3d7 = L.tileLayer(
                 'http://services.arcgisonline.com/arcgis/rest/servicesOcean/World_Ocean_BaseMapServer/tile/{z}/{y}/{x}',
                 {
                     maxZoom: 18,
@@ -74,7 +74,7 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_49bb7945b0e943b296de486682ed5377);
+                ).addTo(map_5cc43c18d39346f3a4bec04119ce5c8d);
 
         
 </script>

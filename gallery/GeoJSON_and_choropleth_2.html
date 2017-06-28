@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_16bfb998be584687a8797bf447427e25 {
+            <style> #map_eb5b183be96e424a81b0fa40a8d0d5e3 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_16bfb998be584687a8797bf447427e25" ></div>
+            <div class="folium-map" id="map_eb5b183be96e424a81b0fa40a8d0d5e3" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_16bfb998be584687a8797bf447427e25 = L.map(
-                                  'map_16bfb998be584687a8797bf447427e25',
+            var map_eb5b183be96e424a81b0fa40a8d0d5e3 = L.map(
+                                  'map_eb5b183be96e424a81b0fa40a8d0d5e3',
                                   {center: [43.0,-100.0],
                                   zoom: 4,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1e23995f15bc4ee8ae4bd55fc3d429de = L.tileLayer(
+            var tile_layer_4ef6c9daab7745269caecbf7845e4b5e = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,18 +66,18 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_16bfb998be584687a8797bf447427e25);
+                ).addTo(map_eb5b183be96e424a81b0fa40a8d0d5e3);
 
         
     
 
             
 
-                var geo_json_ee62ced7a78c46a8908f25eb1c495810 = L.geoJson(
+                var geo_json_a9fad843181a46f1bf340db17faf63b7 = L.geoJson(
                     "us-states.json"
                     
-                    ).addTo(map_16bfb998be584687a8797bf447427e25);
-                geo_json_ee62ced7a78c46a8908f25eb1c495810.setStyle(function(feature) {return feature.properties.style;});
+                    ).addTo(map_eb5b183be96e424a81b0fa40a8d0d5e3);
+                geo_json_a9fad843181a46f1bf340db17faf63b7.setStyle(function(feature) {return feature.properties.style;});
 
             
 </script>

@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_1a3f279592344d959f31bf79e7497725 {
+            <style> #map_07c7f8a58a6c4d04a82dede00bc458dc {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1a3f279592344d959f31bf79e7497725" ></div>
+            <div class="folium-map" id="map_07c7f8a58a6c4d04a82dede00bc458dc" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_1a3f279592344d959f31bf79e7497725 = L.map(
-                                  'map_1a3f279592344d959f31bf79e7497725',
+            var map_07c7f8a58a6c4d04a82dede00bc458dc = L.map(
+                                  'map_07c7f8a58a6c4d04a82dede00bc458dc',
                                   {center: [45.372,-121.6972],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_2ed1c111b09348b3b34ef75a05bd670e = L.tileLayer(
+            var tile_layer_dd2f7eab0d044c0f9bf7810e4aa1dfb5 = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,22 +66,22 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_1a3f279592344d959f31bf79e7497725);
+                ).addTo(map_07c7f8a58a6c4d04a82dede00bc458dc);
 
         
     
 
-            var marker_50797d03dabf436288df71da7fbc2496 = L.marker(
+            var marker_4081a6d949944699876fa2e73bcdfb82 = L.marker(
                 [45.3288,-121.6625],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_1a3f279592344d959f31bf79e7497725);
+                .addTo(map_07c7f8a58a6c4d04a82dede00bc458dc);
             
     
 
-                var custom_icon_99b8e2c013834775bed276c38a63bea9 = L.icon({
+                var custom_icon_a307414935eb4b1582b69b0431d9c018 = L.icon({
                     iconUrl: 'http://leafletjs.com/examples/custom-icons/leaf-red.png',
                     iconSize: [38,95],
                     iconAnchor: [22,94],
@@ -92,17 +92,17 @@
 
                     popupAnchor: [-3,-76],
                     });
-                marker_50797d03dabf436288df71da7fbc2496.setIcon(custom_icon_99b8e2c013834775bed276c38a63bea9);
+                marker_4081a6d949944699876fa2e73bcdfb82.setIcon(custom_icon_a307414935eb4b1582b69b0431d9c018);
             
     
-            var popup_d9aab01fd4734957967e8977824381c4 = L.popup({maxWidth: '300'});
+            var popup_876c73e512284004bcf5acbf68cfb5c3 = L.popup({maxWidth: '300'});
 
             
-                var html_ccf75c4675ad4d758ae1551ef636ba94 = $('<div id="html_ccf75c4675ad4d758ae1551ef636ba94" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
-                popup_d9aab01fd4734957967e8977824381c4.setContent(html_ccf75c4675ad4d758ae1551ef636ba94);
+                var html_a66f56cdbeae4b76bd08cbe79f01b44d = $('<div id="html_a66f56cdbeae4b76bd08cbe79f01b44d" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_876c73e512284004bcf5acbf68cfb5c3.setContent(html_a66f56cdbeae4b76bd08cbe79f01b44d);
             
 
-            marker_50797d03dabf436288df71da7fbc2496.bindPopup(popup_d9aab01fd4734957967e8977824381c4);
+            marker_4081a6d949944699876fa2e73bcdfb82.bindPopup(popup_876c73e512284004bcf5acbf68cfb5c3);
 
             
         

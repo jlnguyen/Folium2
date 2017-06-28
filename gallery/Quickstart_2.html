@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_feb437a9b7d549b1bb1c97cc96e3565b {
+            <style> #map_aed914d462ce40f4935ae27cd5d25bf6 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_feb437a9b7d549b1bb1c97cc96e3565b" ></div>
+            <div class="folium-map" id="map_aed914d462ce40f4935ae27cd5d25bf6" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_feb437a9b7d549b1bb1c97cc96e3565b = L.map(
-                                  'map_feb437a9b7d549b1bb1c97cc96e3565b',
+            var map_aed914d462ce40f4935ae27cd5d25bf6 = L.map(
+                                  'map_aed914d462ce40f4935ae27cd5d25bf6',
                                   {center: [45.372,-121.6972],
                                   zoom: 12,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_484696921363423e865965506f8e4cc3 = L.tileLayer(
+            var tile_layer_564b01f4952c4b7984816683ec373e7e = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg',
                 {
                     maxZoom: 18,
@@ -66,105 +66,105 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_feb437a9b7d549b1bb1c97cc96e3565b);
+                ).addTo(map_aed914d462ce40f4935ae27cd5d25bf6);
 
         
     
 
-            var marker_a57d1c26d59f410e9af07b42e5c91672 = L.marker(
+            var marker_a544c414f9cd47a9815a01c987d9d17c = L.marker(
                 [45.3288,-121.6625],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_feb437a9b7d549b1bb1c97cc96e3565b);
+                .addTo(map_aed914d462ce40f4935ae27cd5d25bf6);
             
     
 
-                var icon_6c506a2d63dd4f8885ffddb4f5e9a2e1 = L.AwesomeMarkers.icon({
+                var icon_4e326f674d61422d9a9cd578d8031b28 = L.AwesomeMarkers.icon({
                     icon: 'cloud',
                     iconColor: 'white',
                     markerColor: 'blue',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_a57d1c26d59f410e9af07b42e5c91672.setIcon(icon_6c506a2d63dd4f8885ffddb4f5e9a2e1);
+                marker_a544c414f9cd47a9815a01c987d9d17c.setIcon(icon_4e326f674d61422d9a9cd578d8031b28);
             
     
-            var popup_97b26630dc8a4f8c8224cdc262de06c2 = L.popup({maxWidth: '300'});
+            var popup_ea02d319506543b19965b7f13098aa13 = L.popup({maxWidth: '300'});
 
             
-                var html_e221aa58ce114392832b28252578e446 = $('<div id="html_e221aa58ce114392832b28252578e446" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
-                popup_97b26630dc8a4f8c8224cdc262de06c2.setContent(html_e221aa58ce114392832b28252578e446);
+                var html_008cde5d85024ef8ba02093814095438 = $('<div id="html_008cde5d85024ef8ba02093814095438" style="width: 100.0%; height: 100.0%;">Mt. Hood Meadows</div>')[0];
+                popup_ea02d319506543b19965b7f13098aa13.setContent(html_008cde5d85024ef8ba02093814095438);
             
 
-            marker_a57d1c26d59f410e9af07b42e5c91672.bindPopup(popup_97b26630dc8a4f8c8224cdc262de06c2);
+            marker_a544c414f9cd47a9815a01c987d9d17c.bindPopup(popup_ea02d319506543b19965b7f13098aa13);
 
             
         
     
 
-            var marker_3192cf45fbe4442f92b670c5c10e84f9 = L.marker(
+            var marker_25b7ed0977da4080aa35271709e7623e = L.marker(
                 [45.3311,-121.7113],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_feb437a9b7d549b1bb1c97cc96e3565b);
+                .addTo(map_aed914d462ce40f4935ae27cd5d25bf6);
             
     
 
-                var icon_9c3037163ddc4f44aea19a6090a5de46 = L.AwesomeMarkers.icon({
+                var icon_f0878b7c8b9643f282735b13cba4ca80 = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'green',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_3192cf45fbe4442f92b670c5c10e84f9.setIcon(icon_9c3037163ddc4f44aea19a6090a5de46);
+                marker_25b7ed0977da4080aa35271709e7623e.setIcon(icon_f0878b7c8b9643f282735b13cba4ca80);
             
     
-            var popup_2a7f61866a8a4774abb3a7e47fa40340 = L.popup({maxWidth: '300'});
+            var popup_1b6764920b7f485e86006d2767033ab8 = L.popup({maxWidth: '300'});
 
             
-                var html_45471704b2d247e6a5d3236bfedfe6e1 = $('<div id="html_45471704b2d247e6a5d3236bfedfe6e1" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
-                popup_2a7f61866a8a4774abb3a7e47fa40340.setContent(html_45471704b2d247e6a5d3236bfedfe6e1);
+                var html_a70e853f093d412db18bdd25d42829ed = $('<div id="html_a70e853f093d412db18bdd25d42829ed" style="width: 100.0%; height: 100.0%;">Timberline Lodge</div>')[0];
+                popup_1b6764920b7f485e86006d2767033ab8.setContent(html_a70e853f093d412db18bdd25d42829ed);
             
 
-            marker_3192cf45fbe4442f92b670c5c10e84f9.bindPopup(popup_2a7f61866a8a4774abb3a7e47fa40340);
+            marker_25b7ed0977da4080aa35271709e7623e.bindPopup(popup_1b6764920b7f485e86006d2767033ab8);
 
             
         
     
 
-            var marker_1faf3117551549fd80b98aa515f1576b = L.marker(
+            var marker_500e79b9eb194436a8337e571305447d = L.marker(
                 [45.33,-121.6823],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_feb437a9b7d549b1bb1c97cc96e3565b);
+                .addTo(map_aed914d462ce40f4935ae27cd5d25bf6);
             
     
 
-                var icon_5d5c4310d9624a81b46638f453b626a4 = L.AwesomeMarkers.icon({
+                var icon_2befae7467314d10b1f593dfbb1eca35 = L.AwesomeMarkers.icon({
                     icon: 'info-sign',
                     iconColor: 'white',
                     markerColor: 'red',
                     prefix: 'glyphicon',
                     extraClasses: 'fa-rotate-0'
                     });
-                marker_1faf3117551549fd80b98aa515f1576b.setIcon(icon_5d5c4310d9624a81b46638f453b626a4);
+                marker_500e79b9eb194436a8337e571305447d.setIcon(icon_2befae7467314d10b1f593dfbb1eca35);
             
     
-            var popup_7fcca5d88db24721b0708f7a08f2c99e = L.popup({maxWidth: '300'});
+            var popup_3e5297a8a92f4dc0b77555ab0830e7ce = L.popup({maxWidth: '300'});
 
             
-                var html_f5c1ee51d29e48b9b2fb1df46d25ae9d = $('<div id="html_f5c1ee51d29e48b9b2fb1df46d25ae9d" style="width: 100.0%; height: 100.0%;">Some Other Location</div>')[0];
-                popup_7fcca5d88db24721b0708f7a08f2c99e.setContent(html_f5c1ee51d29e48b9b2fb1df46d25ae9d);
+                var html_6b7f2d3949084ae7b9e2028d9ae2c990 = $('<div id="html_6b7f2d3949084ae7b9e2028d9ae2c990" style="width: 100.0%; height: 100.0%;">Some Other Location</div>')[0];
+                popup_3e5297a8a92f4dc0b77555ab0830e7ce.setContent(html_6b7f2d3949084ae7b9e2028d9ae2c990);
             
 
-            marker_1faf3117551549fd80b98aa515f1576b.bindPopup(popup_7fcca5d88db24721b0708f7a08f2c99e);
+            marker_500e79b9eb194436a8337e571305447d.bindPopup(popup_3e5297a8a92f4dc0b77555ab0830e7ce);
 
             
         

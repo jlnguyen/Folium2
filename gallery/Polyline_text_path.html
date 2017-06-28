@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_df2f2d76a5a245e38c9773bfd99db7bc {
+            <style> #map_5e4e404d73984efdb1153b93f458c665 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -32,7 +32,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_df2f2d76a5a245e38c9773bfd99db7bc" ></div>
+            <div class="folium-map" id="map_5e4e404d73984efdb1153b93f458c665" ></div>
         
 </body>
 <script>    
@@ -44,8 +44,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_df2f2d76a5a245e38c9773bfd99db7bc = L.map(
-                                  'map_df2f2d76a5a245e38c9773bfd99db7bc',
+            var map_5e4e404d73984efdb1153b93f458c665 = L.map(
+                                  'map_5e4e404d73984efdb1153b93f458c665',
                                   {center: [30.0,0.0],
                                   zoom: 3,
                                   maxBounds: bounds,
@@ -56,7 +56,7 @@
             
         
     
-            var tile_layer_f999215420a44a8c83255f8911d12461 = L.tileLayer(
+            var tile_layer_4a3de662656147ad80bc7269fcacd108 = L.tileLayer(
                 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -67,21 +67,21 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_df2f2d76a5a245e38c9773bfd99db7bc);
+                ).addTo(map_5e4e404d73984efdb1153b93f458c665);
 
         
     
-                var poly_line_22fbb0a9572e445aaad5d8cb2d9a819e = L.polyline(
+                var poly_line_c59f3f2586364a93b9213e8cf235ae10 = L.polyline(
                     [[59.3556, -31.99219], [55.17887, -42.89062], [47.7541, -43.94531], [38.27269, -37.96875], [27.05913, -41.13281], [16.29905, -36.5625], [8.40717, -30.23437], [1.05463, -22.5], [-8.75479, -18.28125], [-21.61658, -20.03906], [-31.35364, -24.25781], [-39.90974, -30.9375], [-43.83453, -41.13281], [-47.7541, -49.92187], [-50.95843, -54.14062], [-55.9738, -56.60156]],
                     {
                         color: '#8EE9FF',
                         weight: 15,
                         
                         });
-                map_df2f2d76a5a245e38c9773bfd99db7bc.addLayer(poly_line_22fbb0a9572e445aaad5d8cb2d9a819e);
+                map_5e4e404d73984efdb1153b93f458c665.addLayer(poly_line_c59f3f2586364a93b9213e8cf235ae10);
             
     
-                poly_line_22fbb0a9572e445aaad5d8cb2d9a819e.setText(") ", {
+                poly_line_c59f3f2586364a93b9213e8cf235ae10.setText(") ", {
                     repeat: true,
                     center: false,
                     below: false,
@@ -91,17 +91,17 @@
                 });
             
     
-                var poly_line_63a57d0008b149bea35bc1c250217b52 = L.polyline(
+                var poly_line_ec615580d28744939d77586d171e3992 = L.polyline(
                     [[-40.311, -31.952], [-12.086, -18.727]],
                     {
                         color: 'orange',
                         weight: 10,
                         opacity: 0.8,
                         });
-                map_df2f2d76a5a245e38c9773bfd99db7bc.addLayer(poly_line_63a57d0008b149bea35bc1c250217b52);
+                map_5e4e404d73984efdb1153b93f458c665.addLayer(poly_line_ec615580d28744939d77586d171e3992);
             
     
-                poly_line_63a57d0008b149bea35bc1c250217b52.setText("►", {
+                poly_line_ec615580d28744939d77586d171e3992.setText("►", {
                     repeat: true,
                     center: false,
                     below: false,
@@ -111,17 +111,17 @@
                 });
             
     
-                var poly_line_7fc9dd0779374a74b6dd9bddcfdb3c4a = L.polyline(
+                var poly_line_df5ac20e74b0479da287ac7b6078f2c8 = L.polyline(
                     [[-49.38237, -37.26562], [-1.75754, -14.41406], [51.61802, -23.20312]],
                     {
                         color: 'black',
                         weight: 1,
                         
                         });
-                map_df2f2d76a5a245e38c9773bfd99db7bc.addLayer(poly_line_7fc9dd0779374a74b6dd9bddcfdb3c4a);
+                map_5e4e404d73984efdb1153b93f458c665.addLayer(poly_line_df5ac20e74b0479da287ac7b6078f2c8);
             
     
-                poly_line_7fc9dd0779374a74b6dd9bddcfdb3c4a.setText("✈     ", {
+                poly_line_df5ac20e74b0479da287ac7b6078f2c8.setText("✈     ", {
                     repeat: true,
                     center: false,
                     below: false,
@@ -131,27 +131,27 @@
                 });
             
     
-                var poly_line_5ef7f697d54f4836b38225404c8b117f = L.polyline(
+                var poly_line_cadd942db79f419fa5d8d0d63cb9118d = L.polyline(
                     [[46.67959447, 3.33984375], [46.5588603, 29.53125], [42.29356419, 51.328125], [35.74651226, 68.5546875], [28.65203063, 76.81640625]],
                     {
                         
                         
                         
                         });
-                map_df2f2d76a5a245e38c9773bfd99db7bc.addLayer(poly_line_5ef7f697d54f4836b38225404c8b117f);
+                map_5e4e404d73984efdb1153b93f458c665.addLayer(poly_line_cadd942db79f419fa5d8d0d63cb9118d);
             
     
-                var poly_line_b7d95538d6414c5db2d3ca20f22916ad = L.polyline(
+                var poly_line_f69c70c2911448a187e8595e7b3dadb4 = L.polyline(
                     [[28.76765911, 77.60742188], [27.83907609, 88.72558594], [25.68113734, 97.3828125], [21.24842224, 105.77636719]],
                     {
                         
                         
                         
                         });
-                map_df2f2d76a5a245e38c9773bfd99db7bc.addLayer(poly_line_b7d95538d6414c5db2d3ca20f22916ad);
+                map_5e4e404d73984efdb1153b93f458c665.addLayer(poly_line_f69c70c2911448a187e8595e7b3dadb4);
             
     
-                poly_line_5ef7f697d54f4836b38225404c8b117f.setText("To New Delhi", {
+                poly_line_cadd942db79f419fa5d8d0d63cb9118d.setText("To New Delhi", {
                     repeat: false,
                     center: false,
                     below: false,
@@ -161,7 +161,7 @@
                 });
             
     
-                poly_line_b7d95538d6414c5db2d3ca20f22916ad.setText("To Hanoi", {
+                poly_line_f69c70c2911448a187e8595e7b3dadb4.setText("To Hanoi", {
                     repeat: false,
                     center: false,
                     below: false,

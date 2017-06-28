@@ -2,13 +2,13 @@
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
-    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet@1.1.0/dist/leaflet.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster-src.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.0.0/leaflet.markercluster.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.1.0/dist/leaflet.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
@@ -19,7 +19,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_297a66ebb02344f88d3cea068f802ebd {
+            <style> #map_5c70a775455d40deaa4e76bfcd640e5a {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -31,7 +31,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_297a66ebb02344f88d3cea068f802ebd" ></div>
+            <div class="folium-map" id="map_5c70a775455d40deaa4e76bfcd640e5a" ></div>
         
 </body>
 <script>    
@@ -43,8 +43,8 @@
                 var bounds = L.latLngBounds(southWest, northEast);
             
 
-            var map_297a66ebb02344f88d3cea068f802ebd = L.map(
-                                  'map_297a66ebb02344f88d3cea068f802ebd',
+            var map_5c70a775455d40deaa4e76bfcd640e5a = L.map(
+                                  'map_5c70a775455d40deaa4e76bfcd640e5a',
                                   {center: [45.5236,-122.675],
                                   zoom: 13,
                                   maxBounds: bounds,
@@ -55,7 +55,7 @@
             
         
     
-            var tile_layer_1ffb6a66a2e042f991999f459936d720 = L.tileLayer(
+            var tile_layer_60eeab905a714b309c41c4664a10058a = L.tileLayer(
                 'https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png',
                 {
                     maxZoom: 18,
@@ -66,34 +66,34 @@
                     detectRetina: false,
                     subdomains: 'abc'
                     }
-                ).addTo(map_297a66ebb02344f88d3cea068f802ebd);
+                ).addTo(map_5c70a775455d40deaa4e76bfcd640e5a);
 
         
     
 
-            var marker_500389be512e416b8019a4bc935bda4c = L.marker(
+            var marker_5c687cb02f4f45a2bb84099fd7b71b26 = L.marker(
                 [45.5244,-122.6699],
                 {
                     icon: new L.Icon.Default()
                     }
                 )
-                .addTo(map_297a66ebb02344f88d3cea068f802ebd);
+                .addTo(map_5c70a775455d40deaa4e76bfcd640e5a);
             
     
-            var popup_cdee0d7e324c4cc3825d36ad1e5af5ce = L.popup({maxWidth: '300'});
+            var popup_401f90504c534954a141713fb9ca901e = L.popup({maxWidth: '300'});
 
             
-                var html_37d66f2c16bb4f19a5612884ae6b04a9 = $('<div id="html_37d66f2c16bb4f19a5612884ae6b04a9" style="width: 100.0%; height: 100.0%;">The Waterfront</div>')[0];
-                popup_cdee0d7e324c4cc3825d36ad1e5af5ce.setContent(html_37d66f2c16bb4f19a5612884ae6b04a9);
+                var html_a7057457269e47648cecb71bb9c9faa2 = $('<div id="html_a7057457269e47648cecb71bb9c9faa2" style="width: 100.0%; height: 100.0%;">The Waterfront</div>')[0];
+                popup_401f90504c534954a141713fb9ca901e.setContent(html_a7057457269e47648cecb71bb9c9faa2);
             
 
-            marker_500389be512e416b8019a4bc935bda4c.bindPopup(popup_cdee0d7e324c4cc3825d36ad1e5af5ce);
+            marker_5c687cb02f4f45a2bb84099fd7b71b26.bindPopup(popup_401f90504c534954a141713fb9ca901e);
 
             
         
     
 
-            var circle_marker_a42576100eb74dd3b766b1e9d3bfa0ce = L.circleMarker(
+            var circle_marker_e931e9e362b54335921f67f2fbe0b59c = L.circleMarker(
                 [45.5215,-122.6261],
                 {
                     color: '#3186cc',
@@ -103,17 +103,17 @@
                     }
                 )
                 .setRadius(50)
-                .addTo(map_297a66ebb02344f88d3cea068f802ebd);
+                .addTo(map_5c70a775455d40deaa4e76bfcd640e5a);
             
     
-            var popup_48c78ccf616341e7aff4f1dd3835f63a = L.popup({maxWidth: '300'});
+            var popup_7c6dbaeef3ad4a19b721a4c1fa47f896 = L.popup({maxWidth: '300'});
 
             
-                var html_9bc6a1d7b8e24fb0be14a86a677fd892 = $('<div id="html_9bc6a1d7b8e24fb0be14a86a677fd892" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
-                popup_48c78ccf616341e7aff4f1dd3835f63a.setContent(html_9bc6a1d7b8e24fb0be14a86a677fd892);
+                var html_579d005755e64c469f200e9c67e2ee96 = $('<div id="html_579d005755e64c469f200e9c67e2ee96" style="width: 100.0%; height: 100.0%;">Laurelhurst Park</div>')[0];
+                popup_7c6dbaeef3ad4a19b721a4c1fa47f896.setContent(html_579d005755e64c469f200e9c67e2ee96);
             
 
-            circle_marker_a42576100eb74dd3b766b1e9d3bfa0ce.bindPopup(popup_48c78ccf616341e7aff4f1dd3835f63a);
+            circle_marker_e931e9e362b54335921f67f2fbe0b59c.bindPopup(popup_7c6dbaeef3ad4a19b721a4c1fa47f896);
 
             
         
